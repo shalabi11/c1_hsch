@@ -163,6 +163,51 @@
           "id": 9,
           "name": "Selbermachen als Trend",
           "slug": "selbermachen_als_trend"
+        },
+        {
+          "id": 10,
+          "name": "Träume",
+          "slug": "traeume"
+        },
+        {
+          "id": 11,
+          "name": "Macht Reisen Glücklich?",
+          "slug": "macht_reisen_gluecklich"
+        },
+        {
+          "id": 12,
+          "name": "Allein im Restaurant",
+          "slug": "allein_im_restaurant"
+        },
+        {
+          "id": 13,
+          "name": "Nachhaltiger Konsum",
+          "slug": "nachhaltiger_konsum"
+        },
+        {
+          "id": 14,
+          "name": "Präsentationen an der Uni",
+          "slug": "praesentationen_an_der_uni"
+        },
+        {
+          "id": 15,
+          "name": "Ruf mich nicht an",
+          "slug": "ruf_mich_nicht_an"
+        },
+        {
+          "id": 16,
+          "name": "Smartwatches für Kinder",
+          "slug": "smartwatches_fuer_kinder"
+        },
+        {
+          "id": 17,
+          "name": "Die neue Sehnsucht nach der Natur",
+          "slug": "die_neue_sehnsucht_nach_der_natur"
+        },
+        {
+          "id": 18,
+          "name": "Selfie",
+          "slug": "selfie"
         }
       ]
     },

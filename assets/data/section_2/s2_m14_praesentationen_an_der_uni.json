@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "app": "c1_hsch",
+    "section": 2,
+    "section_name": "LV2",
+    "model": 14,
+    "model_name": "Präsentationen an der Uni",
+    "level": "C1"
+  },
+  "paragraphs": [
+    {
+      "letter": "a",
+      "de": "Vor Präsentationen gibt es an der Uni kein Entkommen. Diese erstellen zu können gilt heutzutage als eine grundlegende Fähigkeit wie Lesen und Schreiben, fast noch wichtiger sogar, und aus Hörsälen und Seminarräumen sind die Folien nicht mehr wegzudenken. Von jedem Studienanfänger im ersten Semester wird heute erwartet, dass er sein Referat mit PowerPoint-Folien unterlegt. Die erste zeigt in der Regel den Namen des Referenten, auf der zweiten steht: „Herzlich willkommen“. Nach der dritten schalten die Kommilitonen ab und verschwinden ins Reich der süßen Träume. Dieses kollektive Wegdämmern ist natürlich nicht beabsichtigt, wird aber toleriert. Denn wer schläft, stellt auch keine lästigen Fragen. Der Referent fährt dann unbeirrt fort und liest von seiner Folie vor, was jeder selbst lesen könnte. Dazu ein paar Bilder, Grafiken und Tabellen, die das Ganze aufhübschen – und fertig ist die Präsentation, bei der sich die Köpfe der Zuhörer unausweichlich nach unten neigen, bis sie langsam entschlummern.",
+      "ar": "لا مفر من العروض التقديمية في الجامعة. تُعتبر القدرة على إعدادها اليوم مهارة أساسية مثل القراءة والكتابة، وربما أكثر أهمية تقريباً، ولم يعد من الممكن تصور قاعات المحاضرات وغرف الندوات بدون الشرائح (الشفافيات). يُتوقع اليوم من كل طالب مبتدئ في الفصل الدراسي الأول أن يرفق بحثه (عرضه الشفوي) بشرائح PowerPoint. عادة ما تُظهر الشريحة الأولى اسم المحاضر (مقدم العرض)، وعلى الثانية يُكتب: \"أهلاً وسهلاً\" (مرحباً بكم). بعد الشريحة الثالثة، يفقد الزملاء تركيزهم ويختفون في عالم الأحلام السعيدة. هذا النعاس (الغفوة) الجماعي ليس مقصوداً بالطبع، لكن يتم التسامح معه. فمن ينام لا يطرح أسئلة مزعجة. يستمر مقدم العرض بعد ذلك غير عابئ ويقرأ من شريحته ما يمكن لأي شخص قراءته بنفسه. أضف إلى ذلك بعض الصور والرسومات والجداول التي تجمّل الأمر برمته - وهكذا يكتمل العرض التقديمي، الذي تميل فيه رؤوس المستمعين للأسفل بشكل لا مفر منه، حتى يغفو ببطء."
+    },
+    {
+      "letter": "b",
+      "de": "Eigentlich wissen es alle: Der Nutzen solcher Präsentationen ist minimal, und in vielen Fällen sind sie sogar kontraproduktiv. Dies meint auch Bildungsforscher Christoph Wecker, der weltweit Studien zu dem Thema ausgewertet hat. Sein Fazit: Wer eine Folie sieht, hört nicht mehr zu. „Man vergisst die Inhalte schneller“, warnt er. Neu sind solche Erkenntnisse aber nicht: „Der ganze PowerPoint-Zirkus sei nicht nur nervig, sondern schädlich“, schrieb schon 2003 der Yale-Professor Edward Tufte in einem Artikel mit der Überschrift „Powerpoint is evil“. PowerPoint mache sogar dumm, behauptete der Emeritus für Statistik, Grafik-Design und politische Ökonomie. Denn das Programm fördere die ausufernde Vermüllung der Präsentationen mit gehaltlosen Info-Grafiken. Die Schwächen sind also schon lange hinlänglich bekannt. Umso erstaunlicher ist es, dass sich in den Hörsälen kein Widerstand regt, ganz im Gegenteil. Oft fordern die Studenten Präsentationen regelrecht ein.",
+      "ar": "في الواقع، الجميع يعرف ذلك: فائدة مثل هذه العروض التقديمية ضئيلة جداً، وفي كثير من الحالات تأتي بنتائج عكسية. هذا ما يعتقده أيضاً الباحث في مجال التعليم كريستوف ويكر، الذي قام بتقييم دراسات حول هذا الموضوع في جميع أنحاء العالم. استنتاجه: من يرى شريحة، لا يعود يستمع. ويحذر قائلاً: \"يُنسى المحتوى بسرعة أكبر\". لكن هذه النتائج ليست جديدة: \"سيرك PowerPoint بأكمله ليس مزعجاً فحسب، بل ضار أيضاً\"، كما كتب أستاذ جامعة ييل إدوارد توفت في عام 2003 في مقال بعنوان \"PowerPoint شر\" (PowerPoint is evil). حتى أن أستاذ الإحصاء والتصميم الجرافيكي والاقتصاد السياسي الفخري زعم أن PowerPoint يجعلك غبياً. لأن البرنامج يشجع على حشو (تلويث/تعبئة) العروض التقديمية بشكل مفرط برسومات بيانية معلوماتية (إنفوغرافيك) خالية من أي محتوى (قيمة). نقاط الضعف هذه معروفة جيداً منذ فترة طويلة. ولذلك، من المثير للدهشة أكثر أنه لا توجد مقاومة في قاعات المحاضرات، بل على العكس تماماً. فغالباً ما يطالب الطلاب حرفياً بالعروض التقديمية."
+    },
+    {
+      "letter": "c",
+      "de": "Doch warum sind die Folien so beliebt? Natürlich liegt es zum einen daran, dass sie der Bequemlichkeit der Studenten entgegenkommen. Sie können sich das Mitschreiben sparen, haben Schwarz auf Weiß, was sie für ihre Klausuren lernen müssen. Und wehe, der Dozent hält sich nicht daran, fragt Themen ab, die er zwar ausführlich, aber nur mündlich, ohne Folie, behandelt hat! Dann ist der Ärger groß. Einige Professoren erklären schon zu Semesterbeginn: Es gilt ausschließlich das geschriebene Wort – also die Folie. Aber die Gründe, warum sich Präsentationen an der Uni und nicht nur dort so sehr verbreiten konnten, liegen noch tiefer – und oft beim Vortragenden selbst. Schließlich ist nicht jeder Student, jede Dozentin und auch nicht jeder Professor ein begnadeter Redner. Drei Viertel der Menschen hassen öffentliche Auftritte – „Glossophobie“ nennt sich diese Angst, vor Publikum zu sprechen. Und da ist nichts leichter, als sich hinter einem Haufen Folien zu verstecken in dem Glauben: Da kann nichts schiefgehen.man muss ja nur ablesen",
+      "ar": "ولكن لماذا تحظى الشرائح بشعبية كبيرة؟ يرجع ذلك بالطبع من ناحية إلى أنها تتوافق مع راحة الطلاب (تريح الطلاب). يمكنهم توفير عناء كتابة الملاحظات (التدوين)، ولديهم أسود على أبيض (مكتوب بوضوح) ما يجب عليهم تعلمه (دراسته) لامتحاناتهم. وويل للمحاضر إن لم يلتزم بذلك، وسأل عن مواضيع تناولها بالتفصيل ولكن شفوياً فقط، بدون شريحة! حينها يكون الغضب كبيراً. بعض الأساتذة يوضحون منذ بداية الفصل الدراسي: الكلمة المكتوبة هي فقط التي تُعتمد - أي الشريحة. لكن الأسباب التي أدت إلى انتشار العروض التقديمية في الجامعة، وليس هناك فقط، أعمق من ذلك - وغالباً ما تكمن في المحاضر (المتحدث) نفسه. في النهاية، ليس كل طالب، ولا كل محاضرة، ولا حتى كل أستاذ هو متحدث موهوب. ثلاثة أرباع الناس يكرهون الظهور (التحدث) أمام الجمهور - \"الغلوسوفوبيا\" (رهاب التحدث) هو اسم هذا الخوف من التحدث أمام الجمهور. ولا يوجد شيء أسهل من الاختباء خلف كومة من الشرائح معتقداً: لا يمكن أن تسير الأمور بشكل خاطئ هناك. فكل ما عليك فعله هو القراءة فحسب."
+    },
+    {
+      "letter": "d",
+      "de": "Zu ergänzen ist noch, dass Präsentationen eine Gefahr mit sich bringen, die oft verkannt wird: Sie bieten die perfekte Tarnung für Unsicherheit, inhaltliche Leere und fehlendes Wissen. Ohne Folien würden viele Vorträge in sich zusammenfallen wie ein Soufflé, reihen sie doch oft nur Allgemeinplätze aneinander. Für die Zuhörer bedeutet dies verschwendete Lebenszeit, der Referent dagegen wiegt sich in falscher Sicherheit. Er glaubt, ein Thema zu beherrschen, es inhaltlich durchdrungen zu haben, obwohl er letztlich nur banale Informationen zusammengestellt und vorgelesen hat. Spätestens in einer Prüfung könnte ihm dies auf die Füße fallen. Und was außerdem schwer wiegt: Wer sich in einem Vortrag immer nur an seinen Folien entlanghangelt, kann es kaum erlernen, frei zu sprechen und einen souveränen Vortragsstil zu entwickeln. Er nimmt sich also die Chance, Fähigkeiten zu erwerben, die ihn im Berufsleben voranbringen könnten.",
+      "ar": "يجب أن نضيف أيضاً أن العروض التقديمية تجلب معها خطراً غالباً ما يتم تجاهله (إساءة تقديره): إنها توفر التمويه (التخفي) المثالي لانعدام الثقة (عدم الأمان)، والفراغ في المحتوى، والافتقار إلى المعرفة. بدون الشرائح، ستنهار العديد من المحاضرات على نفسها مثل السوفليه، فهي غالباً ما لا تسرد سوى عموميات مبتذلة (كلام مستهلك). بالنسبة للمستمعين، هذا يعني إهداراً لوقت الحياة، بينما يهم (يخدع) مقدم العرض نفسه بشعور زائف بالأمان. يعتقد أنه متمكن من موضوع ما، وأنه تغلغل فيه من حيث المحتوى (استوعبه بعمق)، رغم أنه في النهاية قام بتجميع معلومات تافهة (سطحية) وقراءتها بصوت عالٍ. في موعد أقصاه الامتحان (على أبعد تقدير في الامتحان)، قد ينعكس هذا عليه سلباً (يوقعه في ورطة). وما يزيد الطين بلة (وما له وزن ثقيل أيضاً): من يعتمد دائماً فقط على شرائحه في المحاضرة، بالكاد يستطيع تعلم التحدث بطلاقة (بحرية) وتطوير أسلوب إلقاء واثق. وبذلك هو يحرم نفسه من فرصة اكتساب مهارات قد تفيده (تدفعه للأمام) في الحياة المهنية."
+    },
+    {
+      "letter": "e",
+      "de": "Dennoch: Einen Weg zurück gibt es nicht, und Präsentationen sind aus dem Uni-Alltag nicht mehr wegzudenken. Und das muss auch gar nicht sein. Denn es soll auch nicht ausgeblendet werden, dass die Folien, bei allen denkbaren Nachteilen auch vernünftig eingesetzt werden können. Denn letztlich sind sie nur ein Hilfsmittel – und es kommt eben immer darauf an, wie ein solches verwendet wird. Folien bringen dem Zuhörer nichts, wenn der Redner sie als Spickzettel missbraucht. Sie können aber ein zusätzliches Plus bieten: Wenn ein Mediziner eine spezielle Gewebeprobe zeigt, ein Architekt seinen Entwurf für den Rathaus-Neubau einblendet, ist das sinnvoll. Und letztlich gibt es einen einfachen Ratschlag, den man jedem ans Herz legen könnte, der einen guten Vortrag halten will: Der Vortrag sollte bestenfalls auch ohne technische Hilfsmittel funktionieren und Präsentationen das Gesagte bloß ergänzen. Wenn der Redner als Person mit seinen rhetorischen Fähigkeiten, die Inhalte und natürlich auch die Zuhörer – die nicht mit unzähligen Tabellen und Grafiken gelangweilt werden wollen – wieder mehr im Mittelpunkt stehen, ist gegen Folien nämlich gar nichts einzuwenden.",
+      "ar": "ومع ذلك: لا توجد طريق للعودة (لا مجال للتراجع)، ولم يعد من الممكن تصور الحياة الجامعية اليومية بدون العروض التقديمية. وهذا ليس ضرورياً أصلاً (لا داعي لذلك). لأنه لا ينبغي أيضاً إغفال حقيقة أن الشرائح، مع كل العيوب التي يمكن تصورها، يمكن استخدامها أيضاً بشكل معقول. ففي النهاية هي مجرد وسيلة مساعدة - ودائماً ما يعتمد الأمر على كيفية استخدامها. لا تقدم الشرائح للمستمع أي شيء إذا أساء المتحدث استخدامها كـ \"ورقة غش\" (ملاحظات للغش). لكن يمكن أن توفر ميزة إضافية: عندما يعرض طبيب عينة نسيجية خاصة، أو يعرض مهندس معماري تصميمه لمبنى البلدية الجديد، فهذا أمر منطقي (مفيد). وفي النهاية، هناك نصيحة بسيطة يمكن أن تُقدم من القلب لأي شخص يريد إلقاء محاضرة جيدة: يجب أن تنجح المحاضرة في أفضل الأحوال حتى بدون وسائل مساعدة فنية، ويجب أن تكمل العروض التقديمية ما يقال فحسب. عندما يعود المتحدث كشخص بمهاراته البلاغية، والمحتوى، وبالطبع المستمعين - الذين لا يريدون الشعور بالملل بسبب عدد لا يحصى من الجداول والرسومات - ليكونوا في مركز الاهتمام بشكل أكبر مرة أخرى، حينها لن يكون هناك أي اعتراض على الإطلاق على الشرائح."
+    }
+  ],
+  "questions": [
+    {
+      "number": "7",
+      "de": "will der Autor unterhalten?",
+      "ar": "هل يريد الكاتب إمتاع/تسلية القارئ؟",
+      "correct_answer": "a"
+    },
+    {
+      "number": "8",
+      "de": "äußert der Autor Verwunderung?",
+      "ar": "هل يُبدي الكاتب دهشته أو استغرابه؟",
+      "correct_answer": "b"
+    },
+    {
+      "number": "9",
+      "de": "definiert der Autor einen Begriff?",
+      "ar": "هل يعرّف الكاتب مصطلحًا أو مفهومًا؟",
+      "correct_answer": "c"
+    },
+    {
+      "number": "10",
+      "de": "gibt der Autor eine Empfehlung?",
+      "ar": "هل يقدم الكاتب توصية أو نصيحة؟",
+      "correct_answer": "e"
+    },
+    {
+      "number": "11",
+      "de": "spricht der Autor eine Warnung aus?",
+      "ar": "هل يطلق الكاتب تحذيرًا؟",
+      "correct_answer": "d"
+    },
+    {
+      "number": "12",
+      "de": "sucht der Autor nach Erklärungen?",
+      "ar": "هل يبحث الكاتب عن تفسيرات أو أسباب؟",
+      "correct_answer": "c"
+    }
+  ]
+}

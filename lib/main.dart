@@ -30,8 +30,6 @@ void main() async {
   ));
 }
 
-
-
 /// شاشة الـ Splash مخصصة لفحص التوجيه المناسب للمستخدم وتجنب حدوث وميض بالشاشة
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "app": "c1_hsch",
+    "section": 2,
+    "section_name": "LV2",
+    "model": 13,
+    "model_name": "Nachhaltiger Konsum",
+    "level": "C1"
+  },
+  "paragraphs": [
+    {
+      "letter": "a",
+      "de": "Vor Kurzem hat mir eine gute Bekannte, nennen wir sie mal Elke, ihre neuesten Errungenschaften vorgeführt: eine ganze Kollektion nachhaltiger Kleidung, aus Bio-Baumwolle und veganem Leder. Nicht, dass sie unbedingt etwas Neues zum Anziehen gebraucht hätte: Ihr Kleiderschrank platzte schon vorher aus allen Nähten und in unserem Freundeskreis galt sie als ungekrönte Shopping-Königin. Aber Grün liege nun mal im Trend, versicherte mir Elke. Ich muss gestehen, dass ich mir ein verblüfftes Stirnrunzeln nicht verkneifen konnte, als sie mir stolz ihre neuesten Must-haves vorführte. Ist es nicht verwunderlich, dass ausgerechnet durch noch mehr Konsum Umweltbewusstsein demonstriert werden soll? Wie dem auch sei: Nachhaltige Produkte sind zurzeit ziemlich gefragt. Den Kunden beschert dieser Trend ein reines Gewissen sowie ein gutes Gefühl, wenn sie mit dem jeweils angesagtesten Teil aus der Umwelt- und Bio-Produktion auffallen. Natürlich profitieren auch Unternehmen davon, wenn sie auf der Welle des nachhaltigen Konsums mitschwimmen.",
+      "ar": "قبل فترة قصيرة، عرضت لي إحدى معارفي الجيدات، ولنسمها إيلكا، أحدث مكتسباتها: مجموعة كاملة من الملابس المستدامة، المصنوعة من القطن العضوي والجلد النباتي. ليس لأنها كانت بحاجة ماسة لشيء جديد لترتديه: فخزانة ملابسها كانت ممتلئة عن آخرها حتى قبل ذلك، وفي دائرة أصدقائنا كانت تُعتبر ملكة التسوق غير المتوجة. لكن إيلكا أكدت لي أن (اللون) الأخضر أصبح الآن توجهاً (موضة). يجب أن أعترف أنني لم أستطع إخفاء عبوسة دهشة عندما عرضت لي بفخر أحدث ما يجب اقتناؤه (Must-haves). أليس من المثير للدهشة أن يُراد إظهار الوعي البيئي بالتحديد من خلال المزيد من الاستهلاك؟ أياً كان الأمر: المنتجات المستدامة مطلوبة جداً في الوقت الحالي. يمنح هذا التوجه العملاء ضميراً مرتاحاً وشعوراً جيداً عندما يلفتون الانتباه بأكثر القطع العصرية (الرائجة) من الإنتاج البيئي والعضوي. وبالطبع، تستفيد الشركات أيضاً من ركوب موجة الاستهلاك المستدام."
+    },
+    {
+      "letter": "b",
+      "de": "Doch wie kann Konsum überhaupt umweltbewusst sein? Ist dies nicht per se ein Widerspruch? Mit jedem Kauf steigt bekanntlich der Ressourcenverbrauch. Eine Expertengruppe der Vereinten Nationen stellte fest, dass kaum genutzte und schnell wieder entsorgte Waren die Umwelt noch weitaus stärker belasten als Billigflieger. Beispiel Kleidung: Seit den 1950er-Jahren stiegen Herstellung, Kauf und Entsorgung von Klamotten um das Fünffache. Diese Kleidungsstücke türmen sich jährlich zu einem 50-Millionen-Tonnen-Textilienberg auf – von dem so gut wie nichts recycelt wird. Für die Herstellung von Textilien werden große Mengen Wasser sowie Flächen zum Anbau von Baumwolle und anderen Fasern benötigt. Zudem soll die Modebranche 10 Prozent der weltweiten CO2-Emissionen verursachen – mehr als internationale Luftfahrt und Seeschifffahrt zusammen.",
+      "ar": "ولكن كيف يمكن أن يكون الاستهلاك واعياً بالبيئة أصلاً؟ أليس هذا في حد ذاته تناقضاً؟ فكما هو معروف، يزداد استهلاك الموارد مع كل عملية شراء. لاحظت مجموعة خبراء تابعة للأمم المتحدة أن السلع التي بالكاد تُستخدم ويتم التخلص منها بسرعة تشكل عبئاً على البيئة يفوق بكثير عبء رحلات الطيران الرخيصة. خذ الملابس كمثال: منذ الخمسينيات من القرن الماضي، ارتفع تصنيع وشراء والتخلص من الملابس بمقدار خمسة أضعاف. تتراكم قطع الملابس هذه سنوياً لتشكل جبلاً من المنسوجات يزن 50 مليون طن - ولا يُعاد تدوير أي شيء منه تقريباً. يتطلب إنتاج المنسوجات كميات كبيرة من المياه ومساحات لزراعة القطن والألياف الأخرى. بالإضافة إلى ذلك، يُقال إن صناعة الأزياء تتسبب في 10 بالمائة من انبعاثات ثاني أكسيد الكربون العالمية - وهو أكثر مما يسببه الطيران الدولي والشحن البحري مجتمعين."
+    },
+    {
+      "letter": "c",
+      "de": "Egal, wie man es dreht oder wendet: Aus diesen Informationen lässt sich eindeutig ableiten, dass zusätzliche Käufe – so nachhaltig die Produkte auch sein mögen – der Umwelt in jedem Fall eher schaden als nutzen. Es gibt also bessere Wege, einen ökologischen Beitrag zu leisten, als dem Kaufrausch einfach nur einen grünen Anstrich zu verpassen. Empfehlenswert ist es vor allem, den Konsum zu reduzieren. So kann man jedem, der es ernst meint mit der Nachhaltigkeit, ans Herz legen, Sachen auszubessern statt neu anzuschaffen. Es gilt, das Stopfei wieder in die Hand zu nehmen, es in die kaputte Socke zu versenken, das Garn durch die Nadel zu fädeln und das Loch am großen Zeh zu stopfen. Denn rund um das Loch ist die Socke immer noch gut. Der Umgang mit Nadel und Faden sollte daher unbedingt zum nachhaltigen Lebensstil dazugehören.",
+      "ar": "مهما نظرت إلى الأمر من أي زاوية: يمكن استنتاج بوضوح من هذه المعلومات أن عمليات الشراء الإضافية - مهما كانت المنتجات مستدامة - تضر بالبيئة أكثر مما تنفعها في أي حال. لذلك هناك طرق أفضل لتقديم مساهمة بيئية من مجرد إعطاء هوس الشراء طلاءً أخضراً. من المستحسن بشكل خاص تقليل الاستهلاك. لذا يمكن للمرء أن ينصح من أعماق قلبه كل شخص يأخذ الاستدامة على محمل الجد، بإصلاح الأشياء بدلاً من شراء أشياء جديدة. يجب علينا أن نأخذ (بيضة الرتق/الخياطة) مرة أخرى بأيدينا، وأن نضعها في الجورب الممزق، ونمرر الخيط عبر الإبرة، ونرتق الثقب الموجود عند إصبع القدم الكبير. لأن الجورب حول الثقب لا يزال جيداً. لذلك يجب أن يكون استخدام الإبرة والخيط جزءاً من نمط الحياة المستدام بكل تأكيد."
+    },
+    {
+      "letter": "d",
+      "de": "Damit keine Missverständnisse aufkommen: Natürlich ist gegen den Kauf umweltfreundlich produzierter Waren nichts einzuwenden – sofern dieser wirklich notwendig ist. Ich selbst lege großen Wert auf fair produzierte Mode, lehne Billigmode ab und kaufe ausschließlich hochwertige Kleidung, die mir auch in einigen Jahren noch Freude bereiten wird. Aber viele brauchen kein Loch, um neue Socken zu kaufen, und dort liegt der Hase im Pfeffer. Sie denken eher daran, die Welt mit Socken aus ökologisch-veganer Hanfwolle zu retten, indem sie ihre noch neuen Hightech-Kunststofffaser-Socken aus dem Profisportbereich ersetzen. Es kann auch eine neue Bambus-Zahnbürste sein im Tausch gegen das Kunststoff-Exemplar. Oder Bioschuhe statt der noch guten alten. Eine Gießkanne aus Zinkblech, ein neues Fahrrad, weil es heutzutage ein Lastenfahrrad sein muss, eine neue Waschmaschine der Energieeffizienzklasse A+++ statt der vorhandenen, die ein paar Watt mehr verbraucht.",
+      "ar": "حتى لا يحدث أي سوء فهم: بالطبع لا يوجد اعتراض على شراء السلع المنتجة بطريقة صديقة للبيئة - بشرط أن يكون ذلك ضرورياً حقاً. أنا شخصياً أولي أهمية كبيرة للأزياء المنتجة بشكل عادل، وأرفض الأزياء الرخيصة، وأشتري حصرياً الملابس عالية الجودة التي ستستمر في إسعادي حتى بعد بضع سنوات. لكن الكثيرين لا يحتاجون إلى ثقب لشراء جوارب جديدة، وهنا تكمن المشكلة (هنا مربط الفرس). فهم يفكرون بدلاً من ذلك في إنقاذ العالم بجوارب مصنوعة من صوف القنب العضوي والنباتي، من خلال استبدال جواربهم الرياضية الاحترافية الجديدة المصنوعة من الألياف الصناعية عالية التقنية. يمكن أن تكون أيضاً فرشاة أسنان جديدة من الخيزران بدلاً من النسخة البلاستيكية. أو أحذية عضوية بدلاً من القديمة التي لا تزال جيدة. إبريق سقي من صفائح الزنك، أو دراجة جديدة لأنه يجب أن تكون دراجة شحن (بضائع) في هذه الأيام، أو غسالة جديدة من فئة كفاءة الطاقة A+++ بدلاً من الغسالة الحالية التي تستهلك بضع واطات إضافية."
+    },
+    {
+      "letter": "e",
+      "de": "Immerhin, bei den Unternehmen ist inzwischen die Erkenntnis angekommen, dass exzessivem Konsum nicht das allerbeste Image anhaftet. Doch leider sieht es nicht so aus, als würde dies zu einem breiten Umdenken führen. Das ist schade, schließlich ist es allerhöchste Zeit, dass wir anfangen, unser Konsumverhalten zu ändern. Stattdessen nutzen einige Hersteller sogar das schlechte Gewissen, das überflüssige Käufe oftmals begleitet, um ihr Geschäft anzukurbeln. Ein Beispiel aus New York illustriert dies deutlich: Eine Firma, die Outdoor-Kleidung verkauft, riet dazu, diese nicht zu kaufen. In ihrer allerersten Anzeige brachte die Firma das ganze Konsum-Dilemma exakt auf den Punkt: „Kauf diese Jacke nicht. Kauf nicht, was du nicht brauchst.“ Was geschah? In der folgenden Dekade vervielfachte sie ihren Umsatz.",
+      "ar": "على الأقل، أدركت الشركات الآن أن الاستهلاك المفرط لا يحمل أفضل صورة (انطباع). ولكن للأسف لا يبدو أن هذا سيؤدي إلى تغيير واسع النطاق في التفكير. هذا مؤسف، ففي النهاية حان الوقت لكي نبدأ في تغيير سلوكنا الاستهلاكي. بدلاً من ذلك، يستغل بعض المصنعين حتى الشعور بالذنب الذي غالباً ما يصاحب عمليات الشراء الزائدة (غير الضرورية) لتنشيط أعمالهم. وهناك مثال من نيويورك يوضح ذلك بجلاء: نصحت شركة تبيع ملابس الأنشطة الخارجية (الخلوية) بعدم شرائها. في إعلانها الأول على الإطلاق، لخصت الشركة معضلة الاستهلاك بأكملها بشكل دقيق: \"لا تشترِ هذه السترة. لا تشترِ ما لا تحتاجه.\" ماذا حدث؟ في العقد التالي، ضاعفت مبيعاتها."
+    }
+  ],
+  "questions": [
+    {
+      "number": "7",
+      "de": "zieht die Autorin eine Schlussfolgerung?",
+      "ar": "تستخلص الكاتبة استنتاجًا؟",
+      "correct_answer": "c"
+    },
+    {
+      "number": "8",
+      "de": "äußert die Autorin Bedauern?",
+      "ar": "تعبر الكاتبة عن أسفها؟",
+      "correct_answer": "e"
+    },
+    {
+      "number": "9",
+      "de": "erläutert die Autorin ihre persönliche Haltung?",
+      "ar": "تشرح الكاتبة موقفها الشخصي؟",
+      "correct_answer": "d"
+    },
+    {
+      "number": "10",
+      "de": "gibt die Autorin einen Rat?",
+      "ar": "تقدم الكاتبة نصيحة؟",
+      "correct_answer": "d"
+    },
+    {
+      "number": "11",
+      "de": "zeigt sich die Autorin erstaunt?",
+      "ar": "تظهر الكاتبة دهشتها؟",
+      "correct_answer": "b"
+    },
+    {
+      "number": "12",
+      "de": "argumentiert die Autorin mit Zahlen und Fakten?",
+      "ar": "تجادل الكاتبة بالأرقام والحقائق؟",
+      "correct_answer": "b"
+    }
+  ]
+}

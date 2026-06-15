@@ -1,7 +1,7 @@
 {
-  "version": "1.2.0",
-  "build_number": 6,
+  "version": "1.2.1",
+  "build_number": 7,
   "apk_url": "https://qoiyvojzqhbabnncfcjo.supabase.co/storage/v1/object/public/app-updates/C1%20Hsch.apk",
-  "release_notes": "- إضافة النماذج من 10 حتى 18 للقسم الثاني (LV2)\n- تعديل وتصحيح نصوص بعض النماذج",
+  "release_notes": "- إضافة النموذج 18 للقسم الثاني (LV2)",
   "force_update": false
 }

@@ -42,7 +42,7 @@ class DesktopHeader extends ConsumerWidget {
               icon: const Icon(Icons.settings),
               color: AppColors.textSecondary,
               onPressed: () {
-                context.push('/settings');
+                Scaffold.of(context).openEndDrawer();
               },
             ),
           )

@@ -11,6 +11,7 @@ import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
 import '../../../core/theme/theme_provider.dart';
 import '../../../l10n/app_localizations.dart';
+import '../../settings/presentation/settings_screen.dart';
 
 /// Redesigned Sections Screen.
 /// Responsive layout using a Grid for wide screens and List for narrow screens.
@@ -54,6 +55,7 @@ class _SectionsScreenState extends ConsumerState<SectionsScreen> {
       data: (sections) {
         return Scaffold(
           backgroundColor: AppColors.background,
+          endDrawer: isDesktop ? const Drawer(width: 400, child: SettingsScreen()) : null,
           appBar: isDesktop 
             ? null 
             : AppBar(

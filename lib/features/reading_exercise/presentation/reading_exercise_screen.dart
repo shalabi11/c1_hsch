@@ -40,21 +40,13 @@ class _ReadingExerciseScreenState extends ConsumerState<ReadingExerciseScreen> {
       slug: widget.slug,
     );
     _scrollController.addListener(() {
-      if (!mounted || _questionsKey.currentContext == null) return;
+      if (!mounted) return;
       
-      try {
-        final RenderBox box = _questionsKey.currentContext!.findRenderObject() as RenderBox;
-        final dy = box.localToGlobal(Offset.zero).dy;
-        final screenHeight = MediaQuery.of(context).size.height;
-        
-        // If the questions section is visible on screen (e.g. dy is less than 80% of screen height)
-        if (dy < screenHeight * 0.8 && _isAtTop) {
-          setState(() => _isAtTop = false);
-        } else if (dy >= screenHeight * 0.8 && !_isAtTop) {
-          setState(() => _isAtTop = true);
-        }
-      } catch (_) {
-        // Ignored if render object is not ready
+      // Simple and lightweight scroll offset check instead of expensive render tree lookup
+      final isCurrentlyAtTop = _scrollController.offset < 300;
+      
+      if (_isAtTop != isCurrentlyAtTop) {
+        setState(() => _isAtTop = isCurrentlyAtTop);
       }
     });
   }
@@ -105,23 +97,20 @@ class _ReadingExerciseScreenState extends ConsumerState<ReadingExerciseScreen> {
         return Scaffold(
           backgroundColor: AppColors.background,
           appBar: const ReadingAppBar(),
-          body: SingleChildScrollView(
+          body: ListView(
             controller: _scrollController,
             padding: const EdgeInsets.all(16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                ReadingTextSection(exercise: exercise),
-                const SizedBox(height: 16),
-                ReadingQuestionsSection(
-                  exercise: exercise,
-                  state: state,
-                  params: _params,
-                  questionsKey: _questionsKey,
-                  sectionId: widget.sectionId,
-                ),
-              ],
-            ),
+            children: [
+              ReadingTextSection(exercise: exercise),
+              const SizedBox(height: 16),
+              ReadingQuestionsSection(
+                exercise: exercise,
+                state: state,
+                params: _params,
+                questionsKey: _questionsKey,
+                sectionId: widget.sectionId,
+              ),
+            ],
           ),
           floatingActionButton: !isDesktop
               ? ReadingJumpFab(

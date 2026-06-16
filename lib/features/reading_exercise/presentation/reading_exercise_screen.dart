@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -40,11 +41,22 @@ class _ReadingExerciseScreenState extends ConsumerState<ReadingExerciseScreen> {
       slug: widget.slug,
     );
     _scrollController.addListener(() {
-      if (!mounted) return;
+      if (!mounted || _questionsKey.currentContext == null) return;
+
+      final RenderObject? object = _questionsKey.currentContext?.findRenderObject();
+      if (object == null || !object.attached) return;
       
-      // Simple and lightweight scroll offset check instead of expensive render tree lookup
-      final isCurrentlyAtTop = _scrollController.offset < 300;
-      
+      final RenderAbstractViewport? viewport = RenderAbstractViewport.of(object);
+      if (viewport == null) return;
+
+      // Get the exact scroll offset where the questions section starts
+      final double questionsOffset =
+          viewport.getOffsetToReveal(object, 0.0).offset;
+
+      // If our current scroll position is less than the questions offset (minus 200px buffer),
+      // we are still reading the text.
+      final isCurrentlyAtTop = _scrollController.offset < questionsOffset - 200;
+
       if (_isAtTop != isCurrentlyAtTop) {
         setState(() => _isAtTop = isCurrentlyAtTop);
       }
@@ -97,31 +109,47 @@ class _ReadingExerciseScreenState extends ConsumerState<ReadingExerciseScreen> {
         return Scaffold(
           backgroundColor: AppColors.background,
           appBar: const ReadingAppBar(),
-          body: ListView(
+          body: SingleChildScrollView(
             controller: _scrollController,
             padding: const EdgeInsets.all(16.0),
-            children: [
-              ReadingTextSection(exercise: exercise),
-              const SizedBox(height: 16),
-              ReadingQuestionsSection(
-                exercise: exercise,
-                state: state,
-                params: _params,
-                questionsKey: _questionsKey,
-                sectionId: widget.sectionId,
-              ),
-            ],
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                ReadingTextSection(exercise: exercise),
+                const SizedBox(height: 16),
+                ReadingQuestionsSection(
+                  exercise: exercise,
+                  state: state,
+                  params: _params,
+                  questionsKey: _questionsKey,
+                  sectionId: widget.sectionId,
+                ),
+              ],
+            ),
           ),
           floatingActionButton: !isDesktop
               ? ReadingJumpFab(
                   isAtTop: _isAtTop,
                   onScrollToQuestions: () {
-                    if (_questionsKey.currentContext != null) {
-                      Scrollable.ensureVisible(
-                        _questionsKey.currentContext!,
+                    final RenderObject? object = _questionsKey.currentContext?.findRenderObject();
+                    if (object == null || !object.attached) return;
+                    
+                    try {
+                      final RenderAbstractViewport? viewport = RenderAbstractViewport.of(object);
+                      if (viewport != null) {
+                        final double targetOffset = viewport.getOffsetToReveal(object, 0.0).offset;
+                        _scrollController.animateTo(
+                          targetOffset - 16,
+                          duration: const Duration(milliseconds: 600),
+                          curve: Curves.easeInOut,
+                        );
+                      }
+                    } catch (e) {
+                      // Fallback in case of viewport errors
+                      _scrollController.animateTo(
+                        _scrollController.position.maxScrollExtent,
                         duration: const Duration(milliseconds: 600),
                         curve: Curves.easeInOut,
-                        alignment: 0.1,
                       );
                     }
                   },

@@ -28,16 +28,16 @@ jobs:
         run: flutter pub get
         
       - name: Build APK
-        run: flutter build apk --release --split-per-abi
+        run: flutter build apk --release
         
       - name: Rename APK for Release
-        run: mv build/app/outputs/flutter-apk/app-arm64-v8a-release.apk build/app/outputs/flutter-apk/app-release.apk
+        run: mv build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/C1_Hsch.apk
         
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: app-release.apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          name: C1_Hsch.apk
+          path: build/app/outputs/flutter-apk/C1_Hsch.apk
 
   build-windows:
     name: Build Windows App
@@ -57,13 +57,13 @@ jobs:
         run: flutter build windows --release
         
       - name: Zip Windows Release
-        run: Compress-Archive -Path build\windows\x64\runner\Release\* -DestinationPath app-windows.zip
+        run: Compress-Archive -Path build\windows\x64\runner\Release\* -DestinationPath C1_Hsch.zip
         
       - name: Upload Windows Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: app-windows.zip
-          path: app-windows.zip
+          name: C1_Hsch.zip
+          path: C1_Hsch.zip
 
   create-release:
     name: Create GitHub Release
@@ -75,12 +75,12 @@ jobs:
       - name: Download APK
         uses: actions/download-artifact@v4
         with:
-          name: app-release.apk
+          name: C1_Hsch.apk
           
       - name: Download Windows ZIP
         uses: actions/download-artifact@v4
         with:
-          name: app-windows.zip
+          name: C1_Hsch.zip
           
       - name: Get tag name or use default
         id: get_tag
@@ -99,5 +99,5 @@ jobs:
           tag_name: ${{ env.TAG_NAME }}
           name: Release ${{ env.TAG_NAME }}
           files: |
-            app-release.apk
-            app-windows.zip
+            C1_Hsch.apk
+            C1_Hsch.zip

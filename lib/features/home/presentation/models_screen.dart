@@ -185,7 +185,7 @@ class _ModelCard extends StatelessWidget {
       child: InkWell(
         borderRadius: BorderRadius.circular(14),
         onTap: () {
-          if (sectionId == 2) {
+          if (sectionId == 2 || sectionId == 3) {
             context.push('/reading_exercise/$sectionId/${model.id}?slug=${model.slug}');
           } else {
             context.push('/exercise/$sectionId/${model.id}?slug=${model.slug}');
@@ -308,7 +308,7 @@ class _ModelGridCardState extends State<_ModelGridCard> {
         child: InkWell(
           borderRadius: BorderRadius.circular(16),
           onTap: () {
-            if (widget.sectionId == 2) {
+            if (widget.sectionId == 2 || widget.sectionId == 3) {
               context.push('/reading_exercise/${widget.sectionId}/${widget.model.id}?slug=${widget.model.slug}');
             } else {
               context.push('/exercise/${widget.sectionId}/${widget.model.id}?slug=${widget.model.slug}');

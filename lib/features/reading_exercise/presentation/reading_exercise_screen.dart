@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/constants/app_text_styles.dart';
 import 'widgets/reading_app_bar.dart';
-import 'widgets/reading_header.dart';
-import 'widgets/reading_paragraph.dart';
-import 'widgets/reading_question_card.dart';
+import 'widgets/reading_text_section.dart';
+import 'widgets/reading_questions_section.dart';
+import 'widgets/reading_jump_fab.dart';
 import 'reading_exercise_notifier.dart';
 
 class ReadingExerciseScreen extends ConsumerStatefulWidget {
@@ -22,11 +21,15 @@ class ReadingExerciseScreen extends ConsumerStatefulWidget {
   });
 
   @override
-  ConsumerState<ReadingExerciseScreen> createState() => _ReadingExerciseScreenState();
+  ConsumerState<ReadingExerciseScreen> createState() =>
+      _ReadingExerciseScreenState();
 }
 
 class _ReadingExerciseScreenState extends ConsumerState<ReadingExerciseScreen> {
   late final ReadingExerciseParams _params;
+  final ScrollController _scrollController = ScrollController();
+  final GlobalKey _questionsKey = GlobalKey();
+  bool _isAtTop = true;
 
   @override
   void initState() {
@@ -36,6 +39,30 @@ class _ReadingExerciseScreenState extends ConsumerState<ReadingExerciseScreen> {
       modelId: widget.modelId,
       slug: widget.slug,
     );
+    _scrollController.addListener(() {
+      if (!mounted || _questionsKey.currentContext == null) return;
+      
+      try {
+        final RenderBox box = _questionsKey.currentContext!.findRenderObject() as RenderBox;
+        final dy = box.localToGlobal(Offset.zero).dy;
+        final screenHeight = MediaQuery.of(context).size.height;
+        
+        // If the questions section is visible on screen (e.g. dy is less than 80% of screen height)
+        if (dy < screenHeight * 0.8 && _isAtTop) {
+          setState(() => _isAtTop = false);
+        } else if (dy >= screenHeight * 0.8 && !_isAtTop) {
+          setState(() => _isAtTop = true);
+        }
+      } catch (_) {
+        // Ignored if render object is not ready
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
   }
 
   @override
@@ -44,7 +71,8 @@ class _ReadingExerciseScreenState extends ConsumerState<ReadingExerciseScreen> {
       final exercise = next.exercise.valueOrNull;
       if (exercise != null) {
         if (next.selectedAnswers.length == exercise.questions.length &&
-            (previous?.selectedAnswers.length ?? 0) < exercise.questions.length) {
+            (previous?.selectedAnswers.length ?? 0) <
+                exercise.questions.length) {
           Future.delayed(const Duration(milliseconds: 1000), () {
             if (context.mounted) {
               context.pushReplacement(
@@ -57,66 +85,68 @@ class _ReadingExerciseScreenState extends ConsumerState<ReadingExerciseScreen> {
 
     final state = ref.watch(readingExerciseProvider(_params));
 
-    return Scaffold(
-      backgroundColor: AppColors.background,
-      appBar: const ReadingAppBar(),
-      body: state.exercise.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (error, _) => Center(
-          child: Text('Fehler beim Laden: $error', style: const TextStyle(color: Colors.red)),
-        ),
-        data: (exercise) {
-          return SingleChildScrollView(
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  ReadingHeader(
-                    category: exercise.sectionName.toUpperCase(),
-                    title: exercise.modelName,
-                  ),
-                  ...exercise.paragraphs.map((p) => ReadingParagraph(
-                        letter: p.letter,
-                        content: p.de,
-                        translation: p.ar,
-                      )),
-                  const SizedBox(height: 16),
-                  Row(
-                    children: [
-                      Icon(Icons.list_alt, color: AppColors.textPrimary),
-                      const SizedBox(width: 8),
-                      Text(
-                        'Fragen zum Text',
-                        style: AppTextStyles.headingLarge.copyWith(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 16),
-                  ...exercise.questions.map((q) {
-                    final selectedLetter = state.selectedAnswers[q.number];
-                    final isCorrect = state.validationResults[q.number];
-                    return ReadingQuestionCard(
-                      number: q.number,
-                      questionDe: q.de,
-                      questionAr: q.ar,
-                      selectedLetter: selectedLetter,
-                      isCorrect: isCorrect,
-                      onAnswerSelected: (letter) {
-                        ref.read(readingExerciseProvider(_params).notifier).selectAnswer(q.number, letter);
-                      },
-                    );
-                  }),
-                  const SizedBox(height: 24),
-                ],
-              ),
-            ),
-          );
-        },
+    return state.exercise.when(
+      loading: () => Scaffold(
+        backgroundColor: AppColors.background,
+        appBar: const ReadingAppBar(),
+        body: const Center(child: CircularProgressIndicator()),
       ),
+      error: (error, _) => Scaffold(
+        backgroundColor: AppColors.background,
+        appBar: const ReadingAppBar(),
+        body: Center(
+          child: Text('Fehler beim Laden: $error',
+              style: const TextStyle(color: Colors.red)),
+        ),
+      ),
+      data: (exercise) {
+        final isDesktop = MediaQuery.of(context).size.width >= 768;
+
+        return Scaffold(
+          backgroundColor: AppColors.background,
+          appBar: const ReadingAppBar(),
+          body: SingleChildScrollView(
+            controller: _scrollController,
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                ReadingTextSection(exercise: exercise),
+                const SizedBox(height: 16),
+                ReadingQuestionsSection(
+                  exercise: exercise,
+                  state: state,
+                  params: _params,
+                  questionsKey: _questionsKey,
+                  sectionId: widget.sectionId,
+                ),
+              ],
+            ),
+          ),
+          floatingActionButton: !isDesktop
+              ? ReadingJumpFab(
+                  isAtTop: _isAtTop,
+                  onScrollToQuestions: () {
+                    if (_questionsKey.currentContext != null) {
+                      Scrollable.ensureVisible(
+                        _questionsKey.currentContext!,
+                        duration: const Duration(milliseconds: 600),
+                        curve: Curves.easeInOut,
+                        alignment: 0.1,
+                      );
+                    }
+                  },
+                  onScrollToTop: () {
+                    _scrollController.animateTo(
+                      0,
+                      duration: const Duration(milliseconds: 600),
+                      curve: Curves.easeInOut,
+                    );
+                  },
+                )
+              : null,
+        );
+      },
     );
   }
 }

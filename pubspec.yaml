@@ -30,6 +30,9 @@ dependencies:
 flutter_launcher_icons:
   android: true
   ios: true
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
   image_path: "assets/icon/app_icon.png"
 
 
@@ -51,6 +54,7 @@ flutter:
     - assets/data/
     - assets/data/section_1/
     - assets/data/section_2/
+    - assets/data/section_3/
     - assets/icon/
 
   # No custom fonts — system default (San Francisco / Roboto)

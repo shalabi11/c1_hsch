@@ -8,6 +8,7 @@ class ReadingQuestionCard extends StatefulWidget {
   final String questionAr;
   final String? selectedLetter;
   final bool? isCorrect;
+  final List<String> options;
   final ValueChanged<String> onAnswerSelected;
 
   const ReadingQuestionCard({
@@ -17,6 +18,7 @@ class ReadingQuestionCard extends StatefulWidget {
     required this.questionAr,
     required this.selectedLetter,
     required this.isCorrect,
+    required this.options,
     required this.onAnswerSelected,
   });
 
@@ -100,7 +102,7 @@ class _ReadingQuestionCardState extends State<ReadingQuestionCard> {
           Row(
             textDirection: TextDirection.ltr,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: ['a', 'b', 'c', 'd', 'e'].map((letter) {
+            children: widget.options.map((letter) {
               final isSelected = widget.selectedLetter == letter;
               Color bgColor = AppColors.background;
               Color borderColor = AppColors.border.withValues(alpha: 0.8);
@@ -121,7 +123,7 @@ class _ReadingQuestionCardState extends State<ReadingQuestionCard> {
               return Expanded(
                 child: Padding(
                   padding: EdgeInsets.only(
-                    right: letter != 'e' ? 8.0 : 0,
+                    right: letter != widget.options.last ? 8.0 : 0,
                   ),
                   child: InkWell(
                     onTap: () {

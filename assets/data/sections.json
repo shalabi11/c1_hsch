@@ -213,19 +213,54 @@
     },
     {
       "id": 3,
-      "name": "Abschnitt 3",
+      "name": "LV3",
       "nameAr": "القسم الثالث",
-      "isLocked": true,
+      "isLocked": false,
       "models": [
         {
-          "id": 1,
-          "name": "Gesellschaft",
-          "slug": "gesellschaft"
+          "id": 29,
+          "name": "Mehrsprachigkeit 29",
+          "slug": "mehrsprachigkeit"
         },
         {
-          "id": 2,
-          "name": "Migration",
-          "slug": "migration"
+          "id": 30,
+          "name": "Navigation 30",
+          "slug": "navigation"
+        },
+        {
+          "id": 31,
+          "name": "Umweltschutz oder Insel 31",
+          "slug": "umweltschutz"
+        },
+        {
+          "id": 32,
+          "name": "Erika Fuchs - comic übersetzerin 32",
+          "slug": "erika_fuchs"
+        },
+        {
+          "id": 33,
+          "name": "Bundesfreiwilligendienst 33",
+          "slug": "bundesfreiwilligendienst"
+        },
+        {
+          "id": 36,
+          "name": "Johan Friedrich oder Gold oder Porzellan 36",
+          "slug": "johan_friedrich"
+        },
+        {
+          "id": 38,
+          "name": "Präsentation an der Uni oder zweitsStudium 38",
+          "slug": "zweitsstudium"
+        },
+        {
+          "id": 42,
+          "name": "Schlangenhaargurke aus Nigeria 42",
+          "slug": "schlangenhaargurke"
+        },
+        {
+          "id": 43,
+          "name": "SpielzeugIndustrie 43",
+          "slug": "spielzeugindustrie"
         }
       ]
     },

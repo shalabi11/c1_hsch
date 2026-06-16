@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "section": 3,
+    "model": 30,
+    "section_name": "LV3",
+    "model_name": "Navigation 30",
+    "level": "C1"
+  },
+  "paragraphs": [
+    {
+      "letter": "1",
+      "de": "So mancher Autofahrer hat sich schon von seinem Navigationssystem in die Irre führen lassen. In einer Studie befragen wir über 4.000 Teilnehmer dazu, ob und wie häufig sie gedruckte Karten, Navigationsgeräte oder Routenplaner nutzen und für wie gut sie ihren Orientierungssinn halten. Egal ob Mann oder Frau, Jung oder Alt - sich beim Autofahren von einem Navi lotsen zu lassen, ist für die meisten Befragten heutzutage selbstverständlich.",
+      "ar": "لقد سمح العديد من السائقين لأنفسهم بالتضليل من قبل نظام الملاحة الخاص بهم. في إحدى الدراسات، سألنا أكثر من 4000 مشارك عما إذا كانوا يستخدمون الخرائط المطبوعة أو أجهزة الملاحة أو مخططي الطرق وعدد المرات التي يستخدمونها فيها، ومدى جودة إحساسهم بالاتجاه. بغض النظر عما إذا كان رجلاً أم امرأة، شاباً أم عجوزاً - فإن الاسترشاد بجهاز ملاحة أثناء القيادة أمر مفروغ منه لمعظم المستجيبين هذه الأيام."
+    },
+    {
+      "letter": "2",
+      "de": "Personen, die sich oft von einem GPS-System leiten lassen, bewerten ihre Fähigkeit, sich zurechtzufinden, jedoch nicht schlechter als jene, die solche Geräte selten verwenden. Forscher bestätigen, dass Menschen ihre Orientierungsfähigkeit in der Regel realistisch beurteilen können. Wer sie für gut hält, gibt in Studien die Richtung zu bestimmten Zielen tatsächlich präziser an. Das lässt erst einmal vermuten, dass Navigationsgeräte die Orientierungsfähigkeit an sich nicht schmälern.",
+      "ar": "ومع ذلك، فإن الأشخاص الذين يسترشدون غالباً بنظام تحديد المواقع العالمي (GPS) لا يقيمون قدرتهم على إيجاد طريقهم بأسوأ من أولئك الذين نادراً ما يستخدمون مثل هذه الأجهزة. يؤكد الباحثون أن الناس يمكنهم عادة تقييم قدرتهم على التوجيه بشكل واقعي. فأولئك الذين يعتبرونها جيدة، يحددون بالفعل في الدراسات الاتجاه نحو أهداف معينة بدقة أكبر. في البداية، يشير هذا إلى أن أجهزة الملاحة لا تقلل من القدرة على التوجيه بحد ذاتها."
+    },
+    {
+      "letter": "3",
+      "de": "Wir verfügen über mehrere Möglichkeiten, um uns zu orientieren. Zum einen können wir uns den zurückgelegten Weg merken. Dabei helfen auffällige Gebäude wie eine Kirche oder ein zentraler Platz. Solche Landmarken kombinieren wir mit Richtungsangaben zu so genannten Abbiegeanweisungen: „An der Kirche muss ich rechts abbiegen.“ Aus mehreren Abbiegeanweisungen entsteht unser Routenwissen. Um von einem Ort zu einem anderen zu kommen, genügt es, eine bekannte Route zu nehmen - solange man sie nicht verlässt. Das Routenwissen enthält jedoch keine Information darüber, wie verschiedene Landmarken zueinander in Beziehung stehen. Dieses Verständnis für die räumliche Konfiguration entwickelt sich unabhängig vom Routenwissen und wird als Überblickswissen oder kognitive Karte bezeichnet. In unserem Kopf bilden wir also aus den Eindrücken der Umgebung und unseren Erinnerungen eine Art mentale Straßenkarte. Sie ermöglicht es uns, alternative Wege zu gehen, etwa wenn eine Route gesperrt ist oder wenn wir doch einmal falsch abgebogen sind.",
+      "ar": "لدينا عدة طرق للتوجيه. من ناحية، يمكننا أن نتذكر المسار الذي سلكناه. المباني البارزة مثل الكنيسة أو الساحة المركزية تساعد في ذلك. نحن نجمع مثل هذه المعالم مع معلومات الاتجاه فيما يسمى تعليمات الانعطاف: \"عند الكنيسة يجب أن أنعطف يميناً\". تنشأ معرفتنا بالطريق من عدة تعليمات انعطاف. للانتقال من مكان إلى آخر، يكفي أن تسلك طريقاً مألوفاً - طالما أنك لا تغادره. ومع ذلك، لا تحتوي معرفة الطريق على أي معلومات حول كيفية ارتباط المعالم المختلفة ببعضها البعض. يتطور هذا الفهم للتكوين المكاني بشكل مستقل عن معرفة الطريق ويُشار إليه بالمعرفة الشاملة أو الخريطة المعرفية. في رؤوسنا إذن، نُشكل نوعاً من خريطة الشوارع العقلية من انطباعات المحيط وذكرياتنا. إنها تمكننا من اتخاذ مسارات بديلة، مثلاً إذا كان الطريق مغلقاً أو إذا اتخذنا منعطفاً خاطئاً."
+    },
+    {
+      "letter": "4",
+      "de": "Wie einfach Menschen eine kognitive Karte bilden, hängt von der Umgebung ab. Im New Yorker Stadtteil Manhattan fällt es leicht. Die Straßen dort sind rechtwinklig angeordnet, und anhand des Straßennamens (zum Beispiel West 57th Street) kann man erschließen, wo man sich befindet. In London dagegen ist es schwieriger. Die Straßen sind verwinkelt, ihre Lage zueinander schwer zu durchschauen. Die Ausbildung Londoner Taxifahrer dauert daher mehrere Jahre und ist legendär. Und das besondere Orientierungstraining scheint sich auch in ihrem Gehirn niederzuschlagen. Von Taxifahrern in Manhattan hat man nichts dergleichen gehört.",
+      "ar": "تعتمد السهولة التي يشكل بها الناس خريطة معرفية على البيئة. في حي مانهاتن في نيويورك، الأمر سهل. الشوارع هناك مرتبة في زوايا قائمة، ومن خلال اسم الشارع (على سبيل المثال شارع 57 الغربي) يمكن للمرء أن يستنتج أين هو. في لندن، من ناحية أخرى، الأمر أكثر صعوبة. الشوارع ملتوية، ومن الصعب فهم موقعها بالنسبة لبعضها البعض. لذلك يستمر تدريب سائقي سيارات الأجرة في لندن لعدة سنوات وهو أسطوري. ويبدو أن هذا التدريب الخاص على التوجيه ينعكس أيضاً في أدمغتهم. لم يُسمع أي شيء من هذا القبيل عن سائقي سيارات الأجرة في مانهاتن."
+    },
+    {
+      "letter": "5",
+      "de": "Dass der Orientierungssinn kein umfassendes Talent ist, sondern nur eine von verschiedenen Fähigkeiten, um sich zurechtzufinden, verdeutlichen die Unterschiede zwischen den Geschlechtern: Frauen zeigen in Studien einen schlechteren Orientierungssinn als Männer: Sie schneiden weniger gut ab, wenn sie die Richtung einschätzen sollen, in der eine Landmarke, etwa eine Kirche, von ihnen aus liegt. Dafür können sie sich besser als Männer merken, wo in der Nähe der Kirche noch andere Orte zu finden sind, beispielsweise ein Bäcker. Das Routenwissen ist bei beiden Geschlechtern etwa gleich ausgeprägt. Frauen sind ebenso gut in der Lage wie Männer, sich anhand einer Straßenkarte zurechtzufinden, und sie fertigen aus dem Gedächtnis vergleichbar gelungene Skizzen der Umgebung an. Fragt man Personen nach dem Weg, beschreiben Frauen diesen jedoch vor allem anhand von Landmarken, während Männer ebenso Himmelsrichtungen und Entfernungsangaben heranziehen.",
+      "ar": "توضح الاختلافات بين الجنسين أن الإحساس بالاتجاه ليس موهبة شاملة، بل هو مجرد واحدة من المهارات المختلفة لإيجاد طريق المرء: تُظهر النساء في الدراسات إحساساً بالاتجاه أسوأ من الرجال: أداؤهن أقل جودة عندما يتعين عليهن تقدير الاتجاه الذي يقع فيه معلم ما، مثل كنيسة، بالنسبة لهن. في المقابل، يمكنهن تذكر الأماكن الأخرى الموجودة بالقرب من الكنيسة، كالمخبز مثلاً، بشكل أفضل من الرجال. إن معرفة الطرق متساوية تقريباً لدى كلا الجنسين. فالنساء قادرات مثل الرجال على إيجاد طريقهن باستخدام خريطة الشارع، ويقومون بإعداد رسومات تخطيطية ناجحة للبيئة من الذاكرة بشكل مماثل. ومع ذلك، إذا سألت الناس عن الطريق، تصفه النساء بشكل أساسي باستخدام المعالم، بينما يستخدم الرجال أيضاً الاتجاهات الأساسية ومعلومات المسافة."
+    },
+    {
+      "letter": "6",
+      "de": "Bevor es Navis gab, war man gezwungen, sich anhand von Straßenkarten zu orientieren. Diese bilden die Umgebung allozentrisch ab, stellen also räumliche Informationen unabhängig vom Standort des Benutzers dar. Er muss die nach Norden ausgerichtete Karte zunächst mit der eigenen Position und Blickrichtung vergleichen, um sie korrekt zu lesen. Das ist mental aufwändig, hat aber Vorteile: Man gewinnt dadurch eine genauere kognitive Karte. Wer sich von einem Navigationssystem leiten lässt, kann auf diese mentale Rotation verzichten. Denn die Anzeige auf dem Monitor ist bereits egozentrisch ausgerichtet. Das Gerät nimmt dem Nutzer quasi einen Teil der Arbeit ab und sagt ihm, wo er sich befindet und wo er abzubiegen hat. Das klappt meistens gut. Es kann jedoch passieren, dass der Anwender seine Umgebung nicht so genau wahrnimmt - und es infolgedessen nicht merkt, wenn er doch einmal in die Irre geführt wird.",
+      "ar": "قبل وجود أجهزة الملاحة، كان الناس مضطرين للتوجيه باستخدام خرائط الشوارع. تصور هذه الخرائط البيئة بشكل موضوعي، أي أنها تقدم معلومات مكانية مستقلة عن موقع المستخدم. يجب عليه أولاً مقارنة الخريطة الموجهة نحو الشمال بموقعه واتجاه نظره ليقرأها بشكل صحيح. هذا مجهد عقلياً، لكن له مزايا: يكتسب المرء خريطة معرفية أكثر دقة نتيجة لذلك. وأولئك الذين يسترشدون بنظام الملاحة يمكنهم الاستغناء عن هذا الدوران العقلي. لأن الشاشة موجهة بالفعل بشكل ذاتي. يقوم الجهاز عملياً بأخذ جزء من العمل عن المستخدم ويخبره أين هو وأين يجب أن ينعطف. ينجح هذا بشكل جيد في الغالب. ومع ذلك، يمكن أن يحدث ألا يدرك المستخدم محيطه بدقة - ونتيجة لذلك لا يلاحظ إذا ما تم تضليله."
+    },
+    {
+      "letter": "7",
+      "de": "Vor einigen Jahren zeigte ich gemeinsam mit Kollegen, dass Menschen weniger über ihre räumliche Umwelt lernen, wenn sie ein Navi statt einer Karte benutzen. Nicht nur das Überblickswissen – also die kognitive Karte –, sondern auch das Routenwissen war bei ihnen beeinträchtigt. Aber verschlechtert die Nutzung eines Navis zwangsläufig das räumliche Lernen? Vielleicht kann es ja sogar dabei helfen, die Umwelt genauer wahrzunehmen. Um herauszufinden, wie die Geräte dafür verändert werden müssen, schickten wir 84 Probanden mit drei verschiedenen technischen Helfern über einen Universitätscampus. Bei einer Gruppe zeigte der Monitor des Navigationssystems immer die Kreuzung, an der sich die Person gerade befand. Ein Abbiegepfeil wies den Weg. Diese Darstellung ist der von heutigen Navigationsgeräten am ähnlichsten und bildet das Routenwissen ab. Eine zweite Teilnehmergruppe sah auf dem Display eine Straßenkarte, die nach Norden ausgerichtete war und nicht mitrotierte, wenn sich die Person drehte - das entspricht einer allozentrischen Darstellung. Ein blauer Punkt zeigte die Position des Probanden an. Und bei einer dritten Gruppe erschien die eigene Position stets in der Mitte des Bildschirms (Kompassbedingung). Um den Punkt herum waren Ziele und Landmarken eingezeichnet. Diese Ansicht vermittelt das egozentrische Überblickswissen.",
+      "ar": "قبل بضع سنوات، أوضحت مع زملائي أن الناس يتعلمون أقل عن بيئتهم المكانية عند استخدام جهاز ملاحة بدلاً من الخريطة. لم تتأثر المعرفة الشاملة فحسب - أي الخريطة المعرفية - بل تأثرت معرفة الطريق لديهم أيضاً. ولكن هل يؤدي استخدام جهاز الملاحة حتماً إلى تدهور التعلم المكاني؟ ربما يمكن أن يساعد حتى في إدراك البيئة بشكل أكثر دقة. لمعرفة كيف يجب تغيير الأجهزة للقيام بذلك، أرسلنا 84 فرداً للاختبار عبر حرم جامعي مع ثلاثة مساعدين تقنيين مختلفين. بالنسبة لمجموعة واحدة، أظهرت شاشة نظام الملاحة دائماً التقاطع الذي يوجد فيه الشخص حالياً. وأشار سهم الانعطاف إلى الطريق. هذا التمثيل هو الأقرب لأجهزة الملاحة اليوم ويصور معرفة الطريق. وشاهدت مجموعة ثانية من المشاركين خريطة شارع على الشاشة كانت موجهة نحو الشمال ولم تدور عندما دار الشخص - وهذا يتوافق مع التمثيل الموضوعي. وأظهرت نقطة زرقاء موقع المُختبر. وفي مجموعة ثالثة، كان الموقف الخاص يظهر دائماً في منتصف الشاشة (حالة البوصلة). تم رسم الأهداف والمعالم حول النقطة. تنقل هذه النظرة المعرفة الشاملة الذاتية."
+    },
+    {
+      "letter": "8",
+      "de": "Im Anschluss baten wir die Probanden für einige Tests ins Labor. So konnten wir feststellen, was sie nebenher gelernt hatten. Das Ergebnis: Die Versuchspersonen hatten je nach Navieinstellung ganz unterschiedlich erfolgreich nebenbei etwas über die Umgebung gelernt. Im Schnitt zeichneten Teilnehmer der Kompassbedingung akkuratere Kartenskizzen als jene, die auf dem Bildschirm ganz klassisch Kreuzungen mit Abbiegepfeil vor sich gesehen hatten. Dafür verliefen sich diese Probanden am seltensten. Im Routenwissen unterschieden sich die Gruppen nicht. Dennoch zeigt die Studie, dass die Darstellung auf dem Bildschirm eines Navis tatsächlich das Überblickswissen und die Orientierung fördern kann.",
+      "ar": "بعد ذلك، طلبنا من المشاركين الحضور إلى المختبر لإجراء بعض الاختبارات. بهذه الطريقة تمكنا من تحديد ما تعلموه على الجانب. النتيجة: اعتماداً على إعدادات الملاحة، كان الأشخاص المختبرين ناجحين بشكل مختلف تماماً في تعلم شيء ما عن البيئة على الجانب. في المتوسط، رسم المشاركون في حالة البوصلة تخطيطات خرائط أكثر دقة من أولئك الذين شاهدوا تقاطعات كلاسيكية بأسهم انعطاف أمامهم على الشاشة. في المقابل، هؤلاء المشاركون ضلوا طريقهم بشكل نادر. ولم تختلف المجموعات في معرفة الطريق. ومع ذلك، تُظهر الدراسة أن العرض على شاشة جهاز الملاحة يمكن أن يعزز في الواقع المعرفة الشاملة والتوجيه."
+    },
+    {
+      "letter": "9",
+      "de": "Welche Ansicht auf dem Monitor die beste ist, kann man noch nicht sagen. Die klassische Routenanzeige ist gut geeignet, um ohne Umwege zum Ziel zu kommen. Allerdings lernt man bei dieser Darstellung am wenigsten über die Umgebung. Momentan suchen mein Team und ich nach Displaydarstellungen, die unsere Orientierung fördern. Dafür bitten wir Probanden, einen Stadtplan für einen Freund zu zeichnen, der sich in ihrer Heimat nicht auskennt. Aus den Kartenskizzen leiten wir allgemeine Eigenschaften der mentalen Karten ab, um die Anzeige von Navigationsgeräten zu verbessern. Bisher scheint es am vielversprechendsten, wenn die Ansicht auf dem Bildschirm unserer kognitiven Landkarte stark ähnelt. Dagegen hat sich der Trend, die Karte eines Navis immer mehr an reale Satellitenbilder anzunähern, als wenig sinnvoll erwiesen.",
+      "ar": "لا يزال من غير الممكن الجزم بأي عرض على الشاشة هو الأفضل. يُعد عرض الطريق الكلاسيكي مناسباً تماماً للوصول إلى الوجهة دون تحويلات. ومع ذلك، يتعلم المرء بأقل قدر عن البيئة بهذا العرض. حالياً، أبحث أنا وفريقي عن عروض شاشة تعزز توجهنا. للقيام بذلك، نطلب من المشاركين في الاختبار رسم خريطة مدينة لصديق لا يعرف المنطقة. من مخططات الخرائط، نستنتج الخصائص العامة للخرائط العقلية لتحسين عرض أجهزة الملاحة. حتى الآن، يبدو أنه من الواعد جداً أن يكون العرض على الشاشة مشابهاً جداً لخريطتنا المعرفية. في المقابل، أثبت الاتجاه نحو جعل خريطة الملاحة تقترب أكثر فأكثر من صور الأقمار الصناعية الحقيقية أنه غير مفيد."
+    },
+    {
+      "letter": "10",
+      "de": "Aktuelle Darstellungen auf dem Bildschirm eines Navis sind im Vergleich zur mentalen Karte weniger schematisch. Sie enthalten oft unnötige Angaben, während relevante Überblicksinformationen fehlen. Unsere Probanden zeichnen in ihre Kartenskizzen beispielsweise oft Landmarken ein, an denen eine Person gar nicht direkt vorbeiläuft, die aber für das globale Verständnis wichtig sind. Ob Menschen durch ähnliche Anzeigen auf dem Navigationsgerät mehr über die räumliche Umgebung lernen, wird die noch laufende Studie zeigen.",
+      "ar": "إن العروض الحالية على شاشة جهاز الملاحة أقل تخطيطية مقارنة بالخريطة العقلية. فغالباً ما تحتوي على معلومات غير ضرورية، بينما تفتقر إلى معلومات النظرة العامة ذات الصلة. على سبيل المثال، غالباً ما يرسم المبحوثون في مخططات خرائطهم معالم لا يمر بها الشخص بشكل مباشر، ولكنها مهمة للفهم الشامل. ما إذا كان الأشخاص سيتعلمون المزيد عن البيئة المكانية من خلال عروض مماثلة على جهاز الملاحة، هو ما ستُظهره الدراسة التي لا تزال جارية."
+    }
+  ],
+  "questions": [
+    {
+      "number": "13",
+      "de": "Ältere Menschen verlassen sich beim Autofahren nach wie vor ungern auf Navigationsgeräte.",
+      "ar": "كبار السن لا يزالون غير راغبين في الاعتماد على أجهزة الملاحة أثناء القيادة.",
+      "correct_answer": "-"
+    },
+    {
+      "number": "14",
+      "de": "Wissenschaftler haben herausgefunden, dass Menschen ihren Orientierungssinn oft richtig einschätzen.",
+      "ar": "اكتشف العلماء أن الناس غالبًا ما يقيمون إحساسهم بالاتجاه بشكل صحيح.",
+      "correct_answer": "+"
+    },
+    {
+      "number": "15",
+      "de": "Der Begriff ,,kognitive Karte\" ist gleichbedeutend mit ,Routen wissen\".",
+      "ar": "مصطلح \"الخريطة المعرفية\" مرادف لـ \"معرفة الطرق\".",
+      "correct_answer": "-"
+    },
+    {
+      "number": "16",
+      "de": "Eine Studie mit Londoner Taxifahrern brachte keine statistisch signifikanten Ergebnisse.",
+      "ar": "لم تسفر دراسة أجريت على سائقي سيارات الأجرة في لندن عن نتائج إحصائية ذات دلالة.",
+      "correct_answer": "x"
+    },
+    {
+      "number": "17",
+      "de": "Die Tendenz bei Frauen, sich auf Landmarken zu-konzentrieren, und die der Männer, Wege mit Distanzen zu beschreiben, hat sich im Laufe der Evolution entwicht.",
+      "ar": "ميل النساء إلى التركيز على المعالم وميل الرجال إلى وصف الطرق بناء على المسافات تطور على مدى الزمن.",
+      "correct_answer": "x"
+    },
+    {
+      "number": "18",
+      "de": "Man gewinnt beim Kartenlesen einen präziseren Überblick über die Umgebung, weil man die Ausrichtung der Karte verstehen muss.",
+      "ar": "عند قراءة الخرائط، يتم اكتساب نظرة شاملة ودقيقة على البيئة لأن الشخص يجب أن يفهم اتجاه الخريطة.",
+      "correct_answer": "+"
+    },
+    {
+      "number": "19",
+      "de": "Ein Forscherteam konnte zeigen, dass sich durch die Nutzung von Navis zwar das Routen-wissen verschlechtert, nicht aber das Überblickswissen.",
+      "ar": "أثبت فريق بحثي أن استخدام أجهزة الملاحة يؤدي إلى تدهور معرفة الطرق ولكنه لا يؤثر على المعرفة العامة بالمكان.",
+      "correct_answer": "-"
+    },
+    {
+      "number": "20",
+      "de": "Wissenschaftler haben untersucht, wie sich der Anzeigemodus auf dem Navi auf die Wahrnehmung der Umgebung auswirkt.",
+      "ar": "قام العلماء بدراسة تأثير وضع العرض في جهاز الملاحة على إدراك البيئة المحيطة",
+      "correct_answer": "+"
+    },
+    {
+      "number": "21",
+      "de": "Die Teilnehmer aus der dritten Gruppe fertigten gelungenere Kartenskizzen an als die Teilnehmer aus der ersten Gruppe.",
+      "ar": "تمكن المشاركون في المجموعة الثالثة من إعداد رسومات خرائط أكثر دقة من المشاركين في المجموعة الأولى.",
+      "correct_answer": "+"
+    },
+    {
+      "number": "22",
+      "de": "Der Autor und sein Team möchten durch ihre Arbeit die räumliche Informationsverarbeitung der Navi- Nutzer optimieren.",
+      "ar": "يريد المؤلف وفريقه تحسين معالجة المعلومات المكانية لمستخدمي أجهزة الملاحة من خلال عملهم",
+      "correct_answer": "+"
+    },
+    {
+      "number": "23",
+      "de": "Satellitenbilder stellen optimal Orientierungsgröße bei der Konzeption von Navigationsdisplays dar.",
+      "ar": "الصور الفضائية ليست الوسيلة المثلى للتوجيه عند تصميم شاشات الملاحة.",
+      "correct_answer": "-"
+    },
+    {
+      "number": "24",
+      "de": "Welche Überschrift passt am besten zum Text?\n\na) [Nicht angegeben]\nb) schaden Navis unserem Orientierungssinn ?\nc) [Nicht angegeben]",
+      "ar": "ما هو العنوان الأنسب للنص؟\n\na) [غير محدد]\nb) هل تضر أجهزة الملاحة بإحساسنا بالاتجاه؟\nc) [غير محدد]",
+      "correct_answer": "b"
+    }
+  ]
+}

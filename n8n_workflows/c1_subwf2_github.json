@@ -1,0 +1,278 @@
+{
+  "name": "C1 HSCH — Sub-WF 2: JSON Builder + GitHub",
+  "nodes": [
+    {
+      "id": "sg01-trigger",
+      "name": "Execute Workflow Trigger",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [200, 400],
+      "parameters": {}
+    },
+    {
+      "id": "sg02-build-json",
+      "name": "Build JSON Structure",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [460, 400],
+      "parameters": {
+        "jsCode": "// ============================================================\n// Build JSON Structure — C1 HSCH Exam Builder\n// ============================================================\n// يُحوّل البيانات الخام المُخصَّبة إلى هيكل JSON النهائي\n// مع تقسيم النصوص إلى segments عند كل _____\n// ============================================================\n\nconst raw = $input.item.json;\n\nconst text_de = String(raw.text_de || '').trim();\nconst text_ar = String(raw.text_ar || '').trim();\nconst optionsRaw = raw.options_enriched || raw.options || [];\nconst answersRaw = raw.answers || [];\nconst section = Number(raw.section || 0);\nconst section_name = String(raw.section_name || '').trim();\nconst model = Number(raw.model || 0);\nconst model_name = String(raw.model_name || '').trim();\nconst slug = String(raw.slug || '').trim().toLowerCase().replace(/\\s+/g, '-');\nconst chatId = String(raw.chatId || '');\nconst firstName = String(raw.firstName || 'صديقي');\n\n// -------------------------------------------------------\n// دالة بناء الـ segments\n// -------------------------------------------------------\nfunction buildSegments(text) {\n  const BLANK = '_____';\n  const parts = text.split(BLANK);\n  const segments = [];\n  let blankId = 0;\n  parts.forEach((part, idx) => {\n    if (part !== '') segments.push({ type: 'text', content: part });\n    if (idx < parts.length - 1) segments.push({ type: 'blank', id: blankId++ });\n  });\n  return { segments, totalBlanks: blankId };\n}\n\nconst deResult = buildSegments(text_de);\nconst arResult = buildSegments(text_ar);\nconst totalBlanks = deResult.totalBlanks;\n\n// -------------------------------------------------------\n// تطبيع الخيارات\n// -------------------------------------------------------\nconst options = Array.isArray(optionsRaw) ? optionsRaw.map(o => ({\n  key: String(o.key || '').toLowerCase(),\n  de: String(o.de || ''),\n  ar: String(o.ar || ''),\n  keywords: {\n    de: String((o.keywords && o.keywords.de) || ''),\n    ar: String((o.keywords && o.keywords.ar) || '')\n  }\n})) : [];\n\n// -------------------------------------------------------\n// تطبيع مفاتيح الإجابات\n// -------------------------------------------------------\nlet correctKeys = [];\nif (Array.isArray(answersRaw)) {\n  if (answersRaw.length > 0 && typeof answersRaw[0] === 'string') {\n    correctKeys = answersRaw.map(k => String(k).toLowerCase());\n  } else if (answersRaw.length > 0 && typeof answersRaw[0] === 'object') {\n    correctKeys = answersRaw\n      .sort((a, b) => (Number(a.id) || 0) - (Number(b.id) || 0))\n      .map(a => String(a.correct_key || '').toLowerCase());\n  }\n}\n\n// -------------------------------------------------------\n// بناء مصفوفة الإجابات (options الكاملة في id:0 فقط)\n// -------------------------------------------------------\nconst answers = [];\nfor (let i = 0; i < totalBlanks; i++) {\n  if (i === 0) {\n    answers.push({ id: 0, correct_key: correctKeys[0] || '', options });\n  } else {\n    answers.push({ id: i, correct_key: correctKeys[i] || '' });\n  }\n}\n\n// -------------------------------------------------------\n// بناء JSON النهائي\n// -------------------------------------------------------\nconst finalJson = {\n  meta: {\n    app: 'c1_hsch',\n    section,\n    section_name,\n    model,\n    model_name,\n    level: 'C1',\n    total_blanks: totalBlanks\n  },\n  text: {\n    de: [{ type: 'paragraph', segments: deResult.segments }],\n    ar: [{ type: 'paragraph', segments: arResult.segments }]\n  },\n  answers\n};\n\n// -------------------------------------------------------\n// مسار الملف الديناميكي\n// -------------------------------------------------------\nconst filename = `s${section}_m${model}_${slug}.json`;\nconst filePath = `assets/data/section_${section}/${filename}`;\nconst fileContent = JSON.stringify(finalJson, null, 2);\n\nreturn [{ json: {\n  finalJson,\n  fileContent,\n  filePath,\n  filename,\n  section,\n  section_name,\n  model,\n  model_name,\n  slug,\n  totalBlanks,\n  optionsCount: options.length,\n  chatId,\n  firstName\n} }];"
+      }
+    },
+    {
+      "id": "sg03-check-file",
+      "name": "Check File Exists",
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1,
+      "position": [720, 400],
+      "continueOnFail": true,
+      "parameters": {
+        "resource": "file",
+        "operation": "get",
+        "owner": { "__rl": true, "value": "alshalabi011-dotcom", "mode": "name" },
+        "repository": { "__rl": true, "value": "c1_hsch", "mode": "name" },
+        "filePath": "={{ $json.filePath }}"
+      },
+      "credentials": {
+        "githubApi": {
+          "id": "YOUR_GITHUB_CRED_ID",
+          "name": "GitHub — C1 HSCH"
+        }
+      }
+    },
+    {
+      "id": "sg04-if-exists",
+      "name": "IF File Exists",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [980, 400],
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict" },
+          "conditions": [
+            {
+              "id": "check-sha",
+              "leftValue": "={{ $json.sha }}",
+              "rightValue": "",
+              "operator": { "type": "string", "operation": "notEmpty" }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "sg05b-update-file",
+      "name": "Update File on GitHub",
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1,
+      "position": [1240, 260],
+      "continueOnFail": true,
+      "parameters": {
+        "resource": "file",
+        "operation": "edit",
+        "owner": { "__rl": true, "value": "alshalabi011-dotcom", "mode": "name" },
+        "repository": { "__rl": true, "value": "c1_hsch", "mode": "name" },
+        "filePath": "={{ $('Build JSON Structure').item.json.filePath }}",
+        "fileContent": "={{ $('Build JSON Structure').item.json.fileContent }}",
+        "additionalParameters": {
+          "message": "={{ '✏️ [C1 Bot] Update: ' + $('Build JSON Structure').item.json.filename + ' | Section ' + $('Build JSON Structure').item.json.section + ' – ' + $('Build JSON Structure').item.json.section_name + ' | Model ' + $('Build JSON Structure').item.json.model }}",
+          "branch": "main",
+          "sha": "={{ $('Check File Exists').item.json.sha }}"
+        }
+      },
+      "credentials": {
+        "githubApi": {
+          "id": "YOUR_GITHUB_CRED_ID",
+          "name": "GitHub — C1 HSCH"
+        }
+      }
+    },
+    {
+      "id": "sg05a-create-file",
+      "name": "Create File on GitHub",
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1,
+      "position": [1240, 540],
+      "continueOnFail": true,
+      "parameters": {
+        "resource": "file",
+        "operation": "create",
+        "owner": { "__rl": true, "value": "alshalabi011-dotcom", "mode": "name" },
+        "repository": { "__rl": true, "value": "c1_hsch", "mode": "name" },
+        "filePath": "={{ $('Build JSON Structure').item.json.filePath }}",
+        "fileContent": "={{ $('Build JSON Structure').item.json.fileContent }}",
+        "additionalParameters": {
+          "message": "={{ '🤖 [C1 Bot] Add: ' + $('Build JSON Structure').item.json.filename + ' | Section ' + $('Build JSON Structure').item.json.section + ' – ' + $('Build JSON Structure').item.json.section_name + ' | Model ' + $('Build JSON Structure').item.json.model + ' – ' + $('Build JSON Structure').item.json.model_name }}",
+          "branch": "main"
+        }
+      },
+      "credentials": {
+        "githubApi": {
+          "id": "YOUR_GITHUB_CRED_ID",
+          "name": "GitHub — C1 HSCH"
+        }
+      }
+    },
+    {
+      "id": "sg06-check-result",
+      "name": "Check Upload Result",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1500, 400],
+      "parameters": {
+        "jsCode": "// فحص نتيجة رفع GitHub\n// يستقبل من Create أو Update (حصرياً واحدة منهما)\n\nconst result = $input.item.json;\nconst buildData = $('Build JSON Structure').item.json;\n\n// GitHub success: returns { content: {...}, commit: {...} }\n// GitHub error (continueOnFail): { error: {...}, message: '...' }\nconst isSuccess = result.content !== undefined && !result.error;\n\nif (!isSuccess) {\n  const errorMsg = (\n    (result.errors && result.errors[0] && result.errors[0].message) ||\n    result.message ||\n    (result.error && typeof result.error === 'string' ? result.error : JSON.stringify(result.error)) ||\n    'GitHub API Error'\n  );\n  return [{ json: {\n    success: false,\n    errorMessage: errorMsg,\n    timestamp: new Date().toISOString(),\n    ...buildData\n  } }];\n}\n\nconst commitUrl = (result.commit && result.commit.html_url) ||\n  `https://github.com/alshalabi011-dotcom/c1_hsch/blob/main/${buildData.filePath}`;\n\nreturn [{ json: {\n  success: true,\n  commitUrl,\n  timestamp: new Date().toISOString(),\n  ...buildData\n} }];"
+      }
+    },
+    {
+      "id": "sg07-if-success",
+      "name": "IF Upload Success",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [1760, 400],
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict" },
+          "conditions": [
+            {
+              "id": "check-success",
+              "leftValue": "={{ $json.success }}",
+              "rightValue": true,
+              "operator": { "type": "boolean", "operation": "true" }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "sg08-fmt-admin-success",
+      "name": "Format Admin Success Msg",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2020, 260],
+      "parameters": {
+        "jsCode": "// تهيئة رسالة النجاح للمشرف\nconst d = $input.item.json;\n\nconst lines = [\n  '✅ *تم رفع ملف جديد على GitHub*',\n  '',\n  `📄 *الملف:* \\`${d.filename}\\``,\n  `📂 *المسار:* \\`${d.filePath}\\``,\n  `📝 *النموذج:* ${d.model_name}`,\n  `🏷 *القسم:* ${d.section} — ${d.section_name}`,\n  `🔢 *الفراغات:* ${d.totalBlanks}`,\n  `🔤 *الخيارات:* ${d.optionsCount}`,\n  `👤 *أضافه:* ${d.firstName} (chatId: ${d.chatId})`,\n  `⏰ *الوقت:* ${d.timestamp}`,\n  `🔗 ${d.commitUrl}`\n];\n\nreturn [{ json: { ...d, adminMsg: lines.join('\\n') } }];"
+      }
+    },
+    {
+      "id": "sg09-admin-success-tg",
+      "name": "Admin Success Notification",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [2280, 260],
+      "parameters": {
+        "chatId": "1068418205",
+        "text": "={{ $json.adminMsg }}",
+        "additionalFields": {
+          "parse_mode": "Markdown",
+          "disable_web_page_preview": true
+        }
+      },
+      "credentials": {
+        "telegramApi": {
+          "id": "YOUR_TELEGRAM_CRED_ID",
+          "name": "Telegram Bot – C1 HSCH"
+        }
+      }
+    },
+    {
+      "id": "sg10-fmt-admin-error",
+      "name": "Format Admin Error Msg",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2020, 540],
+      "parameters": {
+        "jsCode": "// تهيئة رسالة الخطأ للمشرف\n// يُرسل تفاصيل الخطأ + أول 2500 حرف من JSON للمشرف\n\nconst d = $input.item.json;\nconst maxLen = 2500;\nconst jsonPreview = (d.fileContent || '{}').substring(0, maxLen);\nconst isTruncated = (d.fileContent || '').length > maxLen;\n\nconst lines = [\n  '🚨 *فشل رفع ملف على GitHub!*',\n  '',\n  `📄 *الملف:* \\`${d.filename || 'unknown'}\\``,\n  `📂 *المسار:* \\`${d.filePath || 'unknown'}\\``,\n  `❌ *الخطأ:* ${d.errorMessage || 'خطأ غير معروف'}`,\n  `⏰ *الوقت:* ${d.timestamp || new Date().toISOString()}`,\n  `👤 *المستخدم:* ${d.firstName || 'مجهول'} (chatId: ${d.chatId || 'N/A'})`,\n  '',\n  '📋 *محتوى الملف (للاحتفاظ بنسخة):*',\n  '```json',\n  jsonPreview,\n  isTruncated ? '...\\n(النص مقطوع لأنه أطول من 2500 حرف)' : '',\n  '```'\n];\n\nreturn [{ json: { ...d, adminErrorMsg: lines.join('\\n') } }];"
+      }
+    },
+    {
+      "id": "sg11-admin-error-tg",
+      "name": "Admin Error Alert",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [2280, 540],
+      "parameters": {
+        "chatId": "1068418205",
+        "text": "={{ $json.adminErrorMsg }}",
+        "additionalFields": {
+          "parse_mode": "Markdown",
+          "disable_web_page_preview": true
+        }
+      },
+      "credentials": {
+        "telegramApi": {
+          "id": "YOUR_TELEGRAM_CRED_ID",
+          "name": "Telegram Bot – C1 HSCH"
+        }
+      }
+    },
+    {
+      "id": "sg12-finalize",
+      "name": "Finalize & Return",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2540, 400],
+      "parameters": {
+        "jsCode": "// العقدة الأخيرة الموحدة — نقطة العودة لـ Sub-WF 1\n// تستقبل من مسار النجاح أو مسار الخطأ (حصرياً)\n\nconst d = $input.item.json;\n\nif (d.success) {\n  return [{ json: {\n    success: true,\n    filename: d.filename,\n    filePath: d.filePath,\n    model_name: d.model_name,\n    totalBlanks: d.totalBlanks,\n    optionsCount: d.optionsCount,\n    section: d.section,\n    section_name: d.section_name,\n    commitUrl: d.commitUrl,\n    timestamp: d.timestamp,\n    chatId: d.chatId\n  } }];\n}\n\nreturn [{ json: {\n  success: false,\n  errorMessage: 'حدث خطأ أثناء الرفع على GitHub. تم إبلاغ المشرف وحُفظت نسخة من الملف.',\n  filename: d.filename,\n  filePath: d.filePath\n} }];"
+      }
+    }
+  ],
+  "connections": {
+    "Execute Workflow Trigger": {
+      "main": [[{ "node": "Build JSON Structure", "type": "main", "index": 0 }]]
+    },
+    "Build JSON Structure": {
+      "main": [[{ "node": "Check File Exists", "type": "main", "index": 0 }]]
+    },
+    "Check File Exists": {
+      "main": [[{ "node": "IF File Exists", "type": "main", "index": 0 }]]
+    },
+    "IF File Exists": {
+      "main": [
+        [{ "node": "Update File on GitHub", "type": "main", "index": 0 }],
+        [{ "node": "Create File on GitHub", "type": "main", "index": 0 }]
+      ]
+    },
+    "Update File on GitHub": {
+      "main": [[{ "node": "Check Upload Result", "type": "main", "index": 0 }]]
+    },
+    "Create File on GitHub": {
+      "main": [[{ "node": "Check Upload Result", "type": "main", "index": 0 }]]
+    },
+    "Check Upload Result": {
+      "main": [[{ "node": "IF Upload Success", "type": "main", "index": 0 }]]
+    },
+    "IF Upload Success": {
+      "main": [
+        [{ "node": "Format Admin Success Msg", "type": "main", "index": 0 }],
+        [{ "node": "Format Admin Error Msg", "type": "main", "index": 0 }]
+      ]
+    },
+    "Format Admin Success Msg": {
+      "main": [[{ "node": "Admin Success Notification", "type": "main", "index": 0 }]]
+    },
+    "Admin Success Notification": {
+      "main": [[{ "node": "Finalize & Return", "type": "main", "index": 0 }]]
+    },
+    "Format Admin Error Msg": {
+      "main": [[{ "node": "Admin Error Alert", "type": "main", "index": 0 }]]
+    },
+    "Admin Error Alert": {
+      "main": [[{ "node": "Finalize & Return", "type": "main", "index": 0 }]]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": ""
+  },
+  "staticData": null,
+  "tags": [{ "name": "C1-HSCH" }, { "name": "Sub-Workflow" }, { "name": "GitHub" }],
+  "triggerCount": 0,
+  "versionId": "c1-hsch-subwf2-v1"
+}

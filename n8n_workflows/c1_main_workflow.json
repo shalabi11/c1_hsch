@@ -1,0 +1,155 @@
+{
+  "name": "C1 HSCH — Main Bot v6",
+  "nodes": [
+    {
+      "id": "n01-tg-trigger",
+      "name": "Telegram Trigger",
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.1,
+      "position": [200, 400],
+      "webhookId": "c1-hsch-main-v6",
+      "parameters": {
+        "updates": ["message"],
+        "additionalFields": {}
+      },
+      "credentials": {
+        "telegramApi": {
+          "id": "YOUR_TELEGRAM_CRED_ID",
+          "name": "Telegram Bot – C1 HSCH"
+        }
+      }
+    },
+    {
+      "id": "n02-parse-msg",
+      "name": "Parse Message",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [440, 400],
+      "parameters": {
+        "jsCode": "// استخراج بيانات الرسالة من Telegram\nconst msg = $input.item.json.message;\nif (!msg) return [{ json: { chatId: '', text: '', firstName: 'صديقي', username: '' } }];\n\nconst chatId = String(msg.chat.id);\nconst text = (msg.text || '').trim();\nconst firstName = (msg.from && msg.from.first_name) ? msg.from.first_name : 'صديقي';\nconst username = (msg.from && msg.from.username) ? msg.from.username : '';\n\nreturn [{ json: { chatId, text, firstName, username } }];"
+      }
+    },
+    {
+      "id": "n03-ai-agent",
+      "name": "AI Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.0,
+      "position": [720, 400],
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.text }}",
+        "options": {
+          "systemMessage": "أنت مساعد ذكي لبوت امتحانات الألمانية C1 HSCH. اسم المستخدم هو {{ $('Parse Message').item.json.firstName }}. تحدث دائماً باللغة العربية بأسلوب ودود وشخصي.\n\nمهمتك: جمع بيانات امتحان كامل بمرونة تامة من المستخدم، عرضها للمراجعة، ثم رفعها على GitHub عبر أداة واحدة.\n\n══════════════════════════════\n📋 الحقول المطلوبة (9 حقول)\n══════════════════════════════\n1. text_de       → النص الألماني كاملاً (يجب أن يحتوي على _____ خمس شرطات سفلية)\n2. text_ar       → الترجمة العربية الكاملة (أو اكتب «auto» للترجمة التلقائية)\n3. options       → الخيارات من a إلى h، لكل خيار: مفتاحه + نصه الألماني + نصه العربي\n4. answers       → مفاتيح الإجابات الصحيحة بترتيب الفراغات مثل: [f, e, b, h, c, g, d]\n5. section       → رقم القسم (رقم فقط، مثال: 1)\n6. section_name  → اسم القسم (مثال: LV1، LV2)\n7. model         → رقم النموذج (رقم فقط، مثال: 3)\n8. model_name    → عنوان النموذج بالألمانية (مثال: Die Maus als Stimmungsbarometer)\n9. slug          → اسم مختصر بالألمانية بأحرف صغيرة فقط بدون مسافات (مثال: maus، klima)\n\n══════════════════════════════\n⚙️ قواعد العمل المرنة\n══════════════════════════════\n• لا تُلزم المستخدم بترتيب معين — افهم ما يُرسله وصنّفه تلقائياً\n• إذا أرسل كل شيء دفعة واحدة فاستوعبه مباشرة\n• إذا أرسل بالتدريج فتذكر ما جُمع ولا تُعيد السؤال عنه\n• إذا لم يحتوِ text_de على _____ → قل له بلطف:\n  «صديقي، النص الألماني يجب أن يحتوي على الفراغات ممثلةً بـ _____ (خمس شرطات سفلية)»\n• إذا أرسل text_ar يدوياً → تحقق أن عدد _____ فيه = عدد _____ في text_de\n• إذا طلب ترجمة تلقائية → احفظ text_ar = «auto» وستُنجز الترجمة تلقائياً عند الرفع\n• إذا أرسل الخيارات بالألمانية فقط → اسأله عن الترجمة العربية أو إذا يريد ترجمة تلقائية\n\n══════════════════════════════\n🔍 مرحلة المراجعة (إلزامية قبل الرفع)\n══════════════════════════════\nعند اكتمال جمع جميع الحقول التسعة، اعرض ملخصاً منظماً:\n\n---\n📊 *ملخص الامتحان للمراجعة:*\n\n📝 *النص الألماني:* [أول 150 حرف من النص]...\n🔢 *الفراغات المكتشفة:* [العدد]\n📋 *الخيارات:*\na) [أول 50 حرف] | b) [أول 50 حرف] | ...\n✅ *مفاتيح الإجابات:* الفراغ0=[x]، الفراغ1=[y]...\n📁 *مسار الملف المتوقع:* assets/data/section_[N]/s[N]_m[M]_[slug].json\n🌐 *الترجمة:* [يدوية / تلقائية بـ Gemini]\n---\n\nثم اسأل:\n«هل تريد تعديل أي شيء، أم أكمل الرفع على GitHub؟\nاكتب *تأكيد* أو *ارفع* للمتابعة.»\n\nإذا أراد تعديلاً → استمع وعدّل وأعد عرض الملخص\nعند التأكيد → استدعِ الأداة process_and_upload_exam فوراً\n\n══════════════════════════════\n📤 بيانات الأداة (عند التأكيد)\n══════════════════════════════\nمرر للأداة JSON بهذا الشكل بالضبط:\n{\n  \"text_de\": \"النص الألماني الكامل مع _____ في مواضعها\",\n  \"text_ar\": \"الترجمة العربية الكاملة مع _____ أو كلمة auto\",\n  \"options\": [{\"key\":\"a\",\"de\":\"...\",\"ar\":\"...\"},{\"key\":\"b\",\"de\":\"...\",\"ar\":\"...\"},{\"key\":\"c\",\"de\":\"...\",\"ar\":\"...\"},{\"key\":\"d\",\"de\":\"...\",\"ar\":\"...\"},{\"key\":\"e\",\"de\":\"...\",\"ar\":\"...\"},{\"key\":\"f\",\"de\":\"...\",\"ar\":\"...\"},{\"key\":\"g\",\"de\":\"...\",\"ar\":\"...\"},{\"key\":\"h\",\"de\":\"...\",\"ar\":\"...\"}],\n  \"answers\": [\"f\",\"e\",\"b\",\"h\",\"c\",\"g\",\"d\"],\n  \"section\": 1,\n  \"section_name\": \"LV1\",\n  \"model\": 1,\n  \"model_name\": \"Die Maus als Stimmungsbarometer\",\n  \"slug\": \"maus\",\n  \"chatId\": \"{{ $('Parse Message').item.json.chatId }}\",\n  \"firstName\": \"{{ $('Parse Message').item.json.firstName }}\"\n}\n\n══════════════════════════════\n📌 أوامر خاصة\n══════════════════════════════\n• /start أو /new → رحّب بالمستخدم واشرح له ما يجب إرساله\n• /help → شرح الحقول المطلوبة\n• /status → عرض ما تم جمعه حتى الآن"
+        },
+        "agent": "toolsAgent"
+      }
+    },
+    {
+      "id": "n04-memory",
+      "name": "Window Buffer Memory",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [580, 620],
+      "parameters": {
+        "sessionKey": "={{ $('Parse Message').item.json.chatId }}",
+        "contextWindowLength": 30
+      }
+    },
+    {
+      "id": "n05-chat-model",
+      "name": "OpenRouter Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAI",
+      "typeVersion": 1.2,
+      "position": [720, 620],
+      "parameters": {
+        "model": "google/gemini-2.0-flash-exp:free",
+        "options": {
+          "temperature": 0.5,
+          "maxTokens": 8192
+        },
+        "basePath": "https://openrouter.ai/api/v1"
+      },
+      "credentials": {
+        "openAiApi": {
+          "id": "YOUR_OPENROUTER_CRED_ID",
+          "name": "OpenRouter API"
+        }
+      }
+    },
+    {
+      "id": "n06-tool-process",
+      "name": "process_and_upload_exam",
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2.0,
+      "position": [900, 620],
+      "parameters": {
+        "name": "process_and_upload_exam",
+        "description": "استدعِ هذه الأداة فقط بعد تأكيد المستخدم النهائي بـ «تأكيد» أو «ارفع» أو «upload». تُعالج الأداة بيانات الامتحان لغوياً (ترجمة تلقائية إذا طُلبت + استخراج كلمات مفتاحية)، تبني ملف JSON بهيكل صحيح، وترفعه على GitHub في المسار المناسب. مرر جميع البيانات المجمّعة كـ JSON كامل.",
+        "workflowId": {
+          "__rl": true,
+          "value": "SUB_WF1_PLACEHOLDER_ID",
+          "mode": "id"
+        },
+        "specifyInputSchema": true,
+        "jsonSchemaExample": "{\n  \"text_de\": \"النص الألماني الكامل مع _____ في مواضعها\",\n  \"text_ar\": \"الترجمة العربية الكاملة مع _____ أو كلمة auto\",\n  \"options\": [{\"key\":\"a\",\"de\":\"...\",\"ar\":\"...\"},{\"key\":\"b\",\"de\":\"...\",\"ar\":\"...\"},{\"key\":\"c\",\"de\":\"...\",\"ar\":\"...\"},{\"key\":\"d\",\"de\":\"...\",\"ar\":\"...\"},{\"key\":\"e\",\"de\":\"...\",\"ar\":\"...\"},{\"key\":\"f\",\"de\":\"...\",\"ar\":\"...\"},{\"key\":\"g\",\"de\":\"...\",\"ar\":\"...\"},{\"key\":\"h\",\"de\":\"...\",\"ar\":\"...\"}],\n  \"answers\": [\"f\",\"e\",\"b\",\"h\",\"c\",\"g\",\"d\"],\n  \"section\": 1,\n  \"section_name\": \"LV1\",\n  \"model\": 1,\n  \"model_name\": \"Die Maus als Stimmungsbarometer\",\n  \"slug\": \"maus\",\n  \"chatId\": \"123456789\",\n  \"firstName\": \"إبراهيم\"\n}"
+      }
+    },
+    {
+      "id": "n07-send-reply",
+      "name": "Send Reply to User",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [1000, 400],
+      "parameters": {
+        "chatId": "={{ $('Parse Message').item.json.chatId }}",
+        "text": "={{ $json.output }}",
+        "additionalFields": {
+          "parse_mode": "Markdown",
+          "disable_web_page_preview": true
+        }
+      },
+      "credentials": {
+        "telegramApi": {
+          "id": "YOUR_TELEGRAM_CRED_ID",
+          "name": "Telegram Bot – C1 HSCH"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Telegram Trigger": {
+      "main": [[{ "node": "Parse Message", "type": "main", "index": 0 }]]
+    },
+    "Parse Message": {
+      "main": [[{ "node": "AI Agent", "type": "main", "index": 0 }]]
+    },
+    "AI Agent": {
+      "main": [[{ "node": "Send Reply to User", "type": "main", "index": 0 }]]
+    },
+    "OpenRouter Chat Model": {
+      "ai_languageModel": [[{ "node": "AI Agent", "type": "ai_languageModel", "index": 0 }]]
+    },
+    "Window Buffer Memory": {
+      "ai_memory": [[{ "node": "AI Agent", "type": "ai_memory", "index": 0 }]]
+    },
+    "process_and_upload_exam": {
+      "ai_tool": [[{ "node": "AI Agent", "type": "ai_tool", "index": 0 }]]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": ""
+  },
+  "staticData": null,
+  "tags": [
+    { "name": "C1-HSCH" },
+    { "name": "Telegram" },
+    { "name": "Main-Bot" },
+    { "name": "AI-Agent" }
+  ],
+  "triggerCount": 1,
+  "versionId": "c1-hsch-main-v6"
+}

@@ -1,0 +1,407 @@
+{
+  "name": "C1 HSCH — Sub-WF 1: Linguistic Processor",
+  "nodes": [
+    {
+      "id": "sl01-trigger",
+      "name": "Execute Workflow Trigger",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        200,
+        400
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "sl02-validate",
+      "name": "Validate & Parse",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        460,
+        400
+      ],
+      "parameters": {
+        "jsCode": "// ============================================================\n// Validate & Parse — C1 HSCH Linguistic Processor\n// ============================================================\n// يتحقق من صحة البيانات الواردة من الـ AI Agent:\n//   1. وجود _____ في النص الألماني\n//   2. تطابق عدد الفراغات في النصين (إذا الترجمة يدوية)\n// ============================================================\n\nconst raw = $input.item.json;\n\n// تطبيع المدخلات\nconst text_de = String(raw.text_de || '').trim();\nlet text_ar = String(raw.text_ar || '').trim();\nconst section = Number(raw.section || 0);\nconst section_name = String(raw.section_name || '').trim();\nconst model = Number(raw.model || 0);\nconst model_name = String(raw.model_name || '').trim();\nconst slug = String(raw.slug || '').trim().toLowerCase().replace(/\\s+/g, '-');\nconst chatId = String(raw.chatId || '');\nconst firstName = String(raw.firstName || 'صديقي');\n\n// تطبيع الخيارات (قد تصل كـ string أو array)\nlet options = raw.options;\nif (typeof options === 'string') {\n  try { options = JSON.parse(options); } catch(e) { options = []; }\n}\nif (!Array.isArray(options)) options = [];\n\n// تطبيع الإجابات (قد تصل كـ string أو array)\nlet answers = raw.answers;\nif (typeof answers === 'string') {\n  try { answers = JSON.parse(answers); } catch(e) {\n    // صيغة: \"f,e,b,h\"\n    answers = answers.split(',').map(a => a.trim()).filter(Boolean);\n  }\n}\nif (!Array.isArray(answers)) answers = [];\n\n// --- التحقق 1: وجود _____ في النص الألماني ---\nconst blanksDE = (text_de.match(/_____/g) || []).length;\nif (blanksDE === 0) {\n  return [{ json: {\n    valid: false,\n    errorMsg: 'صديقي، النص الألماني لا يحتوي على فراغات! يجب تمثيل كل فراغ بـ _____ (خمس شرطات سفلية متتالية بالضبط). يرجى إعادة إرسال النص مع الفراغات.',\n    text_de, text_ar, options, answers, section, section_name, model, model_name, slug, chatId, firstName\n  } }];\n}\n\n// --- التحقق 2: تطابق الفراغات (إذا ترجمة يدوية) ---\nconst needsTranslation = text_ar.toLowerCase() === 'auto' || text_ar === '';\nif (!needsTranslation && text_ar !== '') {\n  const blanksAR = (text_ar.match(/_____/g) || []).length;\n  if (blanksAR !== blanksDE) {\n    return [{ json: {\n      valid: false,\n      errorMsg: `صديقي، عدد الفراغات في الترجمة العربية (${blanksAR}) لا يساوي عدد الفراغات في النص الألماني (${blanksDE}). يرجى مراجعة الترجمة والتأكد من وجود _____ في نفس المواضع.`,\n      text_de, text_ar, options, answers, section, section_name, model, model_name, slug, chatId, firstName\n    } }];\n  }\n}\n\n// --- كل شيء صحيح، نُكمل ---\nreturn [{ json: {\n  valid: true,\n  needsTranslation,\n  text_de,\n  text_ar,\n  options,\n  answers,\n  section,\n  section_name,\n  model,\n  model_name,\n  slug,\n  blanksCount: blanksDE,\n  chatId,\n  firstName\n} }];"
+      }
+    },
+    {
+      "id": "sl03-if-valid",
+      "name": "IF Valid",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        720,
+        400
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "check-valid",
+              "leftValue": "={{ $json.valid }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "sl04-if-translate",
+      "name": "IF Translation Needed",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        980,
+        260
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "check-translate",
+              "leftValue": "={{ $json.needsTranslation }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "sl05-lara-translate",
+      "name": "Lara Auto Translate",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1240,
+        140
+      ],
+      "continueOnFail": true,
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.laratranslate.com/v1/translate",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "contentType": "json",
+        "body": {
+          "specifyBody": "json",
+          "jsonBody": "={{ JSON.stringify({ source: 'de', target: 'ar', text: $json.text_de, instructions: ['حافظ على كل _____ (خمس شرطات سفلية) في نفس موضعها بالضبط. لا تُضف أي شرح. أسلوب أكاديمي رسمي C1.'] }) }}"
+        },
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "YOUR_LARA_CRED_ID",
+          "name": "Lara Translate API"
+        }
+      }
+    },
+    {
+      "id": "sl06-parse-translation",
+      "name": "Parse Translation Result",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1500,
+        140
+      ],
+      "parameters": {
+        "jsCode": "// استخراج نص الترجمة من استجابة Lara Translation API\n// ودمجها مع بيانات الامتحان الأصلية\n// Lara API يُرجع: { translation: '...', detectedLanguage: '...' }\n\nconst laraResponse = $input.item.json;\n\n// استخراج النص المترجم من استجابة Lara\nlet translatedText = '';\nif (laraResponse.translation) {\n  // استجابة Lara الناجحة\n  translatedText = String(laraResponse.translation).trim();\n} else if (laraResponse.error || laraResponse.message) {\n  // فشلت الترجمة — نُعيد النص الألماني كـ fallback مع تحذير\n  const originalData = $('IF Translation Needed').item.json;\n  console.log('Lara API Error:', laraResponse.error || laraResponse.message);\n  return [{ json: {\n    ...originalData,\n    text_ar: originalData.text_de,\n    translationNote: 'فشلت الترجمة التلقائية عبر Lara: ' + (laraResponse.error || laraResponse.message)\n  } }];\n}\n\n// الحصول على البيانات الأصلية\nconst originalData = $('IF Translation Needed').item.json;\n\n// التحقق من تطابق عدد الفراغات\nconst blanksDE = (originalData.text_de.match(/_____/g) || []).length;\nconst blanksAR = (translatedText.match(/_____/g) || []).length;\n\nif (blanksDE !== blanksAR) {\n  console.log(`Warning: blanks mismatch — DE: ${blanksDE}, AR translated: ${blanksAR}`);\n}\n\nreturn [{ json: {\n  ...originalData,\n  text_ar: translatedText,\n  translationNote: blanksDE !== blanksAR\n    ? `تحذير: عدد الفراغات في الترجمة التلقائية (${blanksAR}) يختلف عن الأصل (${blanksDE})`\n    : null\n} }];"
+      }
+    },
+    {
+      "id": "sl07-set-kw-prompt",
+      "name": "Set Keywords Prompt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1760,
+        260
+      ],
+      "parameters": {
+        "jsCode": "// عقدة التمرير — تستقبل من:\n//   - IF Translation Needed [FALSE] (ترجمة يدوية)\n//   - Parse Translation Result (ترجمة تلقائية)\n// تُجهز بيانات الخيارات لطلب LLM الكلمات المفتاحية\n\nconst data = $input.item.json;\nconst options = Array.isArray(data.options) ? data.options : [];\n\n// تهيئة نص الخيارات للـ LLM\nconst optionsText = options.map(o => {\n  const arPart = o.ar ? ` | العربية: ${o.ar}` : '';\n  return `${o.key}) الألمانية: ${o.de}${arPart}`;\n}).join('\\n');\n\nreturn [{ json: {\n  ...data,\n  options_text_for_llm: optionsText\n} }];"
+      }
+    },
+    {
+      "id": "sl08-basic-llm-keywords",
+      "name": "Extract Keywords (Basic LLM)",
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.4,
+      "position": [
+        2020,
+        260
+      ],
+      "parameters": {
+        "prompt": "={{ 'أنت خبير لغوي في اللغة الألمانية C1. استخرج 2-3 كلمات مفتاحية صعبة من كل خيار وترجمتها للعربية.\\n\\nقواعد صارمة:\\n1. أرجع JSON array فقط بالشكل المحدد، بدون أي نص إضافي\\n2. لا تُضف json أو أي markdown\\n3. الشكل المطلوب بالضبط: [{\"key\":\"a\",\"de_keywords\":\"Wort1, Wort2\",\"ar_keywords\":\"كلمة1، كلمة2\"},{\"key\":\"b\",...}]\\n\\nالخيارات:\\n' + $json.options_text_for_llm + '\\n\\nأرجع JSON array فقط.' }}",
+        "options": {}
+      }
+    },
+    {
+      "id": "sl08-lm-model",
+      "name": "OpenRouter Model (Keywords)",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        2020,
+        460
+      ],
+      "parameters": {
+        "model": "google/gemini-2.0-flash-exp:free",
+        "options": {
+          "temperature": 0.3,
+          "maxTokens": 2048
+        },
+        "basePath": "https://openrouter.ai/api/v1"
+      },
+      "credentials": {
+        "openAiApi": {
+          "id": "YOUR_OPENROUTER_CRED_ID",
+          "name": "OpenRouter API"
+        }
+      }
+    },
+    {
+      "id": "sl09-parse-keywords",
+      "name": "Parse Keywords + Build Result",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2280,
+        260
+      ],
+      "parameters": {
+        "jsCode": "// استخراج الكلمات المفتاحية من استجابة Basic LLM Chain\n// Basic LLM Chain يُرجع: { text: '...' } (بدل choices[0].message.content)\n// وبناء مصفوفة الخيارات المُخصَّبة النهائية\n\nconst llmResponse = $input.item.json;\n// الحصول على بيانات ما قبل الـ LLM من عقدة Set Keywords\nconst originalData = $('Set Keywords Prompt').item.json;\n\n// استخراج محتوى الاستجابة\n// Basic LLM Chain → $json.text\n// OpenAI Node → $json.choices[0].message.content\n// Fallback → $json.content\nlet content = '';\nif (llmResponse.text) {\n  // Basic LLM Chain format\n  content = String(llmResponse.text).trim();\n} else if (llmResponse.choices && llmResponse.choices[0]) {\n  content = llmResponse.choices[0].message.content.trim();\n} else if (llmResponse.content) {\n  content = String(llmResponse.content).trim();\n}\n\n// تنظيف الـ JSON من أي markdown\nconst cleaned = content\n  .replace(/```json\\s*/g, '')\n  .replace(/```\\s*/g, '')\n  .trim();\n\n// محاولة تحليل الـ JSON\nlet keywordsData = [];\ntry {\n  const parsed = JSON.parse(cleaned);\n  if (Array.isArray(parsed)) {\n    keywordsData = parsed;\n  } else if (parsed && typeof parsed === 'object') {\n    keywordsData = Object.values(parsed);\n  }\n} catch(e) {\n  console.log('Keywords parsing failed:', e.message);\n  keywordsData = [];\n}\n\n// إثراء الخيارات بالكلمات المفتاحية\nconst enrichedOptions = (originalData.options || []).map(opt => {\n  const kwMatch = keywordsData.find(k => k && String(k.key).toLowerCase() === String(opt.key).toLowerCase());\n  return {\n    key: String(opt.key || '').toLowerCase(),\n    de: String(opt.de || ''),\n    ar: String(opt.ar || ''),\n    keywords: {\n      de: kwMatch ? String(kwMatch.de_keywords || '') : '',\n      ar: kwMatch ? String(kwMatch.ar_keywords || '') : ''\n    }\n  };\n});\n\nreturn [{ json: {\n  text_de: originalData.text_de,\n  text_ar: originalData.text_ar,\n  options_enriched: enrichedOptions,\n  answers: originalData.answers,\n  section: originalData.section,\n  section_name: originalData.section_name,\n  model: originalData.model,\n  model_name: originalData.model_name,\n  slug: originalData.slug,\n  blanksCount: originalData.blanksCount,\n  chatId: originalData.chatId,\n  firstName: originalData.firstName,\n  translationNote: originalData.translationNote || null\n} }];"
+      }
+    },
+    {
+      "id": "sl10-call-subwf2",
+      "name": "Call JSON Builder + GitHub",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        2540,
+        260
+      ],
+      "parameters": {
+        "source": "database",
+        "workflowId": {
+          "__rl": true,
+          "value": "SUB_WF2_PLACEHOLDER_ID",
+          "mode": "id"
+        },
+        "options": {
+          "waitForSubWorkflow": true
+        }
+      }
+    },
+    {
+      "id": "sl11-format-result",
+      "name": "Format Agent Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2800,
+        260
+      ],
+      "parameters": {
+        "jsCode": "// تهيئة الاستجابة النهائية للـ AI Agent في Main WF\n// نُعيد نتيجة واضحة يستخدمها الـ Agent لإعلام المستخدم\n\nconst result = $input.item.json;\n\nif (!result.success) {\n  return [{ json: {\n    output: result.errorMessage || 'حدث خطأ غير متوقع أثناء الرفع على GitHub. تم إبلاغ المشرف.',\n    success: false\n  } }];\n}\n\n// بناء رسالة النجاح للمستخدم\nconst msg = [\n  '🚀 *تم الرفع بنجاح على GitHub!*',\n  '',\n  `✅ *الملف:* \\`${result.filename}\\``,\n  `📂 *المسار:* \\`${result.filePath}\\``,\n  `📝 *النموذج:* ${result.model_name}`,\n  `🔢 *الفراغات:* ${result.totalBlanks}`,\n  `🔤 *الخيارات:* ${result.optionsCount}`,\n  '',\n  'أرسل /new لإضافة نموذج جديد 🎉'\n].join('\\n');\n\nreturn [{ json: {\n  output: msg,\n  success: true,\n  filename: result.filename,\n  filePath: result.filePath,\n  totalBlanks: result.totalBlanks,\n  optionsCount: result.optionsCount,\n  commitUrl: result.commitUrl\n} }];"
+      }
+    },
+    {
+      "id": "sl_err-format-error",
+      "name": "Format Validation Error",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        980,
+        540
+      ],
+      "parameters": {
+        "jsCode": "// تهيئة رسالة خطأ التحقق لإعادتها للـ AI Agent\n// الـ Agent سيُرسلها للمستخدم بأسلوبه الودود\n\nconst data = $input.item.json;\n\nreturn [{ json: {\n  output: data.errorMsg || 'حدث خطأ في التحقق من البيانات. يرجى مراجعة المدخلات.',\n  success: false,\n  errorType: 'validation'\n} }];"
+      }
+    }
+  ],
+  "connections": {
+    "Execute Workflow Trigger": {
+      "main": [
+        [
+          {
+            "node": "Validate & Parse",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate & Parse": {
+      "main": [
+        [
+          {
+            "node": "IF Valid",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF Valid": {
+      "main": [
+        [
+          {
+            "node": "IF Translation Needed",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Format Validation Error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF Translation Needed": {
+      "main": [
+        [
+          {
+            "node": "Lara Auto Translate",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Set Keywords Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lara Auto Translate": {
+      "main": [
+        [
+          {
+            "node": "Parse Translation Result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Translation Result": {
+      "main": [
+        [
+          {
+            "node": "Set Keywords Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set Keywords Prompt": {
+      "main": [
+        [
+          {
+            "node": "Extract Keywords (Basic LLM)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenRouter Model (Keywords)": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Extract Keywords (Basic LLM)",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Keywords (Basic LLM)": {
+      "main": [
+        [
+          {
+            "node": "Parse Keywords + Build Result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Keywords + Build Result": {
+      "main": [
+        [
+          {
+            "node": "Call JSON Builder + GitHub",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call JSON Builder + GitHub": {
+      "main": [
+        [
+          {
+            "node": "Format Agent Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": ""
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "name": "C1-HSCH"
+    },
+    {
+      "name": "Sub-Workflow"
+    },
+    {
+      "name": "LLM"
+    }
+  ],
+  "triggerCount": 0,
+  "versionId": "c1-hsch-subwf1-v1"
+}

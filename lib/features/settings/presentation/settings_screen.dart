@@ -273,7 +273,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                   ),
                   trailing:
                       Icon(Icons.system_update_alt, color: AppColors.accent),
-                  onTap: () => _checkForUpdates(context, tr),
+                  // onTap: () => _checkForUpdates(context, tr),
                 ),
               ],
             ),

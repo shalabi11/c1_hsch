@@ -1,17 +1,40 @@
-# c1_hsch
+# C1 Hsch
 
-A new Flutter project.
+**C1 Hsch** is a comprehensive Arabic-language learning application designed to help students prepare for the German C1 exam (Goethe-Zertifikat C1, TestDaF, or telc C1 Hochschule). 
 
-## Getting Started
+## 🌟 Features
 
-This project is a starting point for a Flutter application.
+* **Reading Exercises (Leseverstehen):** Tailored reading comprehension sections specifically designed to simulate C1 level German exams.
+* **Bilingual Interface:** Primary interface in Arabic to assist Arab speakers in understanding complex German concepts and instructions easily.
+* **Cross-Platform:** Built to run smoothly on Web, Android, and iOS.
+* **Modern Architecture:** Developed using Flutter, utilizing Riverpod for state management, GoRouter for robust navigation, and Hive for fast local storage.
 
-A few resources to get you started if this is your first Flutter project:
+## 🌐 Web Version
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+The web version of the application is hosted on **Cloudflare Pages** and updates automatically via GitHub (CI/CD). 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Getting Started
+
+### Prerequisites
+- [Flutter SDK](https://flutter.dev/docs/get-started/install)
+- Dart SDK
+
+### Installation
+
+1. Clone the repository.
+2. Install the required packages:
+   ```bash
+   flutter pub get
+   ```
+3. Run the application:
+   ```bash
+   flutter run
+   ```
+
+### 🛠️ Building for Web
+
+To generate a production-ready web build:
+
+```bash
+flutter build web --release
+```

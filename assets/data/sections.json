@@ -243,6 +243,16 @@
           "slug": "bundesfreiwilligendienst"
         },
         {
+          "id": 34,
+          "name": "Essen in der Mensa 34",
+          "slug": "essen_mensa"
+        },
+        {
+          "id": 35,
+          "name": "kleingarten 35",
+          "slug": "kleingarten"
+        },
+        {
           "id": 36,
           "name": "Johan Friedrich oder Gold oder Porzellan 36",
           "slug": "johan_friedrich"

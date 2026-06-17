@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "section": 3,
+    "model": 16,
+    "section_name": "LV3",
+    "model_name": "Reisen 16",
+    "level": "C1"
+  },
+  "paragraphs": [
+    {
+      "letter": "1",
+      "de": "Wollte man einen Anfangspunkt des modernen Tourismus setzen, so läge dieser wohl im 18. Jahrhundert. Damals kam es in Adelskreisen und in wohlhabenden Bürgertum immer mehr in Mode, den Nachwuchs auf eine mehrjährige Reise durch Europa zu schicken, wo er seine Bildung und Sprachkenntnisse erweitern, Kunst und Architektur europäischer Städte kennenlernen, Kontakte knüpfen und Weltläufigkeit erwerben sollte. Zwar gehörte die sogenannte „Grand Tour“ schon seit dem 16. Jahrhundert zum Pflichtprogramm vieler junger Adelige, die dabei die großen europäischen Höfe und städtischen Zentren West- und Südeuropas sowie fremdländische Universitäten und Akademien besuchten. Doch seit dem frühen 18. Jahrhundert erweiterte sich der gesellschaftliche Kreis der Reisenden immer mehr auf das Bürgertum. Die „Grand Tour“ wird dabei nicht nur zu einem Vorläufer der Bildungsreise, sondern sogar des modernen Tourismus.",
+      "ar": "إذا أردنا تحديد نقطة بداية للسياحة الحديثة، فمن المحتمل أن تكون في القرن الثامن عشر. في ذلك الوقت، أصبح من المألوف بشكل متزايد في دوائر النبلاء والطبقة البرجوازية الثرية إرسال الأبناء في رحلة لعدة سنوات عبر أوروبا، حيث كان يُفترض بهم توسيع تعليمهم ومعرفتهم اللغوية، والتعرف على الفن والهندسة المعمارية للمدن الأوروبية، وتكوين العلاقات واكتساب الخبرة العالمية. وعلى الرغم من أن ما يسمى بـ \"الجولة الكبرى\" (Grand Tour) كانت بالفعل منذ القرن السادس عشر جزءًا من البرنامج الإلزامي للعديد من النبلاء الشباب، الذين زاروا فيها البلاطات الأوروبية الكبرى والمراكز الحضرية في غرب وجنوب أوروبا بالإضافة إلى الجامعات والأكاديميات الأجنبية. إلا أنه منذ أوائل القرن الثامن عشر، اتسعت الدائرة الاجتماعية للمسافرين لتشمل الطبقة البرجوازية أكثر فأكثر. وهكذا لا تُعد \"الجولة الكبرى\" مقدمة للرحلات التعليمية فحسب، بل وحتى للسياحة الحديثة."
+    },
+    {
+      "letter": "2",
+      "de": "Solche Reisen waren wegen ihrer hohen Kosten und anderer Schwierigkeiten jungen Männern (und selten auch Frauen) aus begütertem Hause vorbehalten. Der typische Reisende stammte etwa aus dem Vereinigten Königreich oder Skandinavien, war jung, männlich und kam gerade frisch von der Universität. Die ausgedehnten Touren gen Süden weckten bei den Söhnen des europäischen Adels und gehobenen Bürgertums große Begeisterung, denn sie lockten mit seltenen Freiheiten: Man konnte sich aus der Heimat Richtung Sonne und Abenteuer verabschieden, und zwar für eine sehr lange Zeit, teils über Jahre – was sogar gesellschaftlich bestens akzeptiert war. Sicher sein konnten die Reisenden jedenfalls, dass sie mit einem Anekdotenschatz zurückkehren würden, mit dem sie wohl sämtliche Abendgesellschaften für den Rest ihres Lebens unterhalten konnten.",
+      "ar": "كانت مثل هذه الرحلات، بسبب تكلفتها المرتفعة وصعوبات أخرى، حكراً على الشبان (ونادراً على الشابات أيضاً) من العائلات الثرية. كان المسافر النموذجي ينحدر مثلاً من المملكة المتحدة أو الدول الاسكندنافية، شاباً، ذكراً، وتخرج للتو من الجامعة. أثارت الجولات الممتدة نحو الجنوب حماساً كبيراً لدى أبناء النبلاء الأوروبيين والبرجوازية الراقية، لأنها كانت تغريهم بحريات نادرة: فقد كان بإمكان المرء توديع وطنه متجهاً نحو الشمس والمغامرة، وذلك لفترة طويلة جداً، تصل أحياناً إلى سنوات - وهو أمر كان مقبولاً تماماً من الناحية الاجتماعية. وعلى أية حال، كان المسافرون متأكدين من أنهم سيعودون بكنز من الحكايات والنوادر، يمكنهم به تسلية جميع الحفلات المسائية لبقية حياتهم."
+    },
+    {
+      "letter": "3",
+      "de": "Denn in diesen Zeiten war auch mitten in Europa Abenteuergeist gefragt. Weder Wellness-Hotels noch Bettburgen existierten, Straßen waren in teils haarsträubendem Zustand. Während im 16. und 17. Jahrhundert noch zu Pferd gereist wurde, setzte sich im 18. Jahrhundert die Kutsche als Verkehrsmittel durch. Adelige benutzten oft ihre eigene, üppig ausgestattete Kutsche, daneben konnte man noch per Mietkutsche oder in der recht unbequemen Postkutsche reisen. Doch selbst in den luxuriösesten Kutschen war das Reisen schon wegen der schlechten Straßen äußerst strapaziös, selbst die beste Federung konnte nicht alle Stöße abfangen. Verschärft wurde die Situation durch die langen Fahrzeiten, die auf die geringe Reisegeschwindigkeit von selten mehr als 20 Stundenkilometern zurückzuführen waren, aber auch auf fehlende Brücken.",
+      "ar": "لأنه في تلك الأوقات، كانت روح المغامرة مطلوبة حتى في وسط أوروبا. لم تكن هناك فنادق استجمام ولا مجمعات فندقية ضخمة، وكانت الطرق في حالة مزرية ومروعة أحياناً. وبينما كان السفر يتم على ظهور الخيل في القرنين السادس عشر والسابع عشر، أصبحت العربة هي وسيلة النقل السائدة في القرن الثامن عشر. غالباً ما استخدم النبلاء عرباتهم الخاصة المجهزة بسخاء، وإلى جانب ذلك كان يمكن للمرء السفر عبر عربات مستأجرة أو في عربات البريد غير المريحة على الإطلاق. ولكن حتى في أفخم العربات، كان السفر مرهقاً للغاية، وذلك بسبب سوء الطرق، فحتى أفضل أنظمة التعليق لم تكن قادرة على امتصاص جميع الصدمات. ومما زاد الطين بلة هو فترات السفر الطويلة، والتي كانت تُعزى إلى سرعة السفر المنخفضة التي نادراً ما كانت تتجاوز 20 كيلومتراً في الساعة، فضلاً عن افتقار الطرق للجسور."
+    },
+    {
+      "letter": "4",
+      "de": "Bei den Vorbereitungen war große Sorgfalt notwendig. Allein die Organisation der langen Reise mit Schiffen, Kutschen oder streckenweise gar zu Fuß durch unzählige Stadtstaaten, Königreiche und Fürstentümer steigerte Aufwand und Kosten enorm. Die Durchführung der Grand Tour war außerdem mit allerlei Formalitäten verbunden. So mussten Reisepässe und Gesundheitszeugnisse beschafft werden, und zwar wegen der insbesondere in Italien und Deutschland herrschenden Kleinstaaterei häufig in großer Menge. Nicht selten wurden Reisende im Laufe ihrer Grand Tour ausgeraubt oder zumindest von zwielichtigen Bekanntschaften über den Tisch gezogen.",
+      "ar": "كانت هناك حاجة إلى عناية فائقة في التحضيرات. فمجرد تنظيم الرحلة الطويلة بالسفن أو العربات أو حتى سيراً على الأقدام في بعض المسافات عبر عدد لا يحصى من الدويلات المدينية والممالك والإمارات أدى إلى زيادة الجهد والتكاليف بشكل هائل. وعلاوة على ذلك، كان تنفيذ \"الجولة الكبرى\" مرتبطاً بكافة أنواع الإجراءات الرسمية. فكان لابد من استخراج جوازات السفر والشهادات الصحية، وغالباً ما كان ذلك بكميات كبيرة بسبب نظام الدويلات الصغيرة السائد خاصة في إيطاليا وألمانيا. ولم يكن من النادر أن يتعرض المسافرون خلال جولتهم للسرقة أو على الأقل للاحتيال من قبل معارف مشبوهين."
+    },
+    {
+      "letter": "5",
+      "de": "Entlang der Reiserouten entwickelte sich rasch eine touristische Infrastruktur. Schlafplätze für die Nacht boten entweder kleinere Gasthöfe, Poststationen, deren Komfort an einen Pferdestall erinnerte, oder aber entfernte Bekannte und Verwandte. Wohlhabenden Reisenden standen auch teure Gasthöfe zur Verfügung, die mit Baldachinbetten, chinesischem Porzellan und erlesenen Weinen aufwarteten. Angehörige der höchsten Kreise konnten oft auf ein Netzwerk von Freunden und Verwandten zurückgreifen und nahmen Quartier in Privathäusern. Ohnehin gehörte es auf der Tour unbedingt dazu, das Netz der Beziehungen zu pflegen und zu erweitern, das einem Eltern oder Gönner vorbereitet hatten.",
+      "ar": "على طول مسارات السفر، تطورت بنية تحتية سياحية بسرعة. كانت أماكن المبيت ليلاً تتوفر إما في نزل صغيرة، أو محطات بريدية كان مستوى راحتها يذكر بإسطبل للخيول، أو عند معارف وأقارب بعيدين. كما توفرت للمسافرين الأثرياء نزل باهظة الثمن تقدم أسرة ذات مظلات، وخزف صيني، ونبيذ فاخر. وكان بإمكان أفراد الطبقات العليا غالباً الاعتماد على شبكة من الأصدقاء والأقارب والإقامة في منازل خاصة. وعلى أي حال، كان من الضروري خلال الجولة الحفاظ على شبكة العلاقات التي أعدها الآباء أو الرعاة وتوسيعها."
+    },
+    {
+      "letter": "6",
+      "de": "Außerdem war schon angesichts des geringen Alters der Reisenden mindestens ein älterer Begleiter Pflicht, ob in der Variante Diener, väterlicher Freund oder Hausherr. Wenn junge Damen der besseren Gesellschaft nach Italien reisten, gehörte eine unverheiratete Tante oder Cousine als Anstandsdame dazu. Besonders wohlhabende Familien gesellten ihren Sprösslingen noch ein großes Gefolge bei, bestehend aus zahlreichen Dienstboten, Kustexperten oder sogar einem Arzt. Manche nahmen auch einen Maler mit, der sie vor Kulturstätten wie dem Kolosseum porträtierte: Die Lieblingsaccessoires neugieriger Touristen, Fotoapparat und Smartphone, waren schließlich noch nicht erfunden.",
+      "ar": "بالإضافة إلى ذلك، وبالنظر إلى صغر سن المسافرين، كان وجود مرافق واحد أكبر سناً على الأقل إلزامياً، سواء كان على شكل خادم، أو صديق بمنزلة الأب، أو سيد منزل. وعندما كانت الشابات من الطبقة الراقية يسافرن إلى إيطاليا، كان من الضروري اصطحاب عمة أو خالة غير متزوجة أو ابنة عم كوصيفة (مرافقة). وأضافت العائلات الثرية جداً لأبنائها حاشية كبيرة تتألف من العديد من الخدم، أو خبراء الفن، أو حتى طبيب. واصطحب البعض معهم رساماً ليرسمهم أمام المعالم الثقافية مثل الكولوسيوم: ففي النهاية، الإكسسوارات المفضلة للسياح الفضوليين، كالكاميرا والهاتف الذكي، لم تكن قد اختُرعت بعد."
+    },
+    {
+      "letter": "7",
+      "de": "Zu den wichtigsten Reisezielen zählten London und Paris. Viele Reisende besichtigten auch Amsterdam, Zürich, Wien, München, Heidelberg, Berlin oder Athen. Auch der Rhein stand hoch im Kurs. Aber das Herzstück der Reise war zweifellos Italien mit seinen antiken Ruinen, Springbrunnen und Kirchen, Florenz, Rom und der Golf von Neapel mit seinen Inseln, der Vesuv und Pompeji. Nach einem Schlenker über Sizilien konnte man auf der Rückreise Orte wie Venedig mitnehmen. Der Tourismus wurde für Italien zum bedeutenden Wirtschaftsfaktor. Sein Einfluss auf den Kunstmarkt von Rom und Venedig ist nicht zu unterschätzen. Der italienische Maler Pompeo Batoni (1708–1787) etwa, der als Erfinder des Touristenporträts gilt, verdankte seinen Erfolg vor allem seinem Ruf bei den Reisenden.",
+      "ar": "كانت لندن وباريس من بين أهم وجهات السفر. كما زار العديد من المسافرين أمستردام، أو زيورخ، أو فيينا، أو ميونيخ، أو هايدلبرغ، أو برلين، أو أثينا. كما حظي نهر الراين بشعبية كبيرة. لكن قلب الرحلة النابض كان بلا شك إيطاليا بأطلالها القديمة ونوافيرها وكنائسها، وفلورنسا وروما وخليج نابولي بجدزره، وجبل فيزوف وبومبي. وبعد القيام بانعطاف عبر صقلية، كان بالإمكان المرور بأماكن مثل البندقية (فينيسيا) في رحلة العودة. أصبحت السياحة عاملاً اقتصادياً مهماً لإيطاليا. ولا يمكن الاستهانة بتأثيرها على سوق الفن في روما والبندقية. الرسام الإيطالي بومبيو باتوني (1708-1787) مثلاً، والذي يُعتبر مخترع الصور الشخصية للسياح، كان مديناً بنجاحه قبل كل شيء لسمعته بين المسافرين."
+    },
+    {
+      "letter": "8",
+      "de": "Auch wenn die Vorlieben der Reisenden unterschiedlich waren, etablierten sich bei der Grand Tour doch Pflichtstationen, die jeder unbedingt gesehen haben wollte, während umgekehrt weniger bekannte Orte meist links liegen gelassen wurden. Kaum ein Engländer, schrieb im 18. Jahrhundert der Dichter Giuseppe Baretti, interessiere sich in Italien für unbekannte Routen. Damals wie heute gilt: Je mehr man von den Reisen anderer liest, desto mehr wünscht man sich selbst an fremde Orte. Immer mehr Reiseberichte von Touristen weckten in den höheren Kreisen die Lust auf Bildungsreisen, ein eigenes Genre entstand. Oft wurde dabei versprochen, verlässliches Kartenmaterial zu liefern – der Mangel daran stellte ein Ärgernis dar. Der Handel mit Reisebüchern wuchs, immer mehr Reiseliteratur wurde gedruckt.",
+      "ar": "حتى وإن كانت تفضيلات المسافرين مختلفة، فقد ترسخت في \"الجولة الكبرى\" محطات إلزامية أراد الجميع رؤيتها بكل تأكيد، بينما في المقابل تم غالباً تجاهل الأماكن الأقل شهرة. كتب الشاعر جوزيبي باريتي في القرن الثامن عشر أنه بالكاد يهتم أي إنجليزي في إيطاليا بالمسارات غير المعروفة. وكما هو الحال اليوم، كلما قرأ المرء أكثر عن رحلات الآخرين، زادت رغبته في التواجد في أماكن غريبة. أيقظت المزيد والمزيد من تقارير سفر السياح في الأوساط الراقية الرغبة في القيام برحلات تعليمية، ونشأ نوع أدبي خاص بها. وغالباً ما كان يُوعد بتقديم خرائط موثوقة - حيث كان الافتقار إليها يشكل مصدر إزعاج. نما تجارة كتب السفر، وطُبع المزيد والمزيد من أدب الرحلات."
+    },
+    {
+      "letter": "9",
+      "de": "Obwohl der typische Reisende ein junger Mann war, blieb die Grand Tour keine reine Männersache. Auch Damen machten sich auf den Weg, wie etwa Wilhelmine Markgräfin von Bayreuth (1709–1758), eine Schwester Friedrichs des Großen. Sie wurde mit Anfang 20 verheiratet, ihr Gatte hatte seine Grand Tour zu diesem Zeitpunkt schon unternommen. Sie selbst musste wegen diverser Krankheiten lange warten, bis sie ihre Reise antreten konnte. Erst mit Mitte 40 brach sie mit ihrem Mann nach Frankreich und Italien auf – zwar inkognito unter einem Decknamen, aber doch mit einem Gefolge von mehreren Dutzend Dienstboten.",
+      "ar": "على الرغم من أن المسافر النموذجي كان شاباً، إلا أن \"الجولة الكبرى\" لم تظل مسألة رجالية بحتة. فقد انطلقت السيدات أيضاً في الطريق، مثل فيلهلمينه مارغرافين فون بايرويت (1709-1758)، شقيقة فريدريك العظيم. لقد تزوجت في أوائل العشرينيات من عمرها، وكان زوجها قد قام بالفعل بجولته الكبرى في ذلك الوقت. واضطرت هي نفسها للانتظار طويلاً بسبب أمراض مختلفة حتى تمكنت من بدء رحلتها. ولم تنطلق مع زوجها إلى فرنسا وإيطاليا إلا في منتصف الأربعينيات من عمرها - ورغم أن ذلك كان في الخفاء وتحت اسم مستعار، إلا أنها كانت ترافقها حاشية من عدة عشرات من الخدم."
+    },
+    {
+      "letter": "10",
+      "de": "Ausgedehnte Reisen wurden im Laufe der Zeit für wohlhabende Europäer immer üblicher. Je weiter das 19. Jahrhundert voranschritt, desto öfter waren nicht mehr nur reiche, junge Männer mit ihrer Entourage auf große Fahrt, sondern auch Familien, junge Paare und Ältere. Professionelle Reiseanbieter entwickelten sich, Ratgeber für Reisende kamen heraus, und in manchen Kleidungsstücken kann man sogar Vorläufer heutiger Outdoorbekleidung erkennen. War das Reisen vorher ein Übergangsritus, der die jungen Menschen ins Erwachsenenleben geleiten sollte, veränderte es sich mit dem großflächigen Aufkommen der Eisenbahn in den 1840er Jahren. Es wurde preiswerter, einfacher und sicherer. Neben den Grand-Tour-Klassikern wurden nun auch bis dato unbekanntere Städte beliebter. Viele der europäischen Metropolen, die von den damaligen Reisepionieren erkundet wurden, zählen jedoch auch heute noch zu den meistbesuchten Städten. Das Reisen bekam nun ein neues Gesicht: Ohne nach einem Bildungsideal zu streben, machten sich die Menschen auf in die Fremde. Das Zeitalter des Tourismus begann.",
+      "ar": "بمرور الوقت، أصبحت الرحلات الطويلة شائعة بشكل متزايد للأوروبيين الأثرياء. وكلما تقدم القرن التاسع عشر، لم يعد الرجال الشباب الأثرياء مع حاشيتهم هم فقط من ينطلقون في رحلات كبرى، بل أيضاً العائلات والأزواج الشباب وكبار السن. تطور مقدمو خدمات السفر المحترفون، وصدرت كتب إرشادية للمسافرين، وفي بعض قطع الملابس يمكن للمرء حتى التعرف على أسلاف ملابس التخييم والأنشطة الخارجية الحالية. بعد أن كان السفر في السابق بمثابة طقس انتقال يهدف إلى إرشاد الشباب إلى حياة البالغين، تغير الأمر مع الظهور الواسع للسكك الحديدية في أربعينيات القرن التاسع عشر. فقد أصبح السفر أرخص وأسهل وأكثر أماناً. وإلى جانب الوجهات الكلاسيكية في الجولة الكبرى، أصبحت المدن الأقل شهرة حتى ذلك الحين أكثر شعبية أيضاً. ومع ذلك، فإن العديد من المدن الأوروبية الكبرى التي اكتشفها رواد السفر الأوائل في ذلك الوقت، لا تزال حتى اليوم من بين أكثر المدن زيارة. اكتسب السفر الآن وجهاً جديداً: فبدون السعي نحو نموذج تعليمي مثالي، انطلق الناس إلى الأراضي الغريبة. وبدأ عصر السياحة."
+    }
+  ],
+  "questions": [
+    {
+      "number": "13",
+      "de": "Schon im 16. Jahrhundert unternahmen junge Adelige Reisen zum Wissenserwerb.",
+      "ar": "كان النبلاء الشباب يقومون برحلات لاكتساب المعرفة منذ القرن السادس عشر.",
+      "correct_answer": "+"
+    },
+    {
+      "number": "14",
+      "de": "Längere Reisen galten in dieser Zeit noch als gefährlich für Frauen.",
+      "ar": "كانت الرحلات الطويلة تُعتبر خطيرة على النساء في ذلك الوقت.",
+      "correct_answer": "x"
+    },
+    {
+      "number": "15",
+      "de": "Die lange Reisedauer bei der Grand Tour rief bei den Zeitgenossen oft Kritik hervor.",
+      "ar": "كانت المدة الطويلة لرحلات الـ Grand Tour تثير انتقادات الناس في ذلك العصر.",
+      "correct_answer": "-"
+    },
+    {
+      "number": "16",
+      "de": "Der Umstieg auf Kutschen machte das Reisen nicht unbedingt zu einer komfortablen Angelegenheit.",
+      "ar": "الانتقال إلى السفر بالعربات لم يجعل السفر بالضرورة أكثر راحة.",
+      "correct_answer": "+"
+    },
+    {
+      "number": "17",
+      "de": "Die Reisenden mussten sich alle mit bescheidenen Übernachtungsmöglichkeiten zufriedengeben.",
+      "ar": "كان على جميع المسافرين الاكتفاء بأماكن مبيت متواضعة.",
+      "correct_answer": "-"
+    },
+    {
+      "number": "18",
+      "de": "Bei der Grand Tour verreisten die jungen Leute oft nur mit Gleichaltrigen.",
+      "ar": "كان الشباب في رحلات Grand Tour يسافرون غالبًا فقط مع أشخاص من نفس أعمارهم.",
+      "correct_answer": "-"
+    },
+    {
+      "number": "19",
+      "de": "Auch die Eintrittsgelder für Museen trugen in den besuchten Städten zum wirtschaftlichen Aufschwung bei.",
+      "ar": "ساهمت أيضًا رسوم دخول المتاحف في الازدهار الاقتصادي للمدن التي تمت زيارتها.",
+      "correct_answer": "x"
+    },
+    {
+      "number": "20",
+      "de": "Oft interessierten sich die Reisenden auch für Ziele, die abseits der üblichen Reisewege lagen.",
+      "ar": "كان المسافرون يهتمون كثيرًا أيضًا بوجهات تقع خارج المسارات السياحية المعتادة.",
+      "correct_answer": "-"
+    },
+    {
+      "number": "21",
+      "de": "Handelsreisende konnten neu entstehende Handelswege nutzen.",
+      "ar": "كان بإمكان التجار المسافرين الاستفادة من طرق التجارة الجديدة التي كانت تنشأ.",
+      "correct_answer": "x"
+    },
+    {
+      "number": "22",
+      "de": "Wilhelmine von Bayreuth konnte ihre Reisepläne aus gesundheitlichen Gründen viele Jahre lang nicht verwirklichen.",
+      "ar": "لم تتمكن فيلهلمينه فون بايرويت من تحقيق خطط سفرها لسنوات عديدة بسبب مشاكل صحية.",
+      "correct_answer": "+"
+    },
+    {
+      "number": "23",
+      "de": "Durch die besseren Transportmöglichkeiten im 19. Jahrhundert etablierten sich bald auch neue Reiseziele.",
+      "ar": "بفضل وسائل النقل الأفضل في القرن التاسع عشر، ظهرت وانتشرت وجهات سفر جديدة أيضاً.",
+      "correct_answer": "+"
+    },
+    {
+      "number": "24",
+      "de": "Welche der Überschriften passt am besten?\n\na) Die Luxusreisen der Adeligen\nb) Eliten auf Bildungsreise\nc) Weltenbummler einst und heute",
+      "ar": "أي العناوين التالية يناسب النص بشكل أفضل؟\n\na) رحلات النبلاء الفاخرة\nb) النخب في رحلة تعليمية\nc) المسافرون حول العالم قديمًا وحديثاً",
+      "correct_answer": "b"
+    }
+  ]
+}

@@ -218,6 +218,21 @@
       "isLocked": false,
       "models": [
         {
+          "id": 16,
+          "name": "Reisen 16",
+          "slug": "reisen"
+        },
+        {
+          "id": 20,
+          "name": "Schimpansen und Gorilla 20",
+          "slug": "schimpansen_gorilla"
+        },
+        {
+          "id": 21,
+          "name": "Camping 21",
+          "slug": "camping"
+        },
+        {
           "id": 29,
           "name": "Mehrsprachigkeit 29",
           "slug": "mehrsprachigkeit"

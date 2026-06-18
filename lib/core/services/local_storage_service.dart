@@ -102,6 +102,42 @@ class LocalStorageService {
     await _exercisesBox.delete(_getReadingValidationsKey(sectionId, modelId));
   }
 
+  // --- Sprachbausteine Progress ---
+
+  String _getSprachbausteineAnswersKey(int sectionId, int modelId) => 'sprachbausteine_answers_${sectionId}_$modelId';
+  String _getSprachbausteineValidationsKey(int sectionId, int modelId) => 'sprachbausteine_validations_${sectionId}_$modelId';
+
+  Map<String, String>? loadSprachbausteineAnswers(int sectionId, int modelId) {
+    final jsonStr = _exercisesBox.get(_getSprachbausteineAnswersKey(sectionId, modelId));
+    if (jsonStr != null) {
+      final Map<String, dynamic> decoded = jsonDecode(jsonStr);
+      return decoded.map((key, value) => MapEntry(key, value as String));
+    }
+    return null;
+  }
+
+  Future<void> saveSprachbausteineAnswers(int sectionId, int modelId, Map<String, String> answers) async {
+    await _exercisesBox.put(_getSprachbausteineAnswersKey(sectionId, modelId), jsonEncode(answers));
+  }
+
+  Map<String, bool>? loadSprachbausteineValidations(int sectionId, int modelId) {
+    final jsonStr = _exercisesBox.get(_getSprachbausteineValidationsKey(sectionId, modelId));
+    if (jsonStr != null) {
+      final Map<String, dynamic> decoded = jsonDecode(jsonStr);
+      return decoded.map((key, value) => MapEntry(key, value as bool));
+    }
+    return null;
+  }
+
+  Future<void> saveSprachbausteineValidations(int sectionId, int modelId, Map<String, bool> validations) async {
+    await _exercisesBox.put(_getSprachbausteineValidationsKey(sectionId, modelId), jsonEncode(validations));
+  }
+
+  Future<void> clearSprachbausteineData(int sectionId, int modelId) async {
+    await _exercisesBox.delete(_getSprachbausteineAnswersKey(sectionId, modelId));
+    await _exercisesBox.delete(_getSprachbausteineValidationsKey(sectionId, modelId));
+  }
+
   // --- Clear Data ---
 
   Future<void> clearAllData() async {

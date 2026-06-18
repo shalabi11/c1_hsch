@@ -223,8 +223,8 @@
           "slug": "reisen"
         },
         {
-          "id": 20,
-          "name": "Schimpansen und Gorilla 20",
+          "id": 19,
+          "name": "Schimpansen und Gorilla 19",
           "slug": "schimpansen_gorilla"
         },
         {
@@ -293,23 +293,83 @@
       "id": 4,
       "name": "Abschnitt 4",
       "nameAr": "القسم الرابع",
-      "isLocked": true,
+      "isLocked": false,
       "models": [
         {
           "id": 1,
-          "name": "Wirtschaft",
-          "slug": "wirtschaft"
+          "name": "Lernen wird zum Spiel",
+          "slug": "lernen_wird_zum_spiel"
         },
         {
           "id": 2,
-          "name": "Globalisierung",
-          "slug": "globalisierung"
+          "name": "Die chronobiologischen Rhythmen der Kinder",
+          "slug": "chronobiologische_rhythmen"
+        },
+        {
+          "id": 3,
+          "name": "Diktate – lernpsychologisch ungünstig?",
+          "slug": "diktate"
+        },
+        {
+          "id": 4,
+          "name": "Warum Spielen Kinder schlau macht",
+          "slug": "spielen_macht_schlau"
+        },
+        {
+          "id": 5,
+          "name": "Über die Anfänge der Restaurantkultur",
+          "slug": "restaurantkultur"
+        },
+        {
+          "id": 6,
+          "name": "Unterschätzte Pflanzen",
+          "slug": "unterschaetzte_pflanzen"
+        },
+        {
+          "id": 7,
+          "name": "Wieso wir irgendwann aufhören, neue Musik zu hören",
+          "slug": "aufhoeren_neue_musik_zu_hoeren"
+        },
+        {
+          "id": 8,
+          "name": "Bio-giftiger als Chemie",
+          "slug": "bio_giftiger"
+        },
+        {
+          "id": 9,
+          "name": "Die Ordnung der Dinge",
+          "slug": "ordnung_der_dinge"
+        },
+        {
+          "id": 10,
+          "name": "Eine kurze Geschichte der Werbung",
+          "slug": "geschichte_der_werbung"
+        },
+        {
+          "id": 11,
+          "name": "Hat der Hörsaal noch Zukunft?",
+          "slug": "zukunft_hoersaal"
+        },
+        {
+          "id": 12,
+          "name": "Sprache: Wenn Wörter verschwinden",
+          "slug": "woerter_verschwinden"
+        },
+        {
+          "id": 13,
+          "name": "Wie kommen Hochs und Tiefs zu ihren Namen?",
+          "slug": "hochs_und_tiefs"
+        },
+        {
+          "id": 14,
+          "name": "Wie das Geld in die Welt kam",
+          "slug": "geld"
         }
       ]
     },
     {
       "id": 5,
-      "name": "Abschnitt 5",
+      "name": "HV1",
       "nameAr": "القسم الخامس",
       "isLocked": true,
       "models": [
@@ -327,7 +387,7 @@
     },
     {
       "id": 6,
-      "name": "Abschnitt 6",
+      "name": "HV2",
       "nameAr": "القسم السادس",
       "isLocked": true,
       "models": [
@@ -345,7 +405,7 @@
     },
     {
       "id": 7,
-      "name": "Abschnitt 7",
+      "name": "HV3",
       "nameAr": "القسم السابع",
       "isLocked": true,
       "models": [
@@ -358,24 +418,6 @@
           "id": 2,
           "name": "Literatur",
           "slug": "literatur"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Abschnitt 8",
-      "nameAr": "القسم الثامن",
-      "isLocked": true,
-      "models": [
-        {
-          "id": 1,
-          "name": "Politik",
-          "slug": "politik"
-        },
-        {
-          "id": 2,
-          "name": "Geschichte",
-          "slug": "geschichte"
         }
       ]
     }

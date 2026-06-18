@@ -5,19 +5,16 @@ import '../../../../core/constants/app_text_styles.dart';
 import '../../../../core/localization/locale_provider.dart';
 
 class ReadingAppBar extends ConsumerWidget implements PreferredSizeWidget {
-  const ReadingAppBar({super.key});
+  final String title;
+  final PreferredSizeWidget? bottom;
+  
+  const ReadingAppBar({super.key, this.title = 'Leseverstehen', this.bottom});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return AppBar(
       backgroundColor: AppColors.surface,
       elevation: 0,
-      // leading: IconButton(
-      //   icon: Icon(Icons.menu, color: AppColors.textPrimary),
-      //   onPressed: () {
-      //     // TODO: Open drawer or handle menu
-      //   },
-      // ),
       centerTitle: true,
       title: Row(
         mainAxisSize: MainAxisSize.min,
@@ -25,7 +22,7 @@ class ReadingAppBar extends ConsumerWidget implements PreferredSizeWidget {
           Icon(Icons.school, color: AppColors.accent, size: 24),
           const SizedBox(width: 8),
           Text(
-            'Leseverstehen',
+            title,
             style: AppTextStyles.headingLarge.copyWith(
               fontWeight: FontWeight.bold,
               color: AppColors.textPrimary,
@@ -61,9 +58,10 @@ class ReadingAppBar extends ConsumerWidget implements PreferredSizeWidget {
           ),
         ),
       ],
+      bottom: bottom,
     );
   }
 
   @override
-  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => Size.fromHeight(kToolbarHeight + (bottom?.preferredSize.height ?? 0.0));
 }

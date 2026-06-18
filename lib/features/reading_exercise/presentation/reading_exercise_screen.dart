@@ -46,8 +46,7 @@ class _ReadingExerciseScreenState extends ConsumerState<ReadingExerciseScreen> {
       final RenderObject? object = _questionsKey.currentContext?.findRenderObject();
       if (object == null || !object.attached) return;
       
-      final RenderAbstractViewport? viewport = RenderAbstractViewport.of(object);
-      if (viewport == null) return;
+      final RenderAbstractViewport viewport = RenderAbstractViewport.of(object);
 
       // Get the exact scroll offset where the questions section starts
       final double questionsOffset =
@@ -135,15 +134,13 @@ class _ReadingExerciseScreenState extends ConsumerState<ReadingExerciseScreen> {
                     if (object == null || !object.attached) return;
                     
                     try {
-                      final RenderAbstractViewport? viewport = RenderAbstractViewport.of(object);
-                      if (viewport != null) {
-                        final double targetOffset = viewport.getOffsetToReveal(object, 0.0).offset;
-                        _scrollController.animateTo(
-                          targetOffset - 16,
-                          duration: const Duration(milliseconds: 600),
-                          curve: Curves.easeInOut,
-                        );
-                      }
+                      final RenderAbstractViewport viewport = RenderAbstractViewport.of(object);
+                      final double targetOffset = viewport.getOffsetToReveal(object, 0.0).offset;
+                      _scrollController.animateTo(
+                        targetOffset - 16,
+                        duration: const Duration(milliseconds: 600),
+                        curve: Curves.easeInOut,
+                      );
                     } catch (e) {
                       // Fallback in case of viewport errors
                       _scrollController.animateTo(

@@ -371,17 +371,12 @@
       "id": 5,
       "name": "HV1",
       "nameAr": "القسم الخامس",
-      "isLocked": true,
+      "isLocked": false,
       "models": [
         {
-          "id": 1,
-          "name": "Gesundheit",
-          "slug": "gesundheit"
-        },
-        {
-          "id": 2,
-          "name": "Medizin",
-          "slug": "medizin"
+          "id": 15,
+          "name": "15. Studienwahl",
+          "slug": "s5_m15_studienwahl"
         }
       ]
     },

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'sections_notifier.dart';
 import 'widgets/desktop_header.dart';
+import 'widgets/desktop_welcome_banner.dart';
 import 'widgets/section_card.dart';
 import 'widgets/section_grid_card.dart';
 import 'widgets/sections_header.dart';
@@ -86,42 +87,7 @@ class _SectionsScreenState extends ConsumerState<SectionsScreen> {
                         slivers: [
                         if (isDesktop)
                           SliverToBoxAdapter(
-                            child: Container(
-                              margin: const EdgeInsets.only(bottom: 40),
-                              padding: const EdgeInsets.all(32),
-                              decoration: BoxDecoration(
-                                color: AppColors.accent.withValues(alpha: 0.1),
-                                borderRadius: BorderRadius.circular(24),
-                                border: Border.all(color: AppColors.accent.withValues(alpha: 0.2)),
-                              ),
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          'Willkommen zurück!',
-                                          style: AppTextStyles.headingLarge.copyWith(
-                                            fontWeight: FontWeight.w900,
-                                            color: AppColors.accentDark,
-                                          ),
-                                        ),
-                                        const SizedBox(height: 8),
-                                        Text(
-                                          'Wähle eine Lektion, um dein Deutsch weiter zu verbessern.',
-                                          style: AppTextStyles.bodyLarge.copyWith(
-                                            color: AppColors.textSecondary,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  const SizedBox(width: 20),
-                                  Icon(Icons.workspace_premium_rounded, size: 80, color: AppColors.accent),
-                                ],
-                              ),
-                            ),
+                            child: DesktopWelcomeBanner(),
                           ),
                         const SliverToBoxAdapter(
                           child: SectionsHeader(),

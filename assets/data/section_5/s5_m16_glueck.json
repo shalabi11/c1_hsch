@@ -1,0 +1,99 @@
+{
+  "id": "s5_m16_glueck",
+  "title": "Glück",
+  "telegramLink": "https://t.me/Hv1_voices/9?single",
+  "statements": [
+    {
+      "letter": "a",
+      "text": "Die Art und Weise, wie man Probleme löst, spielt eine Rolle für das Glücksempfinden.",
+      "translation": "الطريقة التي يحل بها المرء المشاكل تلعب دوراً في الشعور بالسعادة."
+    },
+    {
+      "letter": "b",
+      "text": "Ein solides finanzielles Auskommen ist die Grundlage für Glück.",
+      "translation": "الدخل المالي الثابت هو أساس السعادة."
+    },
+    {
+      "letter": "c",
+      "text": "Gesellschaftliche Zwänge können das Glück des Einzelnen beeinträchtigen.",
+      "translation": "القيود الاجتماعية يمكن أن تؤثر سلباً على سعادة الفرد."
+    },
+    {
+      "letter": "d",
+      "text": "Glück bedeutet, dass man sich selbst verwirklicht, wenn nötig auch auf Kosten anderer.",
+      "translation": "السعادة تعني أن يحقق المرء ذاته، حتى لو لزم الأمر على حساب الآخرين."
+    },
+    {
+      "letter": "e",
+      "text": "Man kann nur glücklich sein, wenn man seine besonderen Talente ausleben kann.",
+      "translation": "يمكن للمرء أن يكون سعيداً فقط عندما يستطيع ممارسة مواهبه الخاصة."
+    },
+    {
+      "letter": "f",
+      "text": "Ob wir uns glücklich fühlen, können wir nur in begrenztem Maße beeinflussen.",
+      "translation": "ما إذا كنا نشعر بالسعادة يمكننا التأثير عليه فقط إلى حد محدود."
+    },
+    {
+      "letter": "g",
+      "text": "Soziale Beziehungen sind die wichtigste Voraussetzung für Glück.",
+      "translation": "العلاقات الاجتماعية هي أهم شرط للسعادة."
+    },
+    {
+      "letter": "h",
+      "text": "Soziales Engagement führt zu mehr Wohlbefinden und einer optimistischeren Lebenseinstellung",
+      "translation": "المشاركة الاجتماعية تؤدي إلى مزيد من الرفاهية ونظرة أكثر تفاؤلاً للحياة."
+    },
+    {
+      "letter": "i",
+      "text": "Um glücklich zu sein, braucht man im beruflichen Umfeld Anerkennung.",
+      "translation": "لكي تكون سعيداً، تحتاج إلى التقدير في بيئة العمل."
+    },
+    {
+      "letter": "j",
+      "text": "Unser Glücksempfinden hängt von unserer Sicht auf die Welt ab.",
+      "translation": "شعورنا بالسعادة يعتمد على نظرتنا للعالم."
+    }
+  ],
+  "answers": [
+    {
+      "id": 55,
+      "speaker": 1,
+      "correctLetter": "j"
+    },
+    {
+      "id": 56,
+      "speaker": 2,
+      "correctLetter": "a"
+    },
+    {
+      "id": 57,
+      "speaker": 3,
+      "correctLetter": "g"
+    },
+    {
+      "id": 58,
+      "speaker": 4,
+      "correctLetter": "c"
+    },
+    {
+      "id": 59,
+      "speaker": 5,
+      "correctLetter": "f"
+    },
+    {
+      "id": 60,
+      "speaker": 6,
+      "correctLetter": "h"
+    },
+    {
+      "id": 61,
+      "speaker": 7,
+      "correctLetter": "b"
+    },
+    {
+      "id": 62,
+      "speaker": 8,
+      "correctLetter": "i"
+    }
+  ]
+}

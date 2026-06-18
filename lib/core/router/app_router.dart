@@ -12,6 +12,7 @@ import '../../features/reading_exercise/presentation/reading_results_screen.dart
 import '../../features/sprachbausteine_exercise/presentation/sprachbausteine_screen.dart';
 import '../../features/sprachbausteine_exercise/presentation/sprachbausteine_results_screen.dart';
 import '../../features/listening_hv2_exercise/presentation/hv2_exercise_screen.dart';
+import '../../features/listening_hv1_exercise/presentation/hv1_exercise_screen.dart';
 
 final appRouter = GoRouter(
   initialLocation: '/',
@@ -139,6 +140,19 @@ final appRouter = GoRouter(
         final modelId = int.parse(state.pathParameters['modelId']!);
         final slug = state.uri.queryParameters['slug'] ?? '';
         return HV2ExerciseScreen(
+          sectionId: sectionId,
+          modelId: modelId,
+          slug: slug,
+        );
+      },
+    ),
+    GoRoute(
+      path: '/hv1_exercise/:sectionId/:modelId',
+      builder: (_, state) {
+        final sectionId = int.parse(state.pathParameters['sectionId']!);
+        final modelId = int.parse(state.pathParameters['modelId']!);
+        final slug = state.uri.queryParameters['slug'] ?? '';
+        return HV1ExerciseScreen(
           sectionId: sectionId,
           modelId: modelId,
           slug: slug,

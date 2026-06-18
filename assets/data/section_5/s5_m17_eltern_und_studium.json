@@ -1,0 +1,99 @@
+{
+  "id": "s5_m17_eltern_und_studium",
+  "title": "Eltern und Studium",
+  "telegramLink": "https://t.me/Hv1_voices/5?single",
+  "statements": [
+    {
+      "letter": "a",
+      "text": "Aus eigener Erfahrung kann ich das Studium mit Kindern nur befürworten",
+      "translation": "من خلال تجربتي الخاصة، لا يسعني إلا أن أؤيد الدراسة مع وجود أطفال."
+    },
+    {
+      "letter": "b",
+      "text": "Die Universitäten unterstützen Studierende mit Kindern durch unterschiedliche Einrichtungen.",
+      "translation": "الجامعات تدعم الطلاب الذين لديهم أطفال من خلال مرافق (مؤسسات) مختلفة."
+    },
+    {
+      "letter": "c",
+      "text": "Die verpflichtende Teilnahme an Lehrveranstaltungen benachteiligt Studierende mit Kindern.",
+      "translation": "الحضور الإلزامي للمحاضرات يضع الطلاب الذين لديهم أطفال في موقف غير مؤاتٍ."
+    },
+    {
+      "letter": "d",
+      "text": "Ein Kind während des Studiums verringert die beruflichen Aussichten.",
+      "translation": "إنجاب طفل أثناء الدراسة يقلل من الآفاق المهنية."
+    },
+    {
+      "letter": "e",
+      "text": "Ein Studium ist so aufwendig, dass es sich mit einem Kind nicht vereinbaren lässt.",
+      "translation": "الدراسة مجهدة لدرجة أنه لا يمكن التوفيق بينها وبين وجود طفل."
+    },
+    {
+      "letter": "f",
+      "text": "Jüngste Erhebungen zeigen vermehrte Studienabbrüche bei Studierenden mit Kind.",
+      "translation": "أظهرت الدراسات (الاستبيانات) الأخيرة زيادة في حالات الانقطاع عن الدراسة بين الطلاب الذين لديهم أطفال."
+    },
+    {
+      "letter": "g",
+      "text": "Studentenvertreter fordern mehr Fördermaßnahmen für studierende Eltern.",
+      "translation": "ممثلو الطلاب يطالبون بمزيد من إجراءات الدعم للآباء والأمهات الطلاب."
+    },
+    {
+      "letter": "h",
+      "text": "Studierende Eltern zu unterstützen ist ein Gebot der gesellschaftlichen Solidarität.",
+      "translation": "دعم الآباء والأمهات الطلاب هو واجب (مطلب) التضامن المجتمعي."
+    },
+    {
+      "letter": "i",
+      "text": "Wenn man Karriere machen möchte, ist es besser, die Kinder während des Studiums zu bekommen.",
+      "translation": "إذا كان المرء يرغب في بناء مسيرة مهنية، فمن الأفضل إنجاب الأطفال أثناء الدراسة."
+    },
+    {
+      "letter": "j",
+      "text": "Wer während des Studiums ein Kind bekommt, hat weniger Möglichkeiten, sich persönlich weiterzuentwickeln.",
+      "translation": "من ينجب طفلاً أثناء الدراسة، لديه فرص أقل لتطوير نفسه شخصياً."
+    }
+  ],
+  "answers": [
+    {
+      "id": 63,
+      "speaker": 1,
+      "correctLetter": "h"
+    },
+    {
+      "id": 64,
+      "speaker": 2,
+      "correctLetter": "e"
+    },
+    {
+      "id": 65,
+      "speaker": 3,
+      "correctLetter": "c"
+    },
+    {
+      "id": 66,
+      "speaker": 4,
+      "correctLetter": "d"
+    },
+    {
+      "id": 67,
+      "speaker": 5,
+      "correctLetter": "b"
+    },
+    {
+      "id": 68,
+      "speaker": 6,
+      "correctLetter": "a"
+    },
+    {
+      "id": 69,
+      "speaker": 7,
+      "correctLetter": "j"
+    },
+    {
+      "id": 70,
+      "speaker": 8,
+      "correctLetter": "i"
+    }
+  ]
+}

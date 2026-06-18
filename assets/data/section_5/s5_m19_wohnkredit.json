@@ -1,0 +1,99 @@
+{
+  "id": "s5_m19_wohnkredit",
+  "title": "Wohnkredit/Immobilien",
+  "telegramLink": "https://t.me/Hv1_voices/11?single",
+  "statements": [
+    {
+      "letter": "a",
+      "text": "Banken sind bei der Vergabe von Wohnkrediten in letzter Zeit sehr zurückhaltend.",
+      "translation": "كانت البنوك في الآونة الأخيرة متحفظة للغاية في منح قروض الإسكان."
+    },
+    {
+      "letter": "b",
+      "text": "Die Investition in ein eigenes Haus dient der Altersvorsorge.",
+      "translation": "الاستثمار في منزل خاص يخدم كضمان للشيخوخة (تقاعد)."
+    },
+    {
+      "letter": "c",
+      "text": "Durch Mieteinnahmen kann man sich im Alter die Rente aufbessern.",
+      "translation": "من خلال إيرادات الإيجار يمكن للمرء تحسين راتبه التقاعدي في سن الشيخوخة."
+    },
+    {
+      "letter": "d",
+      "text": "Ein eigenes Haus bietet Sicherheit und Geborgenheit für die ganze Familie.",
+      "translation": "امتلاك منزل يوفر الأمن والطمأنينة لجميع أفراد الأسرة."
+    },
+    {
+      "letter": "e",
+      "text": "Häufig sind Gefühle beim Kauf einer Immobilie ausschlaggebend.",
+      "translation": "غالباً ما تكون المشاعر هي العامل الحاسم عند شراء عقار."
+    },
+    {
+      "letter": "f",
+      "text": "Immobilien eignen sich bestens als langfristige Geldanlage.",
+      "translation": "العقارات هي الأنسب كاستثمار مالي طويل الأجل."
+    },
+    {
+      "letter": "g",
+      "text": "Unabhängigkeit ist wichtiger als der Besitz eines eigenen Hauses.",
+      "translation": "الاستقلالية أهم من امتلاك منزل خاص."
+    },
+    {
+      "letter": "h",
+      "text": "Viele lassen sich durch die Werbung von Banken zum Kauf von Immobilien verleiten.",
+      "translation": "الكثيرون ينخدعون بإعلانات البنوك ويُستدرجون لشراء العقارات."
+    },
+    {
+      "letter": "i",
+      "text": "Vor dem Kauf eines Eigenheims muss die kritische Beurteilung der eigenen Vermögensverhältnisse stehen.",
+      "translation": "قبل شراء منزل خاص، يجب أن يكون هناك تقييم نقدي للوضع المالي الخاص بالمرء."
+    },
+    {
+      "letter": "j",
+      "text": "Wer eine Immobilie besitzt, muss sich auf finanzielle Belastungen einstellen.",
+      "translation": "من يمتلك عقاراً يجب أن يستعد للأعباء المالية."
+    }
+  ],
+  "answers": [
+    {
+      "id": 71,
+      "speaker": 1,
+      "correctLetter": "i"
+    },
+    {
+      "id": 72,
+      "speaker": 2,
+      "correctLetter": "e"
+    },
+    {
+      "id": 73,
+      "speaker": 3,
+      "correctLetter": "f"
+    },
+    {
+      "id": 74,
+      "speaker": 4,
+      "correctLetter": "b"
+    },
+    {
+      "id": 75,
+      "speaker": 5,
+      "correctLetter": "g"
+    },
+    {
+      "id": 76,
+      "speaker": 6,
+      "correctLetter": "h"
+    },
+    {
+      "id": 77,
+      "speaker": 7,
+      "correctLetter": "j"
+    },
+    {
+      "id": 78,
+      "speaker": 8,
+      "correctLetter": "d"
+    }
+  ]
+}

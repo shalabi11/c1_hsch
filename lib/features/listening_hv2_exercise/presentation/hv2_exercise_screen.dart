@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/constants/app_text_styles.dart';
-import '../../../../l10n/app_localizations.dart';
+
 import '../../reading_exercise/presentation/widgets/reading_app_bar.dart';
 import 'hv2_exercise_notifier.dart';
 import 'widgets/hv2_item_card.dart';

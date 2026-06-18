@@ -1,0 +1,99 @@
+{
+  "id": "s5_m21_tempolimit",
+  "title": "Tempolimit oder Geschwindigkeitslimit",
+  "telegramLink": "https://t.me/Hv1_voices/4?single",
+  "statements": [
+    {
+      "letter": "a",
+      "text": "Aus gesamtwirtschaftlicher Sich dürfte ein Tempolimit positiv zu beurteilen sein.",
+      "translation": "من وجهة نظر اقتصادية عامة، يُرجح أن يُقيم تحديد السرعة بشكل إيجابي."
+    },
+    {
+      "letter": "b",
+      "text": "Der Verkehr läuft bei einer Geschwindigkeitsbegrenzung flüssiger.",
+      "translation": "حركة المرور تسير بشكل أكثر سلاسة مع وجود قيود على السرعة."
+    },
+    {
+      "letter": "c",
+      "text": "Die Durchsetzung des Tempolimits scheitert an der starken deutschen Autolobby.",
+      "translation": "فرض تحديد السرعة يفشل بسبب جماعات الضغط (اللوبي) القوية للسيارات الألمانية."
+    },
+    {
+      "letter": "d",
+      "text": "Eine allgemeine Geschwindigkeitsbegrenzung ist wirkungslose Symbolpolitik.",
+      "translation": "وضع حد عام للسرعة هو سياسة رمزية غير فعالة."
+    },
+    {
+      "letter": "e",
+      "text": "Eine flexible, situationsgerechte Geschwindigkeitsregelung ist sinnvoller als ein Tempolimit.",
+      "translation": "تنظيم مرن للسرعة يتناسب مع الوضع هو أكثر منطقية من تحديد ثابت للسرعة."
+    },
+    {
+      "letter": "f",
+      "text": "Ein generelles Tempolimit auf den Bundesautobahnen wäre kein Gewinn für die Verkehrssicherheit.",
+      "translation": "فرض حد عام للسرعة على الطرق السريعة الفيدرالية لن يكون مكسباً للسلامة المرورية."
+    },
+    {
+      "letter": "g",
+      "text": "Ein Tempolimit würde neue Impulse für einen effizienten Autobau setzen.",
+      "translation": "تحديد السرعة من شأنه أن يعطي دافعاً (زخماً) جديداً لبناء سيارات فعالة."
+    },
+    {
+      "letter": "h",
+      "text": "Ich will keinen bevormundenden Staat, der vorschreibt, wie wir uns fortbewegen.",
+      "translation": "لا أريد دولة وصية (أبوية) تملي علينا كيف نتنقل."
+    },
+    {
+      "letter": "i",
+      "text": "Ein Tempolimit leistet keinen spürbaren Beitrag zum Klimaschutz.",
+      "translation": "تحديد السرعة لا يقدم مساهمة ملموسة في حماية المناخ."
+    },
+    {
+      "letter": "j",
+      "text": "Unfälle mit Personenschäden würden durch eine Geschwindigkeitsbegrenzung um ein Drittel zurückgehen.",
+      "translation": "الحوادث التي تتضمن إصابات شخصية ستنخفض بمقدار الثلث بسبب وضع حد للسرعة."
+    }
+  ],
+  "answers": [
+    {
+      "id": 79,
+      "speaker": 1,
+      "correctLetter": "g"
+    },
+    {
+      "id": 80,
+      "speaker": 2,
+      "correctLetter": "i"
+    },
+    {
+      "id": 81,
+      "speaker": 3,
+      "correctLetter": "b"
+    },
+    {
+      "id": 82,
+      "speaker": 4,
+      "correctLetter": "h"
+    },
+    {
+      "id": 83,
+      "speaker": 5,
+      "correctLetter": "f"
+    },
+    {
+      "id": 84,
+      "speaker": 6,
+      "correctLetter": "c"
+    },
+    {
+      "id": 85,
+      "speaker": 7,
+      "correctLetter": "e"
+    },
+    {
+      "id": 86,
+      "speaker": 8,
+      "correctLetter": "j"
+    }
+  ]
+}

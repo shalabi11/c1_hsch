@@ -1,0 +1,99 @@
+{
+  "id": "s5_m15_studienwahl",
+  "title": "Studienwahl",
+  "telegramLink": "https://t.me/Hv1_voices/10?single",
+  "statements": [
+    {
+      "letter": "a",
+      "text": "bei der Studienwahl können durchaus auch finanzielle Aspekte berücksichtigt werden",
+      "translation": "عند اختيار التخصص الجامعي يمكن بالتأكيد أن تُؤخذ الجوانب المالية بعين الاعتبار."
+    },
+    {
+      "letter": "b",
+      "text": "Das Studienangebot im ländlichen Raum sollte erweitert werden.",
+      "translation": "العروض الدراسية في المناطق الريفية ينبغي أن يتم توسيعها."
+    },
+    {
+      "letter": "c",
+      "text": "Das Studium sollte so gewählt werden dass man eine Führungsposition erlangen kann.",
+      "translation": "الدراسة ينبغي أن تُختار بحيث يتمكن المرء من الحصول على منصب قيادي."
+    },
+    {
+      "letter": "d",
+      "text": "Das Studium von Massenfächern ist alles andere als erstrebenswert.",
+      "translation": "دراسة التخصصات المكتظة (التي تضم أعداداً هائلة) هي أبعد ما يكون عن المبتغى (غير مرغوبة إطلاقاً)."
+    },
+    {
+      "letter": "e",
+      "text": "Die Studienwahl wird wahrscheinlich auch von den Möglichkeiten in der Region bestimmt",
+      "translation": "اختيار التخصص يُحدد على الأرجح أيضاً من خلال الفرص المتاحة في المنطقة."
+    },
+    {
+      "letter": "f",
+      "text": "Für die Zulassung zum Studium sollten nicht nur die Noten",
+      "translation": "من أجل القبول للدراسة ينبغي ألا يقتصر الأمر على الدرجات (العلامات) فقط."
+    },
+    {
+      "letter": "g",
+      "text": "Jobaussichten sollten bei der Wahl des Studiums eine untergeordnete Rolle spielen",
+      "translation": "آفاق العمل ينبغي أن تلعب دوراً ثانوياً عند اختيار التخصص الدراسي."
+    },
+    {
+      "letter": "h",
+      "text": "Manchmal ist der berufliche Werdegang in der Familie vorgezeichnet.",
+      "translation": "أحياناً يكون المسار المهني مرسوماً (مُقدراً مسبقاً) داخل العائلة."
+    },
+    {
+      "letter": "i",
+      "text": "Selbst bei einer festen Berufsvorstellung sollte man offen bleiben für Alternativen",
+      "translation": "حتى مع وجود تصور مهني ثابت، ينبغي للمرء أن يبقى منفتحاً على البدائل."
+    },
+    {
+      "letter": "j",
+      "text": "Vor der Wahl eines Studiums muss man sich seinen persönlichen Fähigkeiten auseinandersetzen.",
+      "translation": "قبل اختيار التخصص الدراسي يجب على المرء أن يدرس ويفكر ملياً في قدراته الشخصية."
+    }
+  ],
+  "answers": [
+    {
+      "id": 47,
+      "speaker": 1,
+      "correctLetter": "j"
+    },
+    {
+      "id": 48,
+      "speaker": 2,
+      "correctLetter": "h"
+    },
+    {
+      "id": 49,
+      "speaker": 3,
+      "correctLetter": "c"
+    },
+    {
+      "id": 50,
+      "speaker": 4,
+      "correctLetter": "a"
+    },
+    {
+      "id": 51,
+      "speaker": 5,
+      "correctLetter": "g"
+    },
+    {
+      "id": 52,
+      "speaker": 6,
+      "correctLetter": "i"
+    },
+    {
+      "id": 53,
+      "speaker": 7,
+      "correctLetter": "e"
+    },
+    {
+      "id": 54,
+      "speaker": 8,
+      "correctLetter": "d"
+    }
+  ]
+}

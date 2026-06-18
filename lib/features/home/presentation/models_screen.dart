@@ -191,6 +191,8 @@ class _ModelCard extends StatelessWidget {
             context.push('/reading_exercise/$sectionId/${model.id}?slug=${model.slug}');
           } else if (sectionId == 6) {
             context.push('/hv2_exercise/$sectionId/${model.id}?slug=${model.slug}');
+          } else if (sectionId == 5) {
+            context.push('/hv1_exercise/$sectionId/${model.id}?slug=${model.slug}');
           } else {
             context.push('/exercise/$sectionId/${model.id}?slug=${model.slug}');
           }
@@ -318,6 +320,8 @@ class _ModelGridCardState extends State<_ModelGridCard> {
               context.push('/reading_exercise/${widget.sectionId}/${widget.model.id}?slug=${widget.model.slug}');
             } else if (widget.sectionId == 6) {
               context.push('/hv2_exercise/${widget.sectionId}/${widget.model.id}?slug=${widget.model.slug}');
+            } else if (widget.sectionId == 5) {
+              context.push('/hv1_exercise/${widget.sectionId}/${widget.model.id}?slug=${widget.model.slug}');
             } else {
               context.push('/exercise/${widget.sectionId}/${widget.model.id}?slug=${widget.model.slug}');
             }

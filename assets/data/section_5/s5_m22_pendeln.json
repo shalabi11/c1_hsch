@@ -1,0 +1,99 @@
+{
+  "id": "s5_m22_pendeln",
+  "title": "Pendeln",
+  "telegramLink": "https://t.me/Hv1_voices/12?single",
+  "statements": [
+    {
+      "letter": "a",
+      "text": "An das tägliche Fahren gewöhnt man sich schnell.",
+      "translation": "يعتاد المرء بسرعة على القيادة (السفر) اليومية."
+    },
+    {
+      "letter": "b",
+      "text": "Der Zeitverlust beim Pendeln wird durch den familiären Rückhalt ausgeglichen.",
+      "translation": "ضياع الوقت أثناء التنقل (السفر اليومي) يتم تعويضه من خلال الدعم العائلي."
+    },
+    {
+      "letter": "c",
+      "text": "In der Unistadt zu wohnen kann sich negativ auf die Leistungen auswirken.",
+      "translation": "العيش في المدينة الجامعية يمكن أن يؤثر سلباً على الأداء."
+    },
+    {
+      "letter": "d",
+      "text": "Lange Fahrtzeiten können sehr kräftezehrend sein.",
+      "translation": "أوقات السفر الطويلة يمكن أن تكون مرهقة (مستنزفة للطاقة) للغاية."
+    },
+    {
+      "letter": "e",
+      "text": "Pendeln hat Auswirkungen auf das soziale Leben der Studenten.",
+      "translation": "التنقل (السفر اليومي) له تأثير على الحياة الاجتماعية للطلاب."
+    },
+    {
+      "letter": "f",
+      "text": "Pendeln ist für mich nur eine Notlösung.",
+      "translation": "التنقل بالنسبة لي هو مجرد حل اضطراري."
+    },
+    {
+      "letter": "g",
+      "text": "Die eigene Wohnung fördert die Selbstständigkeit der Studenten.",
+      "translation": "الشقة الخاصة تعزز استقلالية الطلاب."
+    },
+    {
+      "letter": "h",
+      "text": "Studenten sollten möglichst weiter im Elternhaus bleiben.",
+      "translation": "ينبغي على الطلاب البقاء في منزل الوالدين قدر الإمكان."
+    },
+    {
+      "letter": "i",
+      "text": "Durch die wegfallenden Mietkosten kann ich Rücklagen bilden.",
+      "translation": "من خلال توفير (إسقاط) تكاليف الإيجار يمكنني تكوين مدخرات."
+    },
+    {
+      "letter": "j",
+      "text": "Ich muss mein Studium genau planen, weil ich pendele.",
+      "translation": "يجب علي تخطيط دراستي بدقة لأنني أتنقل."
+    }
+  ],
+  "answers": [
+    {
+      "id": 87,
+      "speaker": 1,
+      "correctLetter": "f"
+    },
+    {
+      "id": 88,
+      "speaker": 2,
+      "correctLetter": "d"
+    },
+    {
+      "id": 89,
+      "speaker": 3,
+      "correctLetter": "e"
+    },
+    {
+      "id": 90,
+      "speaker": 4,
+      "correctLetter": "b"
+    },
+    {
+      "id": 91,
+      "speaker": 5,
+      "correctLetter": "h"
+    },
+    {
+      "id": 92,
+      "speaker": 6,
+      "correctLetter": "d"
+    },
+    {
+      "id": 93,
+      "speaker": 7,
+      "correctLetter": "g"
+    },
+    {
+      "id": 94,
+      "speaker": 8,
+      "correctLetter": "i"
+    }
+  ]
+}

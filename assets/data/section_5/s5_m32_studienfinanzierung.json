@@ -1,0 +1,99 @@
+{
+  "id": "s5_m32_studienfinanzierung",
+  "title": "Studienfinanzierung",
+  "telegramLink": "",
+  "statements": [
+    {
+      "letter": "a",
+      "text": "Da Akademiker mehr verdienen, sollten sie die Kosten für ihr Studium selbst tragen.",
+      "translation": "بما أن الأكاديميين يكسبون أكثر، ينبغي عليهم تحمل تكاليف دراستهم بأنفسهم."
+    },
+    {
+      "letter": "b",
+      "text": "Der jungen Generation sollte frühzeitig finanzielle Bildung vermittelt werden.",
+      "translation": "يجب تزويد جيل الشباب بالثقافة المالية في وقت مبكر."
+    },
+    {
+      "letter": "c",
+      "text": "Durch staatliche Förderung soll Zugang zur Hochschulbildung für alle hergestellt werden",
+      "translation": "من خلال الدعم الحكومي، ينبغي إتاحة الوصول إلى التعليم العالي للجميع."
+    },
+    {
+      "letter": "d",
+      "text": "Es fördert die Selbständigkeit, wenn Studierende ihren Lebensunterhalt durch Nebenjobs bestreiten",
+      "translation": "إن تأمين الطلاب لمستوى معيشتهم من خلال وظائف بدوام جزئي يعزز استقلاليتهم."
+    },
+    {
+      "letter": "e",
+      "text": "Es sollten nur Studiengänge, die auf dem Arbeitsmarkt gefragt sind, gefördert werden.",
+      "translation": "ينبغي فقط دعم التخصصات الدراسية المطلوبة في سوق العمل."
+    },
+    {
+      "letter": "f",
+      "text": "Für die Finanzierung des Studiums sind in erster Linie die Eltern verantwortlich.",
+      "translation": "الآباء هم المسؤولون في المقام الأول عن تمويل الدراسة."
+    },
+    {
+      "letter": "g",
+      "text": "Man sollte Schulabgänger darauf aufmerksam machen, dass sie auch ohne Studium gute Verdienstmöglichkeiten haben können.",
+      "translation": "ينبغي لفت انتباه خريجي المدارس إلى أنه يمكن أن تكون لديهم فرص كسب جيدة حتى بدون دراسة جامعية."
+    },
+    {
+      "letter": "h",
+      "text": "Nicht alle Eltern sind bereit, ihren Kindern das Studium zu finanzieren.",
+      "translation": "ليس كل الآباء مستعدين لتمويل دراسة أبنائهم."
+    },
+    {
+      "letter": "i",
+      "text": "Staatliche Förderung darf nicht vom Studienfach abhängig sein.",
+      "translation": "الدعم الحكومي يجب ألا يعتمد على التخصص الدراسي."
+    },
+    {
+      "letter": "j",
+      "text": "Unternehmen sollten mehr Fördermöglichkeiten für ihre zukünftigen Arbeitskräfte zur Verfügung stellen.",
+      "translation": "ينبغي على الشركات توفير المزيد من فرص الدعم للقوى العاملة المستقبلية لديها."
+    }
+  ],
+  "answers": [
+    {
+      "id": 95,
+      "speaker": 1,
+      "correctLetter": "c"
+    },
+    {
+      "id": 96,
+      "speaker": 2,
+      "correctLetter": "d"
+    },
+    {
+      "id": 97,
+      "speaker": 3,
+      "correctLetter": "b"
+    },
+    {
+      "id": 98,
+      "speaker": 4,
+      "correctLetter": "j"
+    },
+    {
+      "id": 99,
+      "speaker": 5,
+      "correctLetter": "e"
+    },
+    {
+      "id": 100,
+      "speaker": 6,
+      "correctLetter": "a"
+    },
+    {
+      "id": 101,
+      "speaker": 7,
+      "correctLetter": "g"
+    },
+    {
+      "id": 102,
+      "speaker": 8,
+      "correctLetter": "h"
+    }
+  ]
+}

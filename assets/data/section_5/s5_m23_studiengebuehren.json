@@ -1,0 +1,99 @@
+{
+  "id": "s5_m23_studiengebuehren",
+  "title": "Studiengebühren",
+  "telegramLink": "https://t.me/Hv1_voices/6?single",
+  "statements": [
+    {
+      "letter": "a",
+      "text": "Auch Beschäftigte der Universität bekommen die Auswirkungen der Studierenden zu spüren.",
+      "translation": "الموظفون في الجامعة أيضاً يلمسون (يشعرون بـ) آثار الطلاب."
+    },
+    {
+      "letter": "b",
+      "text": "Studiengebühren können auch von sozial schwächeren Studierenden getragen werden.",
+      "translation": "يمكن للطلاب الأضعف اجتماعياً أيضاً تحمل الرسوم الدراسية."
+    },
+    {
+      "letter": "c",
+      "text": "Durch staatliche Hilfen ist für alle eine Finanzierung des studiums möglich.",
+      "translation": "من خلال المساعدات الحكومية، يمكن للجميع تمويل دراستهم."
+    },
+    {
+      "letter": "d",
+      "text": "Eltern sollten Ihren Kindern das Studium und damit auch die Gebühren finanzieren.",
+      "translation": "ينبغي على الآباء تمويل دراسة أبنائهم وبالتالي تمويل الرسوم أيضاً."
+    },
+    {
+      "letter": "e",
+      "text": "Studiengebühren haben die Studienbedingungen nicht zum Positiven verändert.",
+      "translation": "الرسوم الدراسية لم تغير ظروف الدراسة نحو الأفضل."
+    },
+    {
+      "letter": "f",
+      "text": "Gebühren könnten möglicherweise die Quote der Studienabbrecher senken.",
+      "translation": "الرسوم يمكن أن تخفض من نسبة المنقطعين عن (تاركي) الدراسة."
+    },
+    {
+      "letter": "g",
+      "text": "Studiengebühren sind zumindest in Naturwissenschaften sinnvoll.",
+      "translation": "الرسوم الدراسية منطقية على الأقل في العلوم الطبيعية."
+    },
+    {
+      "letter": "h",
+      "text": "Studiengebühren sind eine zusätzliche Belastung für die Eltern von Studierenden. (معدل: Studiengebühren bedeuten hohe zusätzliche Ausgaben für die Familien.)",
+      "translation": "الرسوم الدراسية هي عبء إضافي على أولياء أمور الطلاب. (معدل: الرسوم الدراسية تعني نفقات إضافية كبيرة للعائلات.)"
+    },
+    {
+      "letter": "i",
+      "text": "Studieninteressierte bevorzugen Bundesländer ohne Studiengebühren.",
+      "translation": "المهتمون بالدراسة يفضلون الولايات التي لا تفرض رسوماً دراسية."
+    },
+    {
+      "letter": "j",
+      "text": "Studiengebühren verlängern die Studiendauer. (معدل: Studiengebühren führen dazu, dass Studierende durch Nebenjobs Zeit verlieren.)",
+      "translation": "الرسوم الدراسية تطيل مدة الدراسة. (معدل: الرسوم الدراسية تؤدي إلى إضاعة الطلاب للوقت بسبب الوظائف بدوام جزئي.)"
+    }
+  ],
+  "answers": [
+    {
+      "id": 135,
+      "speaker": 1,
+      "correctLetter": "i"
+    },
+    {
+      "id": 136,
+      "speaker": 2,
+      "correctLetter": "j"
+    },
+    {
+      "id": 137,
+      "speaker": 3,
+      "correctLetter": "h"
+    },
+    {
+      "id": 138,
+      "speaker": 4,
+      "correctLetter": "e"
+    },
+    {
+      "id": 139,
+      "speaker": 5,
+      "correctLetter": "a"
+    },
+    {
+      "id": 140,
+      "speaker": 6,
+      "correctLetter": "f"
+    },
+    {
+      "id": 141,
+      "speaker": 7,
+      "correctLetter": "c"
+    },
+    {
+      "id": 142,
+      "speaker": 8,
+      "correctLetter": "g"
+    }
+  ]
+}

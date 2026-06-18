@@ -377,6 +377,61 @@
           "id": 15,
           "name": "15. Studienwahl",
           "slug": "s5_m15_studienwahl"
+        },
+        {
+          "id": 16,
+          "name": "16. Glück",
+          "slug": "s5_m16_glueck"
+        },
+        {
+          "id": 17,
+          "name": "17. Eltern und Studium",
+          "slug": "s5_m17_eltern_und_studium"
+        },
+        {
+          "id": 19,
+          "name": "19. Wohnkredit/Immobilien",
+          "slug": "s5_m19_wohnkredit"
+        },
+        {
+          "id": 21,
+          "name": "21. Tempolimit oder Geschwindigkeitslimit",
+          "slug": "s5_m21_tempolimit"
+        },
+        {
+          "id": 22,
+          "name": "22. Pendeln",
+          "slug": "s5_m22_pendeln"
+        },
+        {
+          "id": 23,
+          "name": "23. Studiengebühren",
+          "slug": "s5_m23_studiengebuehren"
+        },
+        {
+          "id": 32,
+          "name": "32. Studienfinanzierung",
+          "slug": "s5_m32_studienfinanzierung"
+        },
+        {
+          "id": 36,
+          "name": "36+34. Grünflächen/gärten",
+          "slug": "s5_m36_34_gruenflaechen"
+        },
+        {
+          "id": 38,
+          "name": "38. Nebenjob",
+          "slug": "s5_m38_nebenjob"
+        },
+        {
+          "id": 40,
+          "name": "40. Ernährung",
+          "slug": "s5_m40_ernaehrung"
+        },
+        {
+          "id": 41,
+          "name": "41. Hausarbeiten",
+          "slug": "s5_m41_hausarbeiten"
         }
       ]
     },

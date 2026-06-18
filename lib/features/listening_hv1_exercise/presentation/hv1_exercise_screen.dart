@@ -145,7 +145,7 @@ class _HV1ExerciseScreenState extends ConsumerState<HV1ExerciseScreen> {
                     onPressed: allAnswered
                         ? () {
                             context.push(
-                                '/results/${widget.sectionId}/${widget.modelId}?slug=${widget.slug}');
+                                '/hv1_results/${widget.sectionId}/${widget.modelId}?slug=${widget.slug}');
                           }
                         : null,
                     style: ElevatedButton.styleFrom(

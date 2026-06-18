@@ -1,0 +1,99 @@
+{
+  "id": "s5_m38_nebenjob",
+  "title": "Nebenjob",
+  "telegramLink": "",
+  "statements": [
+    {
+      "letter": "a",
+      "text": "Bei der Suche nach einer Arbeitsstelle kann es nützlich sein, durch Nebenjobs Praxiserfahrung gesammelt zu haben.",
+      "translation": "عند البحث عن وظيفة، يمكن أن يكون من المفيد اكتساب خبرة عملية من خلال الوظائف بدوام جزئي."
+    },
+    {
+      "letter": "b",
+      "text": "Man sollte einen Nebenjob während des Studiums nutzen, um Kontakte zu Unternehmen zu knüpfen.",
+      "translation": "ينبغي للمرء استغلال وظيفة بدوام جزئي أثناء الدراسة لبناء علاقات مع الشركات."
+    },
+    {
+      "letter": "c",
+      "text": "Es kann die Motivation für das Studium negativ beeinflussen, wenn dieses von den Eltern finanziert wird.",
+      "translation": "قد يؤثر التمويل من قبل الوالدين سلباً على الدافع (الحافز) للدراسة."
+    },
+    {
+      "letter": "d",
+      "text": "Jobs neben dem Studium tragen dazu bei, dass man sich persönlich weiterentwickeln kann.",
+      "translation": "الوظائف بجانب الدراسة تساهم في التطور الشخصي للمرء."
+    },
+    {
+      "letter": "e",
+      "text": "Nebenjobs können sich positiv auf den Lernerfolg auswirken.",
+      "translation": "الوظائف بدوام جزئي يمكن أن تؤثر بشكل إيجابي على نجاح التعلم."
+    },
+    {
+      "letter": "f",
+      "text": "Um seine Freizeit genießen zu können, braucht man ausreichend finanzielle Mittel.",
+      "translation": "من أجل الاستمتاع بوقت الفراغ، يحتاج المرء إلى موارد مالية كافية."
+    },
+    {
+      "letter": "g",
+      "text": "Wenn man dauerhaft neben dem Studium arbeitet, könnten Stress und Leistungsdruck zu gesundheitlichen Problemen führen.",
+      "translation": "إذا عمل المرء بشكل دائم بجانب الدراسة، فإن التوتر وضغط الأداء يمكن أن يؤديا إلى مشاكل صحية."
+    },
+    {
+      "letter": "h",
+      "text": "Wer nebenbei arbeitet, kann sich nicht genug auf das Studium konzentrieren.",
+      "translation": "من يعمل بجانب دراسته، لا يستطيع التركيز بشكل كافٍ على الدراسة."
+    },
+    {
+      "letter": "i",
+      "text": "Wer nicht finanziell darauf angewiesen ist, sollte neben dem Studium nicht arbeiten.",
+      "translation": "من ليس بحاجة مالية (غير معتمد عليها مالياً)، ينبغي ألا يعمل بجانب الدراسة."
+    },
+    {
+      "letter": "j",
+      "text": "Wer sein Studium selbst finanziert, gewinnt Freiheit und muss seine Entscheidungen nicht vor anderen rechtfertigen.",
+      "translation": "من يمول دراسته بنفسه، يكتسب الحرية ولا يضطر لتبرير قراراته أمام الآخرين."
+    }
+  ],
+  "answers": [
+    {
+      "id": 111,
+      "speaker": 1,
+      "correctLetter": "c"
+    },
+    {
+      "id": 112,
+      "speaker": 2,
+      "correctLetter": "d"
+    },
+    {
+      "id": 113,
+      "speaker": 3,
+      "correctLetter": "h"
+    },
+    {
+      "id": 114,
+      "speaker": 4,
+      "correctLetter": "i"
+    },
+    {
+      "id": 115,
+      "speaker": 5,
+      "correctLetter": "e"
+    },
+    {
+      "id": 116,
+      "speaker": 6,
+      "correctLetter": "j"
+    },
+    {
+      "id": 117,
+      "speaker": 7,
+      "correctLetter": "a"
+    },
+    {
+      "id": 118,
+      "speaker": 8,
+      "correctLetter": "f"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "s5_m41_hausarbeiten",
+  "title": "Hausarbeiten",
+  "telegramLink": "",
+  "statements": [
+    {
+      "letter": "a",
+      "text": "Der mit Hausarbeiten verbundene wissenschaftliche Anspruch überfordert Studierende.",
+      "translation": "المتطلبات العلمية المرتبطة بالأبحاث الجامعية (الواجبات المنزلية) تفوق طاقة (ترهق) الطلاب."
+    },
+    {
+      "letter": "b",
+      "text": "Dozenten sollten sich mehr Zeit nehmen, um die Hausarbeiten mit den Studierenden zu besprechen.",
+      "translation": "ينبغي على المحاضرين أخذ المزيد من الوقت لمناقشة الأبحاث الجامعية مع الطلاب."
+    },
+    {
+      "letter": "c",
+      "text": "Die Studiengänge sollten so gestaltet werden, dass die Studierenden mehr Zeit für Hausarbeiten haben.",
+      "translation": "ينبغي تصميم التخصصات الدراسية بحيث يكون لدى الطلاب المزيد من الوقت للأبحاث الجامعية."
+    },
+    {
+      "letter": "d",
+      "text": "Der wichtigste Zweck von Hausarbeiten ist es, das Durchhaltevermögen der Studierenden zu stärken.",
+      "translation": "الغرض الأهم من الأبحاث الجامعية هو تعزيز قوة التحمل (المثابرة) لدى الطلاب."
+    },
+    {
+      "letter": "e",
+      "text": "Da Hausarbeiten Betrugsversuche ermöglichen, sollte auf andere Leistungsnachweise ausgewichen werden.",
+      "translation": "نظراً لأن الأبحاث الجامعية تتيح محاولات الغش، يجب اللجوء إلى إثباتات أداء أخرى (طرق تقييم بديلة)."
+    },
+    {
+      "letter": "f",
+      "text": "Auch für Lehrkräfte stellen Hausarbeiten eine Belastung dar.",
+      "translation": "الأبحاث الجامعية تمثل عبئاً على المعلمين (الأساتذة) أيضاً."
+    },
+    {
+      "letter": "g",
+      "text": "Hausarbeiten sollten nur in bestimmten Fächern als Leistungsnachweis verwendet werden.",
+      "translation": "يجب استخدام الأبحاث الجامعية فقط كإثبات للأداء في مواد (تخصصات) معينة."
+    },
+    {
+      "letter": "h",
+      "text": "Um zu lernen, wissenschaftlich zu arbeiten, sind Hausarbeiten unverzichtbar.",
+      "translation": "من أجل تعلم العمل بطريقة علمية، فإن الأبحاث الجامعية لا غنى عنها."
+    },
+    {
+      "letter": "i",
+      "text": "Da Studierende einen engen Zeitplan haben, verursachen Hausarbeiten unnötigen Stress.",
+      "translation": "بما أن لدى الطلاب جدولاً زمنياً ضيقاً، فإن الأبحاث الجامعية تسبب توتراً غير ضروري."
+    },
+    {
+      "letter": "j",
+      "text": "Wissenschaftliche Hausarbeiten sollten durch beruflich relevante Schreibübungen ersetzt werden.",
+      "translation": "ينبغي استبدال الأبحاث الجامعية العلمية بتمارين كتابة ذات صلة بالمهنة."
+    }
+  ],
+  "answers": [
+    {
+      "id": 127,
+      "speaker": 1,
+      "correctLetter": "j"
+    },
+    {
+      "id": 128,
+      "speaker": 2,
+      "correctLetter": "f"
+    },
+    {
+      "id": 129,
+      "speaker": 3,
+      "correctLetter": "a"
+    },
+    {
+      "id": 130,
+      "speaker": 4,
+      "correctLetter": "i"
+    },
+    {
+      "id": 131,
+      "speaker": 5,
+      "correctLetter": "c"
+    },
+    {
+      "id": 132,
+      "speaker": 6,
+      "correctLetter": "h"
+    },
+    {
+      "id": 133,
+      "speaker": 7,
+      "correctLetter": "e"
+    },
+    {
+      "id": 134,
+      "speaker": 8,
+      "correctLetter": "g"
+    }
+  ]
+}

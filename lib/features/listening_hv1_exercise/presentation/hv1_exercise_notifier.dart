@@ -65,4 +65,8 @@ class HV1ExerciseNotifier extends StateNotifier<HV1ExerciseState> {
     
     state = state.copyWith(selectedAnswers: newAnswers);
   }
+
+  void reset() {
+    state = state.copyWith(selectedAnswers: const {});
+  }
 }

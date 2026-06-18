@@ -1,0 +1,99 @@
+{
+  "id": "s5_m36_34_gruenflaechen",
+  "title": "Grünflächen/gärten",
+  "telegramLink": "https://t.me/Hv1_voices/3?single",
+  "statements": [
+    {
+      "letter": "a",
+      "text": "Städtische Grünflächen sind oft kein Musterbeispiel an Sauberkeit.",
+      "translation": "المساحات الخضراء في المدينة غالباً ما تكون ليست نموذجاً يُحتذى به في النظافة."
+    },
+    {
+      "letter": "b",
+      "text": "Gemeinschaftsgärten stärken den Zusammenhalt im Stadtviertel.",
+      "translation": "الحدائق المجتمعية تعزز التماسك (الترابط) في الحي."
+    },
+    {
+      "letter": "c",
+      "text": "Eine Stadt bietet mehr unkonventionelle Möglichkeiten, Grünflächen zu schaffen, als gedacht.",
+      "translation": "توفر المدينة إمكانيات غير تقليدية لإنشاء مساحات خضراء أكثر مما يُعتقد."
+    },
+    {
+      "letter": "d",
+      "text": "Gemeinschaftsgärten können auch zu pädagogischen Zwecken eingesetzt werden.",
+      "translation": "يمكن أيضاً استخدام الحدائق المجتمعية لأغراض تعليمية (تربوية)."
+    },
+    {
+      "letter": "e",
+      "text": "Die Begrünung von Städten hat positive Auswirkungen auf das Stadtklima.",
+      "translation": "تشجير (تخضير) المدن له تأثيرات إيجابية على مناخ المدينة."
+    },
+    {
+      "letter": "f",
+      "text": "Lehrgärten in Bildungseinrichtungen sind zu kostenintensiv.",
+      "translation": "الحدائق التعليمية في المؤسسات التعليمية مكلفة للغاية."
+    },
+    {
+      "letter": "g",
+      "text": "Grünflächen wirken sich positiv auf die psychische Gesundheit aus.",
+      "translation": "المساحات الخضراء تؤثر بشكل إيجابي على الصحة النفسية."
+    },
+    {
+      "letter": "h",
+      "text": "Projekte für mehr Grünflächen stoßen auf Widerstand bei Politikern.",
+      "translation": "مشاريع زيادة المساحات الخضراء تواجه مقاومة (معارضة) من السياسيين."
+    },
+    {
+      "letter": "i",
+      "text": "Städte sind keine gute Umgebung für den Anbau von Gemüse.",
+      "translation": "المدن ليست بيئة جيدة لزراعة الخضروات."
+    },
+    {
+      "letter": "j",
+      "text": "Das Dach über dem Kopf ist wichtiger als die selbstgezogene Mohrrübe in der Hand.",
+      "translation": "توفير مأوى (سقف فوق الرأس) أهم من الجزر المزروع ذاتياً في اليد."
+    }
+  ],
+  "answers": [
+    {
+      "id": 103,
+      "speaker": 1,
+      "correctLetter": "c"
+    },
+    {
+      "id": 104,
+      "speaker": 2,
+      "correctLetter": "i"
+    },
+    {
+      "id": 105,
+      "speaker": 3,
+      "correctLetter": "b"
+    },
+    {
+      "id": 106,
+      "speaker": 4,
+      "correctLetter": "d"
+    },
+    {
+      "id": 107,
+      "speaker": 5,
+      "correctLetter": "e"
+    },
+    {
+      "id": 108,
+      "speaker": 6,
+      "correctLetter": "j"
+    },
+    {
+      "id": 109,
+      "speaker": 7,
+      "correctLetter": "g"
+    },
+    {
+      "id": 110,
+      "speaker": 8,
+      "correctLetter": "a"
+    }
+  ]
+}

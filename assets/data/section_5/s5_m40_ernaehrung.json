@@ -1,0 +1,99 @@
+{
+  "id": "s5_m40_ernaehrung",
+  "title": "Ernährung",
+  "telegramLink": "",
+  "statements": [
+    {
+      "letter": "a",
+      "text": "Es erfordert nicht viel Mühe, auf eine ausgewogene Ernährung zu achten.",
+      "translation": "لا يتطلب الأمر الكثير من الجهد للانتباه إلى نظام غذائي متوازن."
+    },
+    {
+      "letter": "b",
+      "text": "Durch die Wahl gesunder Nahrungsmittel lässt sich die Lernfähigkeit positiv beeinflussen.",
+      "translation": "يمكن التأثير بشكل إيجابي على القدرة على التعلم من خلال اختيار الأطعمة الصحية."
+    },
+    {
+      "letter": "c",
+      "text": "Zeitmangel und ein anstrengender Alltag sind Hindernisse für eine gesunde Ernährung.",
+      "translation": "ضيق الوقت والحياة اليومية المرهقة هما عقبات أمام اتباع نظام غذائي صحي."
+    },
+    {
+      "letter": "d",
+      "text": "Die Vorteile gesunder Ernährung wiegen den damit verbundenen Aufwand nicht auf.",
+      "translation": "فوائد النظام الغذائي الصحي لا تعوض (توازي) الجهد المبذول فيه."
+    },
+    {
+      "letter": "e",
+      "text": "Der erste Schritt zu einer gesünderen Ernährung ist es, die eigenen Gewohnheiten zu überprüfen.",
+      "translation": "الخطوة الأولى نحو نظام غذائي صحي أكثر هي مراجعة العادات الخاصة بالمرء."
+    },
+    {
+      "letter": "f",
+      "text": "Gemeinsame Mahlzeiten wirken sich positiv auf das Wohlbefinden aus.",
+      "translation": "الوجبات المشتركة لها تأثير إيجابي على الرفاهية."
+    },
+    {
+      "letter": "g",
+      "text": "Es hängt auch von den eigenen finanziellen Möglichkeiten ab, ob man sich gesund ernähren kann.",
+      "translation": "يعتمد الأمر أيضاً على الإمكانيات المالية الخاصة بالمرء فيما إذا كان بإمكانه تناول طعام صحي."
+    },
+    {
+      "letter": "h",
+      "text": "Wenn man die Mahlzeiten vorausplant und selbst kocht, kann man sich auch mit kleinem Geldbeutel gesund ernähren.",
+      "translation": "إذا كان المرء يخطط للوجبات مسبقاً ويطبخ بنفسه، فبإمكانه أيضاً تناول طعام صحي بميزانية صغيرة."
+    },
+    {
+      "letter": "i",
+      "text": "Um in Lernphasen nicht zu ermüden, sollte man vor allem darauf achten, nicht übermäßig große Portionen zu essen.",
+      "translation": "لتجنب التعب (الإرهاق) أثناء فترات التعلم، يجب الانتباه بشكل خاص إلى عدم تناول حصص كبيرة جداً."
+    },
+    {
+      "letter": "j",
+      "text": "Genuss beim Essen und ein ausgeglichenes Essverhalten schließen einander nicht aus.",
+      "translation": "الاستمتاع بتناول الطعام وسلوك الأكل المتوازن لا يستبعد أحدهما الآخر."
+    }
+  ],
+  "answers": [
+    {
+      "id": 119,
+      "speaker": 1,
+      "correctLetter": "c"
+    },
+    {
+      "id": 120,
+      "speaker": 2,
+      "correctLetter": "f"
+    },
+    {
+      "id": 121,
+      "speaker": 3,
+      "correctLetter": "h"
+    },
+    {
+      "id": 122,
+      "speaker": 4,
+      "correctLetter": "b"
+    },
+    {
+      "id": 123,
+      "speaker": 5,
+      "correctLetter": "d"
+    },
+    {
+      "id": 124,
+      "speaker": 6,
+      "correctLetter": "e"
+    },
+    {
+      "id": 125,
+      "speaker": 7,
+      "correctLetter": "j"
+    },
+    {
+      "id": 126,
+      "speaker": 8,
+      "correctLetter": "g"
+    }
+  ]
+}

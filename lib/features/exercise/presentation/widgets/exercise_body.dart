@@ -134,7 +134,8 @@ class ExerciseBody extends StatelessWidget {
     ).whenComplete(notifier.closeBlank);
   }
 
-  String _feedbackMessage(BuildContext context, ExerciseState state, Exercise exercise) {
+  String _feedbackMessage(
+      BuildContext context, ExerciseState state, Exercise exercise) {
     final l10n = AppLocalizations.of(context)!;
     if (state.lastAnswerCorrect) return l10n.feedbackCorrect;
     final lastBlankId = state.selectedAnswers.keys.last;

@@ -296,73 +296,73 @@
       "isLocked": false,
       "models": [
         {
-          "id": 1,
-          "name": "Lernen wird zum Spiel",
+          "id": 32,
+          "name": "Lernen wird zum Spiel 32",
           "slug": "lernen_wird_zum_spiel"
         },
         {
-          "id": 2,
-          "name": "Die chronobiologischen Rhythmen der Kinder",
+          "id": 31,
+          "name": "Die chronobiologischen Rhythmen der Kinder 31",
           "slug": "chronobiologische_rhythmen"
         },
         {
-          "id": 3,
-          "name": "Diktate – lernpsychologisch ungünstig?",
+          "id": 37,
+          "name": "Diktate – lernpsychologisch ungünstig? 37",
           "slug": "diktate"
         },
         {
-          "id": 4,
-          "name": "Warum Spielen Kinder schlau macht",
+          "id": 35,
+          "name": "Warum Spielen Kinder schlau macht 35",
           "slug": "spielen_macht_schlau"
         },
         {
-          "id": 5,
-          "name": "Über die Anfänge der Restaurantkultur",
+          "id": 34,
+          "name": "Über die Anfänge der Restaurantkultur 34",
           "slug": "restaurantkultur"
         },
         {
-          "id": 6,
-          "name": "Unterschätzte Pflanzen",
+          "id": 39,
+          "name": "Unterschätzte Pflanzen 39",
           "slug": "unterschaetzte_pflanzen"
         },
         {
-          "id": 7,
-          "name": "Wieso wir irgendwann aufhören, neue Musik zu hören",
+          "id": 41,
+          "name": "Wieso wir irgendwann aufhören, neue Musik zu hören 41",
           "slug": "aufhoeren_neue_musik_zu_hoeren"
         },
         {
-          "id": 8,
-          "name": "Bio-giftiger als Chemie",
+          "id": 18,
+          "name": "Bio-giftiger als Chemie 18",
           "slug": "bio_giftiger"
         },
         {
-          "id": 9,
-          "name": "Die Ordnung der Dinge",
+          "id": 20,
+          "name": "Die Ordnung der Dinge 20",
           "slug": "ordnung_der_dinge"
         },
         {
-          "id": 10,
-          "name": "Eine kurze Geschichte der Werbung",
+          "id": 21,
+          "name": "Eine kurze Geschichte der Werbung 21",
           "slug": "geschichte_der_werbung"
         },
         {
-          "id": 11,
-          "name": "Hat der Hörsaal noch Zukunft?",
+          "id": 23,
+          "name": "Hat der Hörsaal noch Zukunft? 23",
           "slug": "zukunft_hoersaal"
         },
         {
-          "id": 12,
-          "name": "Sprache: Wenn Wörter verschwinden",
+          "id": 15,
+          "name": "Sprache: Wenn Wörter verschwinden 15",
           "slug": "woerter_verschwinden"
         },
         {
-          "id": 13,
-          "name": "Wie kommen Hochs und Tiefs zu ihren Namen?",
+          "id": 16,
+          "name": "Wie kommen Hochs und Tiefs zu ihren Namen? 16",
           "slug": "hochs_und_tiefs"
         },
         {
-          "id": 14,
-          "name": "Wie das Geld in die Welt kam",
+          "id": 19,
+          "name": "Wie das Geld in die Welt kam 19",
           "slug": "geld"
         }
       ]

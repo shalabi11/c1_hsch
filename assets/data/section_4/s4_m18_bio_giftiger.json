@@ -1,7 +1,7 @@
 {
   "meta": {
     "section": 4,
-    "model": 8,
+    "model": 18,
     "section_name": "Abschnitt 4",
     "model_name": "Bio-giftiger als Chemie",
     "level": "C1"
@@ -31,112 +31,222 @@
   "questions": [
     {
       "number": "25",
-      "options": ["aufgrund der Regel", "entgegen der Regel", "in der Regel", "nach der Regel"],
+      "options": [
+        "aufgrund der Regel",
+        "entgegen der Regel",
+        "in der Regel",
+        "nach der Regel"
+      ],
       "correct_answer": "c"
     },
     {
       "number": "26",
-      "options": ["anbringt", "einbringt", "hervorbringt", "weiterbringt"],
+      "options": [
+        "anbringt",
+        "einbringt",
+        "hervorbringt",
+        "weiterbringt"
+      ],
       "correct_answer": "c"
     },
     {
       "number": "27",
-      "options": ["Substansen", "Substanzen", "Substanzen", "Supstanzen"],
+      "options": [
+        "Substansen",
+        "Substanzen",
+        "Substanzen",
+        "Supstanzen"
+      ],
       "correct_answer": "b"
     },
     {
       "number": "28",
-      "options": ["bitter", "herb", "rau", "streng"],
+      "options": [
+        "bitter",
+        "herb",
+        "rau",
+        "streng"
+      ],
       "correct_answer": "d"
     },
     {
       "number": "29",
-      "options": ["auf", "dar", "fest", "zu"],
+      "options": [
+        "auf",
+        "dar",
+        "fest",
+        "zu"
+      ],
       "correct_answer": "b"
     },
     {
       "number": "30",
-      "options": ["bezüglich", "hinsichtlich", "laut", "zufolge"],
+      "options": [
+        "bezüglich",
+        "hinsichtlich",
+        "laut",
+        "zufolge"
+      ],
       "correct_answer": "d"
     },
     {
       "number": "31",
-      "options": ["gesundheitsgefährdenden", "gesundheitsgefährdenden", "gesundheitsgefährdenden", "gesundheitsgefährdenden"],
+      "options": [
+        "gesundheitsgefährdenden",
+        "gesundheitsgefährdenden",
+        "gesundheitsgefährdenden",
+        "gesundheitsgefährdenden"
+      ],
       "correct_answer": "a"
     },
     {
       "number": "32",
-      "options": ["formieren", "konstruieren", "modellieren", "produzieren"],
+      "options": [
+        "formieren",
+        "konstruieren",
+        "modellieren",
+        "produzieren"
+      ],
       "correct_answer": "d"
     },
     {
       "number": "33",
-      "options": ["bereiten", "machen", "tun", "verursachen"],
+      "options": [
+        "bereiten",
+        "machen",
+        "tun",
+        "verursachen"
+      ],
       "correct_answer": "b"
     },
     {
       "number": "34",
-      "options": ["abgeben", "hingeben", "weitergeben", "wiedergeben"],
+      "options": [
+        "abgeben",
+        "hingeben",
+        "weitergeben",
+        "wiedergeben"
+      ],
       "correct_answer": "c"
     },
     {
       "number": "35",
-      "options": ["Berechnungen", "Plänen", "Strategien", "Überlegungen"],
+      "options": [
+        "Berechnungen",
+        "Plänen",
+        "Strategien",
+        "Überlegungen"
+      ],
       "correct_answer": "c"
     },
     {
       "number": "36",
-      "options": ["lässt er", "lässt es", "lässt ihn", "lässt sich"],
+      "options": [
+        "lässt er",
+        "lässt es",
+        "lässt ihn",
+        "lässt sich"
+      ],
       "correct_answer": "d"
     },
     {
       "number": "37",
-      "options": ["also", "demnach", "insofern", "somit"],
+      "options": [
+        "also",
+        "demnach",
+        "insofern",
+        "somit"
+      ],
       "correct_answer": "a"
     },
     {
       "number": "38",
-      "options": ["ab", "aus", "herum", "zu"],
+      "options": [
+        "ab",
+        "aus",
+        "herum",
+        "zu"
+      ],
       "correct_answer": "c"
     },
     {
       "number": "39",
-      "options": ["unangenehm", "unbedenklich", "unbesorgt", "unruhig"],
+      "options": [
+        "unangenehm",
+        "unbedenklich",
+        "unbesorgt",
+        "unruhig"
+      ],
       "correct_answer": "b"
     },
     {
       "number": "40",
-      "options": ["speichert", "spritzt", "spricht", "spuckt"],
+      "options": [
+        "speichert",
+        "spritzt",
+        "spricht",
+        "spuckt"
+      ],
       "correct_answer": "a"
     },
     {
       "number": "41",
-      "options": ["behalten", "enthalten", "erhalten", "verhalten"],
+      "options": [
+        "behalten",
+        "enthalten",
+        "erhalten",
+        "verhalten"
+      ],
       "correct_answer": "b"
     },
     {
       "number": "42",
-      "options": ["Behältern", "Dosen", "Konserven", "Trägern"],
+      "options": [
+        "Behältern",
+        "Dosen",
+        "Konserven",
+        "Trägern"
+      ],
       "correct_answer": "b"
     },
     {
       "number": "43",
-      "options": ["dabei", "dafür", "damit", "dazu"],
+      "options": [
+        "dabei",
+        "dafür",
+        "damit",
+        "dazu"
+      ],
       "correct_answer": "d"
     },
     {
       "number": "44",
-      "options": ["ertönt", "löst", "schlägt", "schrillt"],
+      "options": [
+        "ertönt",
+        "löst",
+        "schlägt",
+        "schrillt"
+      ],
       "correct_answer": "c"
     },
     {
       "number": "45",
-      "options": ["annähernd", "fast", "ungefähr", "ziemlich"],
+      "options": [
+        "annähernd",
+        "fast",
+        "ungefähr",
+        "ziemlich"
+      ],
       "correct_answer": "d"
     },
     {
       "number": "46",
-      "options": ["durfte", "konnte", "musste", "sollte"],
+      "options": [
+        "durfte",
+        "konnte",
+        "musste",
+        "sollte"
+      ],
       "correct_answer": "d"
     }
   ]

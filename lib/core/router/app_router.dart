@@ -9,6 +9,8 @@ import '../../features/exercise/presentation/exercise_screen.dart';
 import '../../features/exercise/presentation/results_screen.dart';
 import '../../features/reading_exercise/presentation/reading_exercise_screen.dart';
 import '../../features/reading_exercise/presentation/reading_results_screen.dart';
+import '../../features/sprachbausteine_exercise/presentation/sprachbausteine_screen.dart';
+import '../../features/sprachbausteine_exercise/presentation/sprachbausteine_results_screen.dart';
 
 final appRouter = GoRouter(
   initialLocation: '/',
@@ -97,6 +99,32 @@ final appRouter = GoRouter(
         final modelId = int.parse(state.pathParameters['modelId']!);
         final slug = state.uri.queryParameters['slug'] ?? '';
         return ReadingResultsScreen(
+          sectionId: sectionId,
+          modelId: modelId,
+          slug: slug,
+        );
+      },
+    ),
+    GoRoute(
+      path: '/sprachbausteine_exercise/:sectionId/:modelId',
+      builder: (_, state) {
+        final sectionId = int.parse(state.pathParameters['sectionId']!);
+        final modelId = int.parse(state.pathParameters['modelId']!);
+        final slug = state.uri.queryParameters['slug'] ?? '';
+        return SprachbausteineScreen(
+          sectionId: sectionId,
+          modelId: modelId,
+          slug: slug,
+        );
+      },
+    ),
+    GoRoute(
+      path: '/sprachbausteine_results/:sectionId/:modelId',
+      builder: (_, state) {
+        final sectionId = int.parse(state.pathParameters['sectionId']!);
+        final modelId = int.parse(state.pathParameters['modelId']!);
+        final slug = state.uri.queryParameters['slug'] ?? '';
+        return SprachbausteineResultsScreen(
           sectionId: sectionId,
           modelId: modelId,
           slug: slug,

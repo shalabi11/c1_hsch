@@ -94,7 +94,7 @@
       "number": "19",
       "de": "Die Bedeutung von Bio-Bauern als Mensa-Lieferanten wächst.",
       "ar": "تزداد أهمية المزارعين العضويين كمورّدين للمِنسا.",
-      "correct_answer": "+"
+      "correct_answer": "x"
     },
     {
       "number": "20",
@@ -124,7 +124,7 @@
       "number": "24",
       "de": "Welche Überschrift passt am besten zum Text?\n\na) Qualität um jeden Preis: Warum Mensa-Essen teurer wird\nb) Wider die Currywurst – Uni-Mensen setzen auf Qualität\nc) Hinter den Kulissen: Wer in der Mensa kocht",
       "ar": "ما هو العنوان الأنسب للنص؟\n\na) الجودة بأي ثمن: لماذا يصبح طعام المِنسا أغلى؟\nb) ضد نقانق الكاري – مقاصف الجامعات تعتمد على الجودة\nc) خلف الكواليس: من يطبخ في المِنسا؟",
-      "correct_answer": "c"
+      "correct_answer": "b"
     }
   ]
 }

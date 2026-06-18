@@ -1,0 +1,77 @@
+{
+  "id": "s6_m2_fahrrad",
+  "title": "Fahrrad",
+  "telegramLink": "",
+  "items": [
+    {
+      "id": 55,
+      "question": "55. Dr. Julia Henzel",
+      "answer": "a- nutzt das Fahrrad nicht oft für den Weg zur Arbeit.",
+      "questionTranslation": "55. الدكتورة جوليا هينتزل",
+      "answerTranslation": "أ- لا تستخدم الدراجة الهوائية كثيراً للذهاب إلى العمل."
+    },
+    {
+      "id": 56,
+      "question": "56. Als Julia Henzel mit ihrer Doktorarbeit begann,",
+      "answer": "b- schwebte ihr noch ein anderer Forschungsschwerpunkt",
+      "questionTranslation": "56. عندما بدأت جوليا هينتزل أطروحة الدكتوراه الخاصة بها،",
+      "answerTranslation": "ب- كان يدور في ذهنها تركيز بحثي آخر (موضوع بحث مختلف)."
+    },
+    {
+      "id": 57,
+      "question": "57. Dr. Julia Henzel weist darauf hin, dass",
+      "answer": "b- Fahrräder auch für gesellschaftliche Zwecke der Rede wert sind.",
+      "questionTranslation": "57. تشير الدكتورة جوليا هينتزل إلى أن",
+      "answerTranslation": "ب- الدراجات الهوائية تستحق الذكر والاهتمام لأغراض اجتماعية أيضاً."
+    },
+    {
+      "id": 58,
+      "question": "58. Damit mehr Autofahrer auf das Fahrrad umsteigen, müssen",
+      "answer": "b- in Städten die Bedingungen für den Radverkehr verbessert werden.",
+      "questionTranslation": "58. لكي يتحول المزيد من سائقي السيارات إلى استخدام الدراجات الهوائية، يجب",
+      "answerTranslation": "ب- تحسين ظروف حركة مرور الدراجات في المدن."
+    },
+    {
+      "id": 59,
+      "question": "59. Damit sich die Verkehrssituation in Städten verbessert, sollte man",
+      "answer": "a- die Höchstgeschwindigkeit in Städten senken.",
+      "questionTranslation": "59. من أجل تحسين الوضع المروري في المدن، ينبغي للمرء",
+      "answerTranslation": "أ- خفض السرعة القصوى المسموح بها في المدن."
+    },
+    {
+      "id": 60,
+      "question": "60. Um Kinder zum Radfahren zu motivieren,",
+      "answer": "C- ist das Vorbild der Eltern besonders wichtig.",
+      "questionTranslation": "60. لتحفيز الأطفال على ركوب الدراجات،",
+      "answerTranslation": "ج- يُعد القدوة والنموذج الذي يقدمه الآباء مهماً بشكل خاص."
+    },
+    {
+      "id": 61,
+      "question": "61. Dr. Julia Henzel meint, das der Fahrradunterricht",
+      "answer": "A- Um verschiedene Inhalte erweitert werden sollte",
+      "questionTranslation": "61. تعتقد الدكتورة جوليا هينتزل أن دروس (تعليم) ركوب الدراجات",
+      "answerTranslation": "أ- ينبغي توسيعها لتشمل محتويات ومواضيع مختلفة."
+    },
+    {
+      "id": 62,
+      "question": "62. Dr. Julia Henzel findet es ärgerlich, dass",
+      "answer": "c- der öffentliche Nahverkehr auf dem Land schlecht ausgebaut ist.",
+      "questionTranslation": "62. تجد الدكتورة جوليا هينتزل أنه من المزعج أن",
+      "answerTranslation": "ج- وسائل النقل العام المحلية في الريف ضعيفة التطوير (غير مجهزة بشكل جيد)."
+    },
+    {
+      "id": 63,
+      "question": "63. Dr. Julia Henzel empfiehlt, dass",
+      "answer": "A- Die Eltern Fahrgemeinschaften bilden.",
+      "questionTranslation": "63. توصي الدكتورة جوليا هينتزل بأن",
+      "answerTranslation": "أ- يقوم الآباء بتشكيل مجموعات مشاركة السيارات (التوصيل المشترك للأبناء)."
+    },
+    {
+      "id": 64,
+      "question": "64. Dr. Julia Henzel plant,",
+      "answer": "a- weiter in der Forschung zu arbeiten.",
+      "questionTranslation": "64. تخطط الدكتورة جوليا هينتزل لـ",
+      "answerTranslation": "أ- الاستمرار في العمل بمجال البحث العلمي."
+    }
+  ]
+}

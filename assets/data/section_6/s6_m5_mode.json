@@ -1,0 +1,77 @@
+{
+  "id": "s6_m5_mode",
+  "title": "Mode",
+  "telegramLink": "https://t.me/HV2_Voices/15",
+  "items": [
+    {
+      "id": 55,
+      "question": "55. Nadja Müller",
+      "answer": "C- wählt Mode für den Verkauf aus.",
+      "questionTranslation": "55. ناديا مولر",
+      "answerTranslation": "ج- تختار الموضة (الأزياء) من أجل بيعها."
+    },
+    {
+      "id": 56,
+      "question": "56. Die berühmten Modehäuser",
+      "answer": "b- verkaufen nur wenige ihrer Haute-Couture-Modelle.",
+      "questionTranslation": "56. دور الأزياء الشهيرة",
+      "answerTranslation": "ب- تبيع عدداً قليلاً فقط من موديلات الهوت كوتور (الأزياء الراقية) الخاصة بها."
+    },
+    {
+      "id": 57,
+      "question": "57. Bekannte Modeschöpfer",
+      "answer": "C- verdanken ihren finanziellen Erfolg dem Verkauf von Accessoires.",
+      "questionTranslation": "57. مصممو الأزياء المعروفون",
+      "answerTranslation": "ج- يدينون بنجاحهم المالي لبيع الإكسسوارات."
+    },
+    {
+      "id": 58,
+      "question": "58. In der Modebranche",
+      "answer": "b- ist Wirtschaftlichkeit der entscheidende Faktor.",
+      "questionTranslation": "58. في قطاع الموضة (صناعة الأزياء)",
+      "answerTranslation": "ب- تُعد الجدوى الاقتصادية هي العامل الحاسم."
+    },
+    {
+      "id": 59,
+      "question": "59. Nadja Müller",
+      "answer": "a- profitiert von ihren Erfahrungen bei einem Modefabrikanten.",
+      "questionTranslation": "59. ناديا مولر",
+      "answerTranslation": "أ- تستفيد من خبراتها لدى أحد مصنعي الأزياء."
+    },
+    {
+      "id": 60,
+      "question": "60. Nadja Müller",
+      "answer": "C- hat ein untrügliches Gespür für gut verkäufliche Modelle.",
+      "questionTranslation": "60. ناديا مولر",
+      "answerTranslation": "ج- لديها حس لا يخطئ للموديلات التي تباع بشكل جيد."
+    },
+    {
+      "id": 61,
+      "question": "61. Sie trifft ihre Entscheidungen",
+      "answer": "a- auch aufgrund früherer Verkaufszahlen.",
+      "questionTranslation": "61. هي تتخذ قراراتها",
+      "answerTranslation": "أ- بناءً على أرقام المبيعات السابقة أيضاً."
+    },
+    {
+      "id": 62,
+      "question": "62. Die Lieferanten",
+      "answer": "a- haben ihren Firmensitz in Europa.",
+      "questionTranslation": "62. الموردون",
+      "answerTranslation": "أ- يقع مقر شركاتهم في أوروبا."
+    },
+    {
+      "id": 63,
+      "question": "63. Die deutsche Modeindustrie",
+      "answer": "a- befindet sich in einem Aufwärtstrend.",
+      "questionTranslation": "63. صناعة الموضة الألمانية",
+      "answerTranslation": "أ- تمر بمرحلة صعود (اتجاه تصاعدي)."
+    },
+    {
+      "id": 64,
+      "question": "64. Nadja Müller",
+      "answer": "b- erfasst Trends mithilfe der Sozialen Medien.",
+      "questionTranslation": "64. ناديا مولر",
+      "answerTranslation": "ب- ترصد وتتبع الصيحات (الاتجاهات) بمساعدة وسائل التواصل الاجتماعي"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "s6_m8_umweltfreundliche_staedte",
+  "title": "Umweltfreundliche Städte",
+  "telegramLink": "",
+  "items": [
+    {
+      "id": 55,
+      "question": "55. Herr Dr. Müller hat",
+      "answer": "B- in der Berufsberatung von seinem späteren Studienfach erfahren.",
+      "questionTranslation": "55. الدكتور مولر",
+      "answerTranslation": "ب- علم بتخصصه الدراسي اللاحق (المستقبلي) من خلال مركز التوجيه المهني."
+    },
+    {
+      "id": 56,
+      "question": "56. Herrn Dr. Müller gefällt es an seinem Beruf, dass er",
+      "answer": "B- regelmäßig Kontakt zu Bürgern hat.",
+      "questionTranslation": "56. يعجب الدكتور مولر في مهنته أنه",
+      "answerTranslation": "ب- لديه تواصل منتظم مع المواطنين."
+    },
+    {
+      "id": 57,
+      "question": "57. Um den Autoverkehr in Innenstädten zu reduzieren, sollten",
+      "answer": "C- wenige Menschen eigene PKW erwerben",
+      "questionTranslation": "57. من أجل تقليل حركة مرور السيارات في وسط المدن، ينبغي",
+      "answerTranslation": "ج- أن يمتلك عدد أقل من الناس سيارات خاصة."
+    },
+    {
+      "id": 58,
+      "question": "58. Um die Innenstädte für Radfahrer attraktiver zu machen, empfiehlt Herr Dr. Müller",
+      "answer": "A- bessere Mitnahmeregelungen in Bus und Bahn.",
+      "questionTranslation": "58. لجعل وسط المدن أكثر جاذبية لراكبي الدراجات، يوصي الدكتور مولر بـ",
+      "answerTranslation": "أ- قواعد وقوانين أفضل لاصطحاب (الدراجات) في الحافلات والقطارات."
+    },
+    {
+      "id": 59,
+      "question": "59. In den Städten",
+      "answer": "A- können vor allem Geschäfte mit besonderem Angebot erfolgreich sein",
+      "questionTranslation": "59. في المدن",
+      "answerTranslation": "أ- يمكن للمحلات التجارية ذات العروض المتميزة (الخاصة) أن تكون ناجحة بالدرجة الأولى."
+    },
+    {
+      "id": 60,
+      "question": "60. Herr Dr. Müller prognostiziert, dass in Zukunft",
+      "answer": "B- das Stadtbild stärker von Grünflächen geprägt sein wird.",
+      "questionTranslation": "60. يتوقع الدكتور مولر أنه في المستقبل",
+      "answerTranslation": "ب- سيتأثر مظهر المدينة بشكل أكبر بالمساحات الخضراء."
+    },
+    {
+      "id": 61,
+      "question": "61. Dr. Müller sagt, dass",
+      "answer": "A- die Menschen in Zukunft weniger isoliert wohnen werden.",
+      "questionTranslation": "61. يقول الدكتور مولر إن",
+      "answerTranslation": "أ- الناس في المستقبل سيعيشون بشكل أقل عزلة."
+    },
+    {
+      "id": 62,
+      "question": "62. Städte sind als Wohnort attraktiv, weil",
+      "answer": "b- sie Vorteile für verschiedene Altersgruppen bieten.",
+      "questionTranslation": "62. المدن جذابة كمكان للسكن لأنها",
+      "answerTranslation": "ب- تقدم مزايا لمختلف الفئات العمرية."
+    },
+    {
+      "id": 63,
+      "question": "63. Eine besonders große Herausforderung ist für Herrn Dr. Müller",
+      "answer": "c- die Herstellung von Barrierefreiheit.",
+      "questionTranslation": "63. التحدي الأكبر بشكل خاص بالنسبة للدكتور مولر هو",
+      "answerTranslation": "ج- تحقيق وتوفير إمكانية الوصول الخالية من العوائق (تهيئة البيئة لذوي الاحتياجات الخاصة وكبار السن)."
+    },
+    {
+      "id": 64,
+      "question": "64. Laut Herrn Dr. Müller ist die Stadt Hamburg ein Vorreiter",
+      "answer": "a- beim Umweltschutz.",
+      "questionTranslation": "64. وفقاً للدكتور مولر، تُعد مدينة هامبورغ رائدة في",
+      "answerTranslation": "أ- مجال حماية البيئة."
+    }
+  ]
+}

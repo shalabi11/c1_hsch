@@ -361,6 +361,18 @@ abstract class AppLocalizations {
   /// In ar, this message translates to:
   /// **'جاري تحميل وتثبيت التحديث...'**
   String get downloadingUpdate;
+
+  /// No description provided for @tapToTranslate.
+  ///
+  /// In ar, this message translates to:
+  /// **'انقر للترجمة'**
+  String get tapToTranslate;
+
+  /// No description provided for @audioRecordingsLink.
+  ///
+  /// In ar, this message translates to:
+  /// **'التسجيلات الصوتية (قناة تلغرام)'**
+  String get audioRecordingsLink;
 }
 
 class _AppLocalizationsDelegate

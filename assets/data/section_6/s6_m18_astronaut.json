@@ -1,0 +1,77 @@
+{
+  "id": "s6_m18_astronaut",
+  "title": "Astronaut",
+  "telegramLink": "https://t.me/HV2_Voices/3?single",
+  "items": [
+    {
+      "id": 55,
+      "question": "55. Thomas Reiter",
+      "answer": "c- weiß, wie er sich beim Raumflug fühlen wird",
+      "questionTranslation": "55. توماس رايتر",
+      "answerTranslation": "ج- يعرف كيف سيكون شعوره أثناء رحلة الفضاء"
+    },
+    {
+      "id": 56,
+      "question": "56. Bei seinem ersten Raumflug .",
+      "answer": "c- waren sich Thomas Reiter und seine Kollegen von der Art her ähnlich.",
+      "questionTranslation": "56. في رحلته الفضائية الأولى",
+      "answerTranslation": "ج- كان توماس رايتر وزملائه متشابهين من حيث الطبيعة والشخصية"
+    },
+    {
+      "id": 57,
+      "question": "57. Jeder Astronaut",
+      "answer": "b- bekommt abends Informationen zu seiner Arbeit am nächsten Tag.",
+      "questionTranslation": "57. كل رائد فضاء",
+      "answerTranslation": "ب- يتلقى في المساء معلومات حول عمله في اليوم التالي"
+    },
+    {
+      "id": 58,
+      "question": "58. Arbeitsbesprechungen",
+      "answer": "a- behandeln die Geschehnisse des Tages.",
+      "questionTranslation": "58. اجتماعات العمل",
+      "answerTranslation": "أ- تتناول أحداث ومجريات اليوم"
+    },
+    {
+      "id": 59,
+      "question": "59. wer Astronaut werden will",
+      "answer": "a- braucht Durchhaltevermögen",
+      "questionTranslation": "59. من يريد أن يصبح رائد فضاء",
+      "answerTranslation": "أ- يحتاج إلى القدرة على التحمل والمثابرة"
+    },
+    {
+      "id": 60,
+      "question": "60. Die Raumfahrt",
+      "answer": "b- gehört wie anderes auch zur menschlichen Kultur.",
+      "questionTranslation": "60. رحلات الفضاء",
+      "answerTranslation": "ب- تنتمي كغيرها من الأشياء إلى الثقافة الإنسانية"
+    },
+    {
+      "id": 61,
+      "question": "61. Erkundungsreisen:",
+      "answer": "c- Vorbedingung für eine hochentwickelte Gesellschaft.",
+      "questionTranslation": "61. الرحلات الاستكشافية",
+      "answerTranslation": "ج- شرط مسبق ومجبر لمجتمع متطور للغاية"
+    },
+    {
+      "id": 62,
+      "question": "62. Expeditionen zum Mars",
+      "answer": "b- sollen in näher Zukunft auf der Raumfahrt ISS vorbereitet werden",
+      "questionTranslation": "62. البعثات إلى كوكب المريخ",
+      "answerTranslation": "ب- ينبغي أن يتم التحضير لها في المستقبلالقريب على متن المحطة الفضائية الدولية"
+    },
+    {
+      "id": 63,
+      "question": "63. Raumfahrt",
+      "answer": "c- sollte breiten Schichten zugänglich gemacht werden",
+      "questionTranslation": "63. رحلات الفضاء",
+      "answerTranslation": "ج- ينبغي أن تتاح وتكون سهلة الوصول لشرائح واسعة من المجتمع"
+    },
+    {
+      "id": 64,
+      "question": "64. Wer das Astronauten-Training absolviert hat.",
+      "answer": "b- muss sich noch gegen einen anderen Kandidaten behaupten.",
+      "questionTranslation": "64. من أكمل تدريب رواد الفضاء",
+      "answerTranslation": "ب- يجب عليه بعد ذلك أن يثبت نفسه في مواجهة مرشح آخر"
+    }
+  ]
+}

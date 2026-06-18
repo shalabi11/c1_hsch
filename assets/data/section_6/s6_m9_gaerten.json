@@ -1,0 +1,77 @@
+{
+  "id": "s6_m9_gaerten",
+  "title": "Gärten",
+  "telegramLink": "https://t.me/HV2_Voices/4?single",
+  "items": [
+    {
+      "id": 55,
+      "question": "55. Herr Martinek",
+      "answer": "- wünscht sich keinen eigenen Garten.",
+      "questionTranslation": "55. السيد مارتينيك",
+      "answerTranslation": "- لا يرغب في الحصول على حديقة خاصة به"
+    },
+    {
+      "id": 56,
+      "question": "56. Österreichische Schlossanlage",
+      "answer": "- ist heute öffentlich für Besucher zugänglich",
+      "questionTranslation": "56. مجمع القصر النمساوي",
+      "answerTranslation": "- متاح ومفتوح اليوم للزوار من العامة"
+    },
+    {
+      "id": 57,
+      "question": "57. Ella Martinek",
+      "answer": "- gestaltete die Gartenanlage mit.",
+      "questionTranslation": "57. إيلا مارتينيك",
+      "answerTranslation": "- شاركت في تصميم وتنسيق مجمع الحدائق"
+    },
+    {
+      "id": 58,
+      "question": "58. An Gärten begeistert Herr Martinek",
+      "answer": "- der geschichtliche Hintergrund.",
+      "questionTranslation": "58. ما يثير حماس السيد مارتينيك في الحدائق هو",
+      "answerTranslation": "- الخلفية التاريخية"
+    },
+    {
+      "id": 59,
+      "question": "59. Im Laufe Zeit",
+      "answer": "- dienten Gärten unterschiedlichen Zwecken.",
+      "questionTranslation": "59. على مر الزمن",
+      "answerTranslation": "- خدمت الحدائق أغراضاً مختلفة"
+    },
+    {
+      "id": 60,
+      "question": "60. Kartoffeln",
+      "answer": "- wurden zuerst von Wissenschaftler angebaut.",
+      "questionTranslation": "60. البطاطس",
+      "answerTranslation": "- تم زراعتها أولاً من قِبل العلماء"
+    },
+    {
+      "id": 61,
+      "question": "61. Von Tomaten weiß man. Dass sie",
+      "answer": "- auch als Heilmittel verwendet wurden.",
+      "questionTranslation": "61. من المعروف عن الطماطم أنها",
+      "answerTranslation": "- استُخدمت أيضاً كعلاج (دواء شفائي)"
+    },
+    {
+      "id": 62,
+      "question": "62. Die Orangerie",
+      "answer": "- diente in der kalten Jahreszeit als Lagerraum für Früchte.",
+      "questionTranslation": "62. الدفيئة الزجاجية",
+      "answerTranslation": "- كانت تستخدم في فصول السنة الباردة كمستودع لتخزين الفواكه"
+    },
+    {
+      "id": 63,
+      "question": "63. das neue Buch des Studiogastes",
+      "answer": "- erläuterte auch wichtige begriffe.",
+      "questionTranslation": "63. الكتاب الجديد لضيف الاستوديو",
+      "answerTranslation": "- شرح أيضاً مصطلحات هامة"
+    },
+    {
+      "id": 64,
+      "question": "64. Was sollen die Anrufer machen?",
+      "answer": "- eine bestimmte Wort finden.",
+      "questionTranslation": "64. ماذا ينبغي على المتصلين أن يفعلوا؟",
+      "answerTranslation": "- أن يجدوا كلمة معينة"
+    }
+  ]
+}

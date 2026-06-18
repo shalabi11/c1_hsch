@@ -155,4 +155,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get downloadingUpdate => 'جاري تحميل وتثبيت التحديث...';
+
+  @override
+  String get tapToTranslate => 'انقر للترجمة';
+
+  @override
+  String get audioRecordingsLink => 'التسجيلات الصوتية (قناة تلغرام)';
 }

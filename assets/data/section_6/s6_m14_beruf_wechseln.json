@@ -1,0 +1,77 @@
+{
+  "id": "s6_m14_beruf_wechseln",
+  "title": "Beruf wechseln",
+  "telegramLink": "https://t.me/HV2_Voices/14",
+  "items": [
+    {
+      "id": 55,
+      "question": "55. Der Hauptgrund für Unzufriedenheit im Beruf ist laut Herrn Dr. Dahlbeck",
+      "answer": "a- fehlende Anerkennung im Unternehmen.",
+      "questionTranslation": "55. السبب الرئيسي لعدم الرضا في العمل وفقاً للسيد الدكتور داهلبيك هو",
+      "answerTranslation": "أ- غياب التقدير في الشركة"
+    },
+    {
+      "id": 56,
+      "question": "56. Berufsanfänger fürchten oft, dass",
+      "answer": "C- ein Berufswechsel bei Arbeitgebern Skepsis weckt.",
+      "questionTranslation": "56. المبتدئون في العمل يخشون غالباً أن",
+      "answerTranslation": "ج- يثير تغيير المهنة الشكوك لدى أصحاب العمل"
+    },
+    {
+      "id": 57,
+      "question": "57. Herr Dr. Dahlbeck rät,",
+      "answer": "b- vor einem beruflichen Neuanfang Bedenkzeit einzuplanen.",
+      "questionTranslation": "57. ينصح السيد الدكتور داهلبيك بـ",
+      "answerTranslation": "ب- التخطيط لفترة تفكير قبل البدء في بداية مهنية جديدة"
+    },
+    {
+      "id": 58,
+      "question": "58. Herr Dr. Dahlbeck hat sich zu einem Berufswechsel entschlossen, weil er",
+      "answer": "a- mit der Zeit deutliche Stresssymptome entwickelte.",
+      "questionTranslation": "58. قرر السيد الدكتور داهلبيك تغيير مهنته لأنه",
+      "answerTranslation": "أ- طور مع مرور الوقت أعراض توتر واضحة"
+    },
+    {
+      "id": 59,
+      "question": "59. Nachdem Herr Dr. Dahlbeck seine Stelle gekündigt hatte,",
+      "answer": "b- leitete er seine Existenzgründung in die Wege.",
+      "questionTranslation": "59. بعد أن استقال السيد الدكتور داهلبيك من وظيفته",
+      "answerTranslation": "ب- بدأ في اتخاذ خطوات لتأسيس عمله الخاص"
+    },
+    {
+      "id": 60,
+      "question": "60. Herrn Dr. Dahlbecks Kunden",
+      "answer": "a- schätzen ihn wegen seiner Kenntnisse.",
+      "questionTranslation": "60. زبائن السيد الدكتور داهلبيك",
+      "answerTranslation": "أ- يقدرونه بسبب معرفته وخبرته"
+    },
+    {
+      "id": 61,
+      "question": "61. Viele von Herrn Dr. Dahlbecks Kunden",
+      "answer": "b- wagen einen kompletten Neuanfang.",
+      "questionTranslation": "61. العديد من زبائن السيد الدكتور داهلبيك",
+      "answerTranslation": "ب- يجرؤون على القيام ببداية جديدة تماماً"
+    },
+    {
+      "id": 62,
+      "question": "62. Herr Dr. Dahlbeck weist darauf hin, dass",
+      "answer": "b- in Pflegeberufen erfahrene Bewerber oft bevorzugt werden.",
+      "questionTranslation": "62. يشير السيد الدكتور داهلبيك إلى أن",
+      "answerTranslation": "ب- المتقدمين للوظائف ذوي الخبرة في مهن الرعاية غالباً ما يتم تفضيلهم"
+    },
+    {
+      "id": 63,
+      "question": "63. Unternehmen reagieren skeptisch auf Jobwechsler, weil",
+      "answer": "C- diese nach kurzer Zeit wieder kündigen könnten.",
+      "questionTranslation": "63. الشركات تتعامل بشك مع مغيري الوظائف لأن",
+      "answerTranslation": "ج- هؤلاء قد يستقيلون مرة أخرى بعد فترة قصيرة"
+    },
+    {
+      "id": 64,
+      "question": "64. Herr Dr. Dahlbeck rät Bewerbern,",
+      "answer": "b- im Bewerbungsschreiben die Gründe für die Neuorientierung wegzulassen.",
+      "questionTranslation": "64. ينصح السيد الدكتور داهلبيك المتقدمين للوظائف بـ",
+      "answerTranslation": "ب- تجنب ذكر أسباب إعادة التوجيه المهني في خطاب التقديم"
+    }
+  ]
+}

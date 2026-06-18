@@ -1,0 +1,77 @@
+{
+  "id": "s6_m19_buerger_forschung",
+  "title": "Bürger Forschung",
+  "telegramLink": "",
+  "items": [
+    {
+      "id": 55,
+      "question": "55. Es ist laut Professor Adler eine weite verbreitete Meinung, dass",
+      "answer": "b- Forschung nur eine Sache für Spezialisten ist.",
+      "questionTranslation": "55. وفقاً للبروفيسور أدلر، هناك رأي شائع بأن",
+      "answerTranslation": "ب- الأبحاث هي مسألة تخص المتخصصين والخبراء فقط"
+    },
+    {
+      "id": 56,
+      "question": "56. Die Aufgaben der Bürgerforscher",
+      "answer": "a- bestehen oft darin, Daten zu erheben.",
+      "questionTranslation": "56. مهام الباحثين من المواطنين (الهواة)",
+      "answerTranslation": "أ- تتمثل غالباً في جمع البيانات ورصدها"
+    },
+    {
+      "id": 57,
+      "question": "57. Professor Adler begann sich für Bürgerforschung einzusetzen, weil",
+      "answer": "b- er von Laien wertvolle Anregungen bekam.",
+      "questionTranslation": "57. بدأ البروفيسور أدلر في دعم أبحاث المواطنين لأنه",
+      "answerTranslation": "ب- تلقى أفكاراً ومقترحات قيمة من غير المتخصصين (العوام)"
+    },
+    {
+      "id": 58,
+      "question": "58. Professor Adler hat sich schon als Kind",
+      "answer": "a- für die theoretischen Grundlagen seines Fachs interessiert.",
+      "questionTranslation": "58. البروفيسور أدلر كان مهتماً منذ طفولته بـ",
+      "answerTranslation": "أ- الأسس النظرية لتخصصه الدراسي"
+    },
+    {
+      "id": 59,
+      "question": "59. Professor Adlers Kinder",
+      "answer": "c- zeigen schon jetzt Interesse an den Naturwissenschaften",
+      "questionTranslation": "59. أطفال البروفيسور أدلر",
+      "answerTranslation": "ج- يظهرون بالفعل منذ الآن اهتماماً بالعلوم الطبيعية"
+    },
+    {
+      "id": 60,
+      "question": "60. Bürgerforscher",
+      "answer": "a- können auf einer Internetseite nach interessanten Forschungsvorhaben suchen.",
+      "questionTranslation": "60. الباحثون من المواطنين",
+      "answerTranslation": "أ- يمكنهم البحث عن مشاريع بحثية مثيرة للاهتمام على موقع إلكتروني"
+    },
+    {
+      "id": 61,
+      "question": "61. Wissenschaftler",
+      "answer": "b- können auf die Arbeit von Leute nicht immer verzichten.",
+      "questionTranslation": "61. العلماء",
+      "answerTranslation": "ب- لا يمكنهم دائماً الاستغناء عن عمل وجهود الناس"
+    },
+    {
+      "id": 62,
+      "question": "62. Ausschließlich Wissenschaftler",
+      "answer": "c- werden wohl weiterhin komplexe Versuche durchführen.",
+      "questionTranslation": "62. العلماء وحدهم دون غيرهم",
+      "answerTranslation": "ج- سوف يستمرون على الأرجح في إجراء التجارب المعقدة"
+    },
+    {
+      "id": 63,
+      "question": "63. Die Ergebnisse von Laien",
+      "answer": "a- gehen meist aus gewissenhafter Arbeit hervor",
+      "questionTranslation": "63. النتائج التي يتوصل إليها غير المتخصصين (الهواة)",
+      "answerTranslation": "أ- تنتج في الغالب عن عمل دقيق ومسؤول"
+    },
+    {
+      "id": 64,
+      "question": "64. In der Vergangenheit",
+      "answer": "a- haben Hobbyforscher einige große Entdeckungen gemacht.",
+      "questionTranslation": "64. في الماضي",
+      "answerTranslation": "أ- حقق الباحثون الهواة بعض الاكتشافات الكبيرة العظيمة"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "s6_m13_landflucht__metropolen",
+  "title": "Landflucht/ Metropolen",
+  "telegramLink": "",
+  "items": [
+    {
+      "id": 55,
+      "question": "55. Frau Mentor",
+      "answer": "C- befasst sich mit der Stadt als Lebensumfeld.",
+      "questionTranslation": "55. السيدة مينتور",
+      "answerTranslation": "ج- تتعامل مع المدينة كبيئة معيشية (مجال للحياة)"
+    },
+    {
+      "id": 56,
+      "question": "56. Für den Studiogast gehört zu einer Stadt",
+      "answer": "c- die Aufteilung bestimmter Arbeiten unter den Menschen.",
+      "questionTranslation": "56. بالنسبة لضيف الاستوديو، ينتمي إلى المدينة",
+      "answerTranslation": "ج- تقسيم أعمال معينة بين الناس"
+    },
+    {
+      "id": 57,
+      "question": "57. in Uruk der , Mutter aller Metropolenو",
+      "answer": "b- gab es bereits eine wirksame Verwaltung.",
+      "questionTranslation": "57. في أوروك، \"أم المدن الكبرى\"",
+      "answerTranslation": "ب- كان هناك بالفعل إدارة فعالة"
+    },
+    {
+      "id": 58,
+      "question": "58. in Zukunft wird Arbeit",
+      "answer": "b- sich stärker auf Dienstleistungen konzentrieren.",
+      "questionTranslation": "58. في المستقبل سوف",
+      "answerTranslation": "ب- تتركز العمل بشكل أكبر على الخدمات"
+    },
+    {
+      "id": 59,
+      "question": "59. Produktionsbetriebe werden in Zukunft vermutlich.",
+      "answer": "b- unter bestimmten Umständen städtische Standorte wählen.",
+      "questionTranslation": "59. الشركات الإنتاجية سوف في المستقبل على الأرجح",
+      "answerTranslation": "ب- تختار مواقع حضرية (داخل المدن) تحت ظروف معينة"
+    },
+    {
+      "id": 60,
+      "question": "60. Leicht verderbliche Lebensmittel",
+      "answer": "a- wurden bis zur Mitte des 1 9 Jahrhunderts vorwiegend in den Städten produziert.",
+      "questionTranslation": "60. المواد الغذائية سريعة التلف",
+      "answerTranslation": "أ- كانت تُنتج حتى منتصف القرن التاسع عشر في المدن بشكل رئيسي"
+    },
+    {
+      "id": 61,
+      "question": "61. in Zukunft.",
+      "answer": "b- nimmt die Zahl der nicht im Familienverband Lebenden in den Städten.",
+      "questionTranslation": "61. في المستقبل",
+      "answerTranslation": "ب- يزداد عدد الأشخاص الذين لا يعيشون في إطار أسري داخل المدن"
+    },
+    {
+      "id": 62,
+      "question": "62. Bei Großprojekten",
+      "answer": "b- sollten Bürgerinnen und Bürger auch eigenes Geld einbringen können.",
+      "questionTranslation": "62. في المشاريع الكبرى",
+      "answerTranslation": "ب- ينبغي أن يتمكن المواطنون والمواطنات أيضاً من المساهمة بأموالهم الخاصة"
+    },
+    {
+      "id": 63,
+      "question": "63. in den Innenstädten.",
+      "answer": "a- werden öffentliche Verkehrsmittel weit häufiger genutzt als private Pkw.",
+      "questionTranslation": "63. في وسط المدن",
+      "answerTranslation": "أ- تُستخدم وسائل النقل العام بشكل أكثر تكراراً بكثير من السيارات الخاص"
+    },
+    {
+      "id": 64,
+      "question": "64. Künftige Aufgabe der Stadtplanung wird sein.",
+      "answer": "c- die strukturellen Voraussetzungen für Gemeinschafts- und Verleihmodelle zu etablieren.",
+      "questionTranslation": "64. المهمة المستقبلية لتخطيط المدن ستكون",
+      "answerTranslation": "ج- وضع الشروط الهيكلية والأساسية لنماذج المشاركة والتأجير"
+    }
+  ]
+}

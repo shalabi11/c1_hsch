@@ -1,0 +1,77 @@
+{
+  "id": "s6_m1_fischer_unternehmen",
+  "title": "Fischer Unternehmen",
+  "telegramLink": "https://t.me/HV2_Voices/9",
+  "items": [
+    {
+      "id": 55,
+      "question": "55. Frau Fischer behauptet, dass Frauen",
+      "questionTranslation": "55. السيدة فيشر تزعم أن النساء",
+      "answer": "c- weniger gezielt einkaufen als Männer.",
+      "answerTranslation": "ج- يتسوقن بشكل أقل توجيهاً (أقل تحديداً لما يردن) مقارنة بالرجال."
+    },
+    {
+      "id": 56,
+      "question": "56. Die Unternehmerin",
+      "questionTranslation": "56. سيدة الأعمال",
+      "answer": "a- konzentriert sich weiterhin auf Frauen als Kundinnen.",
+      "answerTranslation": "أ- تستمر في التركيز على النساء كزبائن."
+    },
+    {
+      "id": 57,
+      "question": "57. Zukünftigkeit Trends",
+      "questionTranslation": "57. الاتجاهات المستقبلية",
+      "answer": "c- werden durch zahlreiche Mitarbeiter aufgespürt.",
+      "answerTranslation": "ج- يتم رصدها/اكتشافها من قِبل عدد كبير من الموظفين."
+    },
+    {
+      "id": 58,
+      "question": "58. Frau Fischer.",
+      "questionTranslation": "58. السيدة فيشر",
+      "answer": "c- lässt ihren Mitarbeitern Freiräume zum Gestalten.",
+      "answerTranslation": "ج- تترك لموظفيها مساحة من الحرية للإبداع/التشكيل."
+    },
+    {
+      "id": 59,
+      "question": "59. Das Unternehmen,",
+      "questionTranslation": "59. الشركة",
+      "answer": "b- erzielt den größten Umsatz mit Dekorativen.",
+      "answerTranslation": "ب- تحقق أكبر مبيعاتها (أعلى إيرادات) من مواد الديكور."
+    },
+    {
+      "id": 60,
+      "question": "60. Das Clubmodell.",
+      "questionTranslation": "60. نموذج النادي",
+      "answer": "c- spart Lagerkosten und kann so günstigere Preise gewährleisten.",
+      "answerTranslation": "ج- يوفر تكاليف التخزين، وبالتالي يمكنه ضمان أسعار أرخص."
+    },
+    {
+      "id": 61,
+      "question": "61. Frau Fischer.",
+      "questionTranslation": "61. السيدة فيشر",
+      "answer": "c- will weiterhin schöne Produkte an möglichst viele Menschen verkaufen.",
+      "answerTranslation": "ج- تريد الاستمرار في بيع منتجات جميلة لأكبر عدد ممكن من الناس."
+    },
+    {
+      "id": 62,
+      "question": "62. Die Unternehmerin",
+      "questionTranslation": "62. سيدة الأعمال",
+      "answer": "a- möchte den Kunden neuartige Einkaufserlebnisse bieten.",
+      "answerTranslation": "أ- ترغب في تقديم تجارب تسوق مبتكرة/جديدة للزبائن."
+    },
+    {
+      "id": 63,
+      "question": "63. Das Unternehmen",
+      "questionTranslation": "63. الشركة",
+      "answer": "b- legt Wert auf die Beständigkeit der Produkte.",
+      "answerTranslation": "ب- تولي أهمية كبيرة لمتانة/استدامة المنتجات."
+    },
+    {
+      "id": 64,
+      "question": "64. In ihrer Jugend.",
+      "questionTranslation": "64. في شبابها",
+      "answer": "i- entwickelte Frau Fischer die Zielstrebigkeit, Geld zu verdienen.",
+      "answerTranslation": "أ- طوّرت السيدة فيشر الإصرار (العزيمة) على كسب المال."
+    }
+  ]
+}

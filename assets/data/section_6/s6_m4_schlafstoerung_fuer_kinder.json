@@ -1,0 +1,77 @@
+{
+  "id": "s6_m4_schlafstoerung_fuer_kinder",
+  "title": "Schlafstörung für Kinder",
+  "telegramLink": "https://t.me/HV2_Voices/2?single",
+  "items": [
+    {
+      "id": 55,
+      "question": "55. Kinder",
+      "answer": "a- haben in bestimmten Entwicklungsphasen Schlafstörungen.",
+      "questionTranslation": "55. الأطفال",
+      "answerTranslation": "أ- يعانون من اضطرابات النوم في مراحل معينة من نموهم."
+    },
+    {
+      "id": 56,
+      "question": "56. Jugendliche gehen abends später zu Bett, weil",
+      "answer": "a- sich der Biorhythmus verändert.",
+      "questionTranslation": "56. المراهقون يذهبون إلى الفراش في وقت متأخر من المساء لأن",
+      "answerTranslation": "أ- إيقاعهم الحيوي (الساعة البيولوجية) يتغير."
+    },
+    {
+      "id": 57,
+      "question": "57. Das Hormon Melatonin",
+      "answer": "a- hilft beim Einschlafen.",
+      "questionTranslation": "57. هرمون الميلاتونين",
+      "answerTranslation": "أ- يساعد على النوم (الدخول في النوم)."
+    },
+    {
+      "id": 58,
+      "question": "58. Jugendliche",
+      "answer": "b- -schaden durch zu frühes Ausstehen ihrer Gesundheit.",
+      "questionTranslation": "58. المراهقون",
+      "answerTranslation": "ب- يضرون بصحتهم من خلال الاستيقاظ المبكر جداً."
+    },
+    {
+      "id": 59,
+      "question": "59. Schlafmangel bei Kindern und Jugendlichen",
+      "answer": "b- kann zu starken Entwicklungsproblemen führen.",
+      "questionTranslation": "59. نقص النوم لدى الأطفال والمراهقين",
+      "answerTranslation": "ب- يمكن أن يؤدي إلى مشاكل حادة في النمو."
+    },
+    {
+      "id": 60,
+      "question": "60. Frau Prof. Reinecke",
+      "answer": "b- spricht sich für eine Änderung der Schulzeiten aus.",
+      "questionTranslation": "60. البروفيسورة راينكه",
+      "answerTranslation": "ب- تؤيد تغيير الأوقات المدرسية."
+    },
+    {
+      "id": 61,
+      "question": "61. Schulen",
+      "answer": "b- haben einen starren Zeitrahmen.",
+      "questionTranslation": "61. المدارس",
+      "answerTranslation": "ب- لديها إطار زمني جامد."
+    },
+    {
+      "id": 62,
+      "question": "62. Schülerinnen und Schüler sollten in der idealen Schule",
+      "answer": "c- zu Tageszeiten unterrichtet werden, an denen sie am leistungsfähigsten sind.",
+      "questionTranslation": "62. الطلاب والطالبات ينبغي عليهم في المدرسة المثالية",
+      "answerTranslation": "ج- أن يتلقوا التعليم في أوقات النهار التي يكونون فيها أكثر قدرة على الأداء والعطاء."
+    },
+    {
+      "id": 63,
+      "question": "63. Viele Lehrer meinen, dass frühes Aufstehen",
+      "answer": "- die Leistungsfähigkeit steigert.",
+      "questionTranslation": "63. يعتقد الكثير من المعلمين أن الاستيقاظ المبكر",
+      "answerTranslation": "- يزيد من القدرة على الأداء."
+    },
+    {
+      "id": 64,
+      "question": "64. Frau Prof. Reinecke denkt, dass",
+      "answer": "- frühes Aufstehen gesellschaftlich bedingt ist.",
+      "questionTranslation": "64. تعتقد البروفيسورة راينكه أن",
+      "answerTranslation": "- الاستيقاظ المبكر مشروط (مفروض) مجتمعياً."
+    }
+  ]
+}

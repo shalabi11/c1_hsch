@@ -291,7 +291,7 @@
     },
     {
       "id": 4,
-      "name": "Abschnitt 4",
+      "name": "Sprachbausteine",
       "nameAr": "القسم الرابع",
       "isLocked": false,
       "models": [
@@ -389,17 +389,102 @@
       "id": 6,
       "name": "HV2",
       "nameAr": "القسم السادس",
-      "isLocked": true,
+      "isLocked": false,
       "models": [
         {
           "id": 1,
-          "name": "Bildung",
-          "slug": "bildung"
+          "name": "1. Fischer Unternehmen",
+          "slug": "s6_m1_fischer_unternehmen"
         },
         {
           "id": 2,
-          "name": "Wissenschaft",
-          "slug": "wissenschaft"
+          "name": "2. Fahrrad",
+          "slug": "s6_m2_fahrrad"
+        },
+        {
+          "id": 3,
+          "name": "3. Das Start-Up Von Niklas",
+          "slug": "s6_m3_das_start_up_von_niklas"
+        },
+        {
+          "id": 4,
+          "name": "4. Schlafstörung für Kinder",
+          "slug": "s6_m4_schlafstoerung_fuer_kinder"
+        },
+        {
+          "id": 5,
+          "name": "5. Mode",
+          "slug": "s6_m5_mode"
+        },
+        {
+          "id": 6,
+          "name": "6. Pflanzen Kommunizieren",
+          "slug": "s6_m6_pflanzen_kommunizieren"
+        },
+        {
+          "id": 7,
+          "name": "7. Anna Palmers Bolg",
+          "slug": "s6_m7_anna_palmers_bolg"
+        },
+        {
+          "id": 8,
+          "name": "8. Umweltfreundliche Städte",
+          "slug": "s6_m8_umweltfreundliche_staedte"
+        },
+        {
+          "id": 9,
+          "name": "9. Gärten",
+          "slug": "s6_m9_gaerten"
+        },
+        {
+          "id": 10,
+          "name": "10. Roboter",
+          "slug": "s6_m10_roboter"
+        },
+        {
+          "id": 11,
+          "name": "11. Forschung Afrika",
+          "slug": "s6_m11_forschung_afrika"
+        },
+        {
+          "id": 12,
+          "name": "12. Finja",
+          "slug": "s6_m12_finja"
+        },
+        {
+          "id": 13,
+          "name": "13. Landflucht/ Metropolen",
+          "slug": "s6_m13_landflucht__metropolen"
+        },
+        {
+          "id": 14,
+          "name": "14. Beruf wechseln",
+          "slug": "s6_m14_beruf_wechseln"
+        },
+        {
+          "id": 15,
+          "name": "15. Drohnen",
+          "slug": "s6_m15_drohnen"
+        },
+        {
+          "id": 16,
+          "name": "16. Schwiegermutter",
+          "slug": "s6_m16_schwiegermutter"
+        },
+        {
+          "id": 17,
+          "name": "17. Raumfahrt, ESA",
+          "slug": "s6_m17_raumfahrt_esa"
+        },
+        {
+          "id": 18,
+          "name": "18. Astronaut",
+          "slug": "s6_m18_astronaut"
+        },
+        {
+          "id": 19,
+          "name": "19. Bürger Forschung",
+          "slug": "s6_m19_buerger_forschung"
         }
       ]
     },

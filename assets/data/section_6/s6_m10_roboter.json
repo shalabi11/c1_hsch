@@ -1,0 +1,77 @@
+{
+  "id": "s6_m10_roboter",
+  "title": "Roboter",
+  "telegramLink": "https://t.me/HV2_Voices/10?single",
+  "items": [
+    {
+      "id": 55,
+      "question": "55. Tourbot ist ein Roboter, der..",
+      "answer": "c- Touristen durch ein Museum fuhrt.",
+      "questionTranslation": "55. توربوت هو روبوت",
+      "answerTranslation": "ج- يرشد السياح داخل المتحف."
+    },
+    {
+      "id": 56,
+      "question": "56. Der Museumsroboter Rhino..",
+      "answer": "c- hat unabhängig von der Besucherzahl Führungen gemacht",
+      "questionTranslation": "56. روبوت المتحف راينو",
+      "answerTranslation": "ج- كان يقوم بالجولات بغضّ النظر عن عدد الزوار."
+    },
+    {
+      "id": 57,
+      "question": "57. Bei der Entwicklung von Robotern muss vor allem",
+      "answer": "b- die Programmierung weiter entwickelt werden.",
+      "questionTranslation": "57. في تطوير الروبوتات يجب قبل كل شيء",
+      "answerTranslation": "ب- تطوير البرمجة."
+    },
+    {
+      "id": 58,
+      "question": "58. Schon jetzt",
+      "answer": "C- sind Roboter in der Lage, sich selbst aufzuladen",
+      "questionTranslation": "58. الروبوتات",
+      "answerTranslation": "ج- قادرة بالفعل على شحن نفسها ذاتيًا."
+    },
+    {
+      "id": 59,
+      "question": "59. Herr Burgard sagt, dass Roboter..",
+      "answer": "a- Zum Schutz eigener Wohnung eingesetzt werden",
+      "questionTranslation": "59. يقول بورغارد إن الروبوتات",
+      "answerTranslation": "أ- يمكن استخدامها لحماية المنزل."
+    },
+    {
+      "id": 60,
+      "question": "60. Laut Burgard werden Roboter in 50 Jahren",
+      "answer": "c- sich so fortbewegen wie Menschen",
+      "questionTranslation": "60. وفقًا لبورغارد، الروبوتات بعد 50 سنة",
+      "answerTranslation": "ج- ستتحرك مثل البشر."
+    },
+    {
+      "id": 61,
+      "question": "61. Nach Moravec werden Roboterkinder",
+      "answer": "b- beliebter sein als Menschenkinder .",
+      "questionTranslation": "61. بحسب مورافيتش، أطفال الروبوت",
+      "answerTranslation": "ب- سيكونون أكثر محبة من الأطفال البشر."
+    },
+    {
+      "id": 62,
+      "question": "62. Herr Burgard hält Moravec Prognose tut",
+      "answer": "b- übertreiben",
+      "questionTranslation": "62. ",
+      "answerTranslation": "62- بورغارد يرى أن توقعات مورافيتش b مبالغ فيها."
+    },
+    {
+      "id": 63,
+      "question": "63. Herr Burgard",
+      "answer": "c- Er sagt, dass Roboter Menschen manchmal überlegen sind",
+      "questionTranslation": "63. يقول بورغارد إن الروبوتات",
+      "answerTranslation": "ج- قد تتفوق على البشر في بعض المجالات."
+    },
+    {
+      "id": 64,
+      "question": "64. Forscher und Gesellschaft",
+      "answer": "c- müssen ethische Aspekte der Robotik im Auge behalten .",
+      "questionTranslation": "64. يجب على الباحثين والمجتمع",
+      "answerTranslation": "ج- مراعاة الجوانب الأخلاقية للروبوتات."
+    }
+  ]
+}

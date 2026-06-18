@@ -69,5 +69,7 @@
   "whatsNew": "Was gibt's Neues:",
   "updateNowBtn": "Jetzt aktualisieren",
   "laterBtn": "Später",
-  "downloadingUpdate": "Update wird heruntergeladen und installiert..."
+  "downloadingUpdate": "Update wird heruntergeladen und installiert...",
+  "tapToTranslate": "Tippen zum Übersetzen",
+  "audioRecordingsLink": "Audioaufnahmen (Telegram-Kanal)"
 }

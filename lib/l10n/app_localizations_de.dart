@@ -156,4 +156,10 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get downloadingUpdate =>
       'Update wird heruntergeladen und installiert...';
+
+  @override
+  String get tapToTranslate => 'Tippen zum Übersetzen';
+
+  @override
+  String get audioRecordingsLink => 'Audioaufnahmen (Telegram-Kanal)';
 }

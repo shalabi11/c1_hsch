@@ -189,6 +189,8 @@ class _ModelCard extends StatelessWidget {
             context.push('/sprachbausteine_exercise/$sectionId/${model.id}?slug=${model.slug}');
           } else if (sectionId == 2 || sectionId == 3) {
             context.push('/reading_exercise/$sectionId/${model.id}?slug=${model.slug}');
+          } else if (sectionId == 6) {
+            context.push('/hv2_exercise/$sectionId/${model.id}?slug=${model.slug}');
           } else {
             context.push('/exercise/$sectionId/${model.id}?slug=${model.slug}');
           }
@@ -314,6 +316,8 @@ class _ModelGridCardState extends State<_ModelGridCard> {
               context.push('/sprachbausteine_exercise/${widget.sectionId}/${widget.model.id}?slug=${widget.model.slug}');
             } else if (widget.sectionId == 2 || widget.sectionId == 3) {
               context.push('/reading_exercise/${widget.sectionId}/${widget.model.id}?slug=${widget.model.slug}');
+            } else if (widget.sectionId == 6) {
+              context.push('/hv2_exercise/${widget.sectionId}/${widget.model.id}?slug=${widget.model.slug}');
             } else {
               context.push('/exercise/${widget.sectionId}/${widget.model.id}?slug=${widget.model.slug}');
             }

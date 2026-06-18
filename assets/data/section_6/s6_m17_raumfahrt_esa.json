@@ -1,0 +1,77 @@
+{
+  "id": "s6_m17_raumfahrt_esa",
+  "title": "Raumfahrt, ESA",
+  "telegramLink": "https://t.me/HV2_Voices/5?single",
+  "items": [
+    {
+      "id": 55,
+      "question": "55. Die junge Frau, Azra",
+      "answer": "a- hat nur einen kurzen Weg zu ihrer Arbeitsstelle",
+      "questionTranslation": "55. المرأة الشابة، عذراء",
+      "answerTranslation": "أ- لديها طريق قصير فقط إلى مكان عملها"
+    },
+    {
+      "id": 56,
+      "question": "56. Die ESA. die Europäische Weltraum Agentur.",
+      "answer": "b- ist nicht nur in Europa vertreten",
+      "questionTranslation": "56. وكالة الفضاء الأوروبية",
+      "answerTranslation": "ب- ليست ممثلة في أوروبا فقط"
+    },
+    {
+      "id": 57,
+      "question": "57. Die Arbeit in dem Zentrum,",
+      "answer": "a- gefällt Azra wegen der besonderen Stimmung dort.",
+      "questionTranslation": "57. العمل في المركز",
+      "answerTranslation": "أ- يعجب عذراء بسبب الأجواء الخاصة هناك"
+    },
+    {
+      "id": 58,
+      "question": "58. in dem Zentrum.",
+      "answer": "b- werden auch gemeinsame Freizeitaktivitäten angeboten",
+      "questionTranslation": "58. في المركز",
+      "answerTranslation": "ب- يتم أيضاً تقديم أنشطة ترفيهية مشتركة"
+    },
+    {
+      "id": 59,
+      "question": "59. Azra,",
+      "answer": "a- hörte erst während des Studiums von den Arbeitsmöglichkeiten bei der ESA.",
+      "questionTranslation": "59. عذراء",
+      "answerTranslation": "أ- سمعت لأول مرة عن فرص العمل في وكالة الفضاء الأوروبية أثناء دراستها"
+    },
+    {
+      "id": 60,
+      "question": "60. vor ihrer Bewerbung,",
+      "answer": "a- bekam Azra die Gelegenheit, ihren jetzigen Arbeitsplatz zu besuchen.",
+      "questionTranslation": "60. قبل تقديم طلب توظيفها",
+      "answerTranslation": "أ- أُتيحت لعذراء الفرصة لزيارة مكان عملها الحالي"
+    },
+    {
+      "id": 61,
+      "question": "61. über das Trainee Programm,",
+      "answer": "c- wird eine bestimmte Anzahl von Jobs bei der ESA angeboten.",
+      "questionTranslation": "61. عبر برنامج التدريب",
+      "answerTranslation": "ج- يتم تقديم عدد معين من الوظائف في وكالة الفضاء الأوروبية"
+    },
+    {
+      "id": 62,
+      "question": "62. Bewerberinnen und Bewerber,",
+      "answer": "b- können sich schon kurz vor dem Studienabschluss bewerben.",
+      "questionTranslation": "62. المتقدمات والمتقدمون للوظائف",
+      "answerTranslation": "ب- يمكنهم التقديم قبل وقت قصير من التخرج ونهاية الدراسة"
+    },
+    {
+      "id": 63,
+      "question": "63. die Vorstellungsgespräche.",
+      "answer": "c- werden von den jeweiligen Ressorts durchgeführt.",
+      "questionTranslation": "63. مقابلات العمل (المقابلات الشخصية)",
+      "answerTranslation": "ج- يتم إجراؤها من قِبل الأقسام (الإدارات) المعنية ذات الصلة"
+    },
+    {
+      "id": 64,
+      "question": "64. in Zukunft möchte die junge Frau Azra.",
+      "answer": "c- Vielleicht an einen anderen ESA Niederlassung wechseln",
+      "questionTranslation": "64. في المستقبل تود المرأة الشابة عذراء",
+      "answerTranslation": "ج- الانتقال ربما إلى فرع آخر لوكالة الفضاء الأوروبية"
+    }
+  ]
+}

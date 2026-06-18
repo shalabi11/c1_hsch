@@ -1,0 +1,77 @@
+{
+  "id": "s6_m15_drohnen",
+  "title": "Drohnen",
+  "telegramLink": "https://t.me/HV2_Voices/8?single",
+  "items": [
+    {
+      "id": 55,
+      "question": "55. Der Studiogast",
+      "answer": "a- beschäftigt sich beruflich mit den neuesten Entwicklungen im Bereich Drohnen",
+      "questionTranslation": "55. ضيف الاستوديو",
+      "answerTranslation": "أ- ينشغل مهنياً بأحدث التطورات في مجال الطائرات بدون طيار"
+    },
+    {
+      "id": 56,
+      "question": "56. Der Begriff .Drohen",
+      "answer": "b- umfasst militärische und nicht-militärische Flugobjekte.",
+      "questionTranslation": "56. مصطلح طائرة بدون طيار",
+      "answerTranslation": "ب- يشمل الأجسام الطائرة العسكرية وغير العسكرية"
+    },
+    {
+      "id": 57,
+      "question": "57. Nikola Tesla",
+      "answer": "a- entwickelte ein Gerät, das den heutigen Drohnen ähnelt",
+      "questionTranslation": "57. نيكولا تسلا",
+      "answerTranslation": "أ- طوّر جهازاً يشبه الطائرات بدون طيار الحالية"
+    },
+    {
+      "id": 58,
+      "question": "58. Ein Quadrocopter",
+      "answer": "b- ist besonders stabil und leicht zu dirigieren.",
+      "questionTranslation": "58. المروحية الرباعية",
+      "answerTranslation": "ب- تتميز بالاستقرار الشديد وسهولة التوجيه"
+    },
+    {
+      "id": 59,
+      "question": "59. Drohnen",
+      "answer": "c- verringern das Gefahrenpotenzial für Rettungskräfte.",
+      "questionTranslation": "59. الطائرات بدون طيار",
+      "answerTranslation": "ج- تقلل من المخاطر المحتملة على قوات الإنقاذ"
+    },
+    {
+      "id": 60,
+      "question": "60. Mithilfe von Drohnen",
+      "answer": "a- können Einsätze nach extremen Naturereignissen besser geplant werden.",
+      "questionTranslation": "60. المساعدة بواسطة الطائرات بدون طيار",
+      "answerTranslation": "أ- تتيح تخطيط العمليات بشكل أفضل بعد الظواهر الطبيعية القاسية"
+    },
+    {
+      "id": 61,
+      "question": "61. Im Vergleich zu Satelliten",
+      "answer": "c- werden Drohnenaufnahmen nicht durch Wolken gestört.",
+      "questionTranslation": "61. بالمقارنة مع الأقمار الصناعية",
+      "answerTranslation": "ج- لا تتأثر لقطات (تصوير) الطائرات بدون طيار بالغيوم"
+    },
+    {
+      "id": 62,
+      "question": "62. Die Organisation Arzte ohne Grenzen.",
+      "answer": "a- brauchte ein neues Transportmittel für medizinische Produkte.",
+      "questionTranslation": "62. منظمة أطباء بلا حدود",
+      "answerTranslation": "أ- احتاجت إلى وسيلة نقل جديدة للمنتجات الطبية"
+    },
+    {
+      "id": 63,
+      "question": "63. in den USA",
+      "answer": "c- werden schon Medikamente per Drohne zugestellt.",
+      "questionTranslation": "63. في الولايات المتحدة الأمريكية",
+      "answerTranslation": "ج- يتم بالفعل تسليم الأدوية عبر الطائرات بدون طيار"
+    },
+    {
+      "id": 64,
+      "question": "64. Die Nutzung von Drohnen",
+      "answer": "b- Muss auch dem Datenschutzgesetz entsprechen.",
+      "questionTranslation": "64. استخدام الطائرات بدون طيار",
+      "answerTranslation": "ب- يجب أن يتوافق أيضاً مع قانون حماية البيانات"
+    }
+  ]
+}

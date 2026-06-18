@@ -160,7 +160,6 @@ class _ResultsBody extends ConsumerWidget {
                     child: ResultsActionButtons(
                       sectionId: sectionId,
                       modelId: modelId,
-                      isReading: false,
                       onRetry: () {
                         notifier.retry();
                         context.pushReplacement(

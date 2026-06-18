@@ -127,7 +127,6 @@ class _ReadingResultsBody extends StatelessWidget {
                     child: ResultsActionButtons(
                       sectionId: sectionId,
                       modelId: modelId,
-                      isReading: true,
                       onRetry: () {
                         final params = ReadingExerciseParams(
                             sectionId: sectionId, modelId: modelId, slug: slug);

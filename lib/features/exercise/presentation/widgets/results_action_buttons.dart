@@ -13,13 +13,11 @@ class ResultsActionButtons extends ConsumerWidget {
     required this.onRetry,
     required this.sectionId,
     required this.modelId,
-    required this.isReading,
   });
 
   final VoidCallback onRetry;
   final int sectionId;
   final int modelId;
-  final bool isReading;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -47,7 +45,14 @@ class ResultsActionButtons extends ConsumerWidget {
         if (nextModel != null) ...[
           FilledButton.icon(
             onPressed: () {
-              final path = isReading ? '/reading_exercise' : '/exercise';
+              String path;
+              if (sectionId == 4) {
+                path = '/sprachbausteine_exercise';
+              } else if (sectionId == 2 || sectionId == 3) {
+                path = '/reading_exercise';
+              } else {
+                path = '/exercise';
+              }
               context.pushReplacement('$path/$sectionId/${nextModel.id}?slug=${nextModel.slug}');
             },
             style: FilledButton.styleFrom(

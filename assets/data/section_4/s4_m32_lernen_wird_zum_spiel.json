@@ -74,7 +74,7 @@
       "options": [
         "deren",
         "den",
-        "dessen",
+        "dessen dje",
         "die"
       ],
       "correct_answer": "a"
@@ -173,7 +173,7 @@
       "number": "39",
       "options": [
         "uncomblizierte",
-        "unkomblizierte",
+        "unkomblitzierte",
         "unkomplitzierte",
         "unkomplizierte"
       ],
@@ -192,10 +192,10 @@
     {
       "number": "41",
       "options": [
-        "Recharchieren",
+        "Rechärchieren",
         "Recherchieren",
-        "Rechershieren",
-        "Rescharchieren"
+        "Recherschieren",
+        "Reschärchieren"
       ],
       "correct_answer": "b"
     },
@@ -214,7 +214,7 @@
       "options": [
         "disziplinierte",
         "disziplinierten",
-        "disziplinierter",
+        "disziplnierter",
         "diszipliniertes"
       ],
       "correct_answer": "d"
@@ -245,7 +245,7 @@
         "besonders",
         "jeweilig",
         "mitunter",
-        "wieder"
+        "wieder ______________________________________"
       ],
       "correct_answer": "c"
     }

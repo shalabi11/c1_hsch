@@ -43,7 +43,7 @@
         "dagegen",
         "danach"
       ],
-      "correct_answer": "d"
+      "correct_answer": "b"
     },
     {
       "number": "27",
@@ -53,7 +53,7 @@
         "zurechtzufinden",
         "zurechtzulegen"
       ],
-      "correct_answer": "c"
+      "correct_answer": "d"
     },
     {
       "number": "28",
@@ -61,7 +61,7 @@
         "fünf mal",
         "fünf Mahl",
         "fünfmal",
-        "fünfmahl"
+        "funfmahl"
       ],
       "correct_answer": "c"
     },
@@ -71,9 +71,9 @@
         "ließ",
         "lässt",
         "lassen",
-        "lasse"
+        "lasse,"
       ],
-      "correct_answer": "b"
+      "correct_answer": "c"
     },
     {
       "number": "30",
@@ -93,7 +93,7 @@
         "Zeitmaß",
         "Zeitverlust"
       ],
-      "correct_answer": "a"
+      "correct_answer": "b"
     },
     {
       "number": "32",
@@ -123,7 +123,7 @@
         "damit",
         "sodass"
       ],
-      "correct_answer": "b"
+      "correct_answer": "c"
     },
     {
       "number": "35",
@@ -133,13 +133,13 @@
         "bekräftigt",
         "befestigt"
       ],
-      "correct_answer": "b"
+      "correct_answer": "c"
     },
     {
       "number": "36",
       "options": [
         "braucht",
-        "bräuchten",
+        "brauchten",
         "brauchen",
         "brauchte"
       ],
@@ -183,23 +183,23 @@
         "allerdings",
         "aber"
       ],
-      "correct_answer": "b"
+      "correct_answer": "c"
     },
     {
       "number": "41",
       "options": [
         "Zwischen",
-        "In",
+        "in",
         "An",
         "Unter"
       ],
-      "correct_answer": "b"
+      "correct_answer": "d"
     },
     {
       "number": "42",
       "options": [
-        "gefühlsmässig",
-        "gefühlsmäßig",
+        "gefüllsmässig",
+        "Gefuhlsmäßig",
         "Gefühls mäßig",
         "gefühlsmäßig"
       ],
@@ -210,10 +210,10 @@
       "options": [
         "entwickelt",
         "entwickeln",
-        "ententwickeln",
+        "entwickelten",
         "entwickelte"
       ],
-      "correct_answer": "a"
+      "correct_answer": "b"
     },
     {
       "number": "44",
@@ -230,8 +230,8 @@
       "options": [
         "skepptisch",
         "sceptisch",
-        "skepsisch",
-        "skeptisch"
+        "skeptisch",
+        "skeptich"
       ],
       "correct_answer": "d"
     },
@@ -241,7 +241,7 @@
         "kopiert",
         "integriert",
         "sanktioniert",
-        "respektiert"
+        "respektiert __________________________________________"
       ],
       "correct_answer": "d"
     }

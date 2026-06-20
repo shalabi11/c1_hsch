@@ -68,7 +68,7 @@
       "options": [
         "stresempfindlich",
         "stressempfindlich",
-        "strebempfindlich",
+        "streßempfindlich",
         "stressempfintlich"
       ],
       "correct_answer": "b"
@@ -249,7 +249,7 @@
         "einnehmen",
         "ernst nehmen",
         "vornehmen",
-        "mitnehmen"
+        "mitnehmen ___________________________"
       ],
       "correct_answer": "b"
     }

@@ -51,7 +51,7 @@
         "ja",
         "oder"
       ],
-      "correct_answer": "b"
+      "correct_answer": "a"
     },
     {
       "number": "27",
@@ -66,12 +66,12 @@
     {
       "number": "28",
       "options": [
-        "spektakuläre",
-        "spectaculare",
+        "specktakuläre",
+        "spectakuläre",
         "spektaculäre",
-        "spektakuläre"
+        "spektakulare"
       ],
-      "correct_answer": "a"
+      "correct_answer": "d"
     },
     {
       "number": "29",
@@ -121,7 +121,7 @@
         "sie",
         "wir"
       ],
-      "correct_answer": "d"
+      "correct_answer": "a"
     },
     {
       "number": "34",
@@ -131,7 +131,7 @@
         "wird",
         "würde"
       ],
-      "correct_answer": "a"
+      "correct_answer": "b"
     },
     {
       "number": "35",
@@ -146,12 +146,12 @@
     {
       "number": "36",
       "options": [
-        "analisieren",
-        "analysieren",
-        "analysyeren",
+        "analsieren",
+        "anallisieren",
+        "anallysieren",
         "analysieren"
       ],
-      "correct_answer": "b"
+      "correct_answer": "d"
     },
     {
       "number": "37",
@@ -181,12 +181,12 @@
         "Gegensatz",
         "Gegenteil"
       ],
-      "correct_answer": "c"
+      "correct_answer": "d"
     },
     {
       "number": "40",
       "options": [
-        "es",
+        "es '",
         "ihr",
         "sich",
         "sie"
@@ -196,10 +196,10 @@
     {
       "number": "41",
       "options": [
+        "rafinierte",
+        "rafinnirte",
         "raffinierte",
-        "raffinirte",
-        "raffiniertte",
-        "raffienierte"
+        "raffinnierte"
       ],
       "correct_answer": "a"
     },
@@ -211,7 +211,7 @@
         "vor die Tür",
         "zur Wehr"
       ],
-      "correct_answer": "d"
+      "correct_answer": "c"
     },
     {
       "number": "43",
@@ -241,7 +241,7 @@
         "mit Feinden",
         "vor Feinden"
       ],
-      "correct_answer": "d"
+      "correct_answer": "b"
     },
     {
       "number": "46",
@@ -249,9 +249,9 @@
         "gelegt",
         "geräumt",
         "geschoben",
-        "gestellt"
+        "gestellt ________________________________"
       ],
-      "correct_answer": "b"
+      "correct_answer": "c"
     }
   ]
 }

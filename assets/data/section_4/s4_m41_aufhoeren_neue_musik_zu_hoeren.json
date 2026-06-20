@@ -134,12 +134,12 @@
     {
       "number": "36",
       "options": [
-        "alle möglichen Sinneseindrücke",
-        "alle mögliche Sinneseindrücke",
-        "aller möglichen Sinneseindrücke",
-        "allen möglichen Sinneseindrücken"
+        "alle möglichen Sinnes eindrücke",
+        "alle möglichen Sinnes eindrücken",
+        "alle mögliche Sinnes eindrücke",
+        "allen möglichen Sinnes eindrücken"
       ],
-      "correct_answer": "a"
+      "correct_answer": "d"
     },
     {
       "number": "37",
@@ -166,10 +166,10 @@
       "options": [
         "bereits katalogisierten",
         "bereits katalogisiertes",
-        "einem bereits katalogisierten",
+        "einem bereits katalogi sierten",
         "ein bereits katalogisiertes"
       ],
-      "correct_answer": "d"
+      "correct_answer": "c"
     },
     {
       "number": "40",
@@ -237,7 +237,7 @@
         "schaffen",
         "wandeln",
         "setzen",
-        "wechseln"
+        "wechseln ___________________________________"
       ],
       "correct_answer": "b"
     }

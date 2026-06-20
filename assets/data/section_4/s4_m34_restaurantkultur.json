@@ -28,9 +28,9 @@
     {
       "number": "25",
       "options": [
-        "genau",
-        "ganz",
         "sicher",
+        "ganz",
+        "genau",
         "komplett"
       ],
       "correct_answer": "a"
@@ -38,9 +38,9 @@
     {
       "number": "26",
       "options": [
-        "speist",
-        "knabbert",
         "nagt",
+        "knabbert",
+        "speist",
         "schluckt"
       ],
       "correct_answer": "a"
@@ -50,97 +50,97 @@
       "options": [
         "Feinschmäker",
         "Feinschmeker",
-        "Feinschmecker",
-        "Feinschmäcker"
+        "Feinschmäcker",
+        "Feinschmecker"
       ],
       "correct_answer": "c"
     },
     {
       "number": "28",
       "options": [
-        "Brüller",
-        "Schrei",
+        "Laut",
         "Ruf",
-        "Laut"
+        "Schrei",
+        "Brüller"
       ],
       "correct_answer": "b"
     },
     {
       "number": "29",
       "options": [
-        "neulich",
-        "anfänglich",
-        "letztlich",
-        "sich"
+        "ihn",
+        "man",
+        "sich",
+        "es"
       ],
       "correct_answer": "c"
     },
     {
       "number": "30",
       "options": [
-        "so",
-        "es",
-        "das",
-        "dies"
+        "üblich",
+        "vertraulich",
+        "regelrecht",
+        "gewöhnlich"
       ],
       "correct_answer": "a"
     },
     {
       "number": "31",
       "options": [
-        "festgelegten",
         "festen",
-        "bestimmten",
-        "vorgegebenen"
+        "dichten",
+        "starren",
+        "starken"
       ],
       "correct_answer": "b"
     },
     {
       "number": "32",
       "options": [
-        "Wurde",
-        "Wäre",
         "War",
-        "Wird"
+        "Wurde",
+        "Hatte",
+        "Sollte"
       ],
       "correct_answer": "a"
     },
     {
       "number": "33",
       "options": [
-        "Gerichte",
-        "Speisen",
-        "Gänge",
-        "Mahlzeiten"
+        "Schritte",
+        "Züge",
+        "Läufe",
+        "Gänge"
       ],
       "correct_answer": "c"
     },
     {
       "number": "34",
       "options": [
-        "Wer",
-        "Jeder der",
-        "Man der",
-        "Derjenige"
+        "Wo",
+        "Der",
+        "Welcher",
+        "Wer"
       ],
       "correct_answer": "a"
     },
     {
       "number": "35",
       "options": [
-        "zu einem",
-        "mit einem",
-        "für einen",
-        "an einem"
+        "am",
+        "im",
+        "zum",
+        "beim"
       ],
       "correct_answer": "a"
     },
     {
       "number": "36",
       "options": [
-        "wie sie wir",
-        "die wir sie",
         "die sie uns",
+        "die wir sie",
+        "wie sie wir",
         "wie wir sie"
       ],
       "correct_answer": "d"
@@ -148,9 +148,9 @@
     {
       "number": "37",
       "options": [
-        "dichtet",
-        "schließt",
         "deutet",
+        "schließt",
+        "dichtet",
         "interpretiert"
       ],
       "correct_answer": "c"
@@ -158,50 +158,50 @@
     {
       "number": "38",
       "options": [
-        "überlassen",
+        "übergeben",
         "überbracht",
         "überliefert",
-        "übergeben"
+        "überlassen"
       ],
       "correct_answer": "c"
     },
     {
       "number": "39",
       "options": [
-        "neulich",
+        "endlich",
         "anfänglich",
         "letztlich",
-        "endlich"
+        "neulich"
       ],
       "correct_answer": "c"
     },
     {
       "number": "40",
       "options": [
+        "zu bedanken",
+        "abzudanken",
         "zu verdanken",
-        "zu schulden",
-        "zu danken",
-        "zu nehmen"
+        "zu gedenken"
       ],
       "correct_answer": "a"
     },
     {
       "number": "41",
       "options": [
+        "mochten",
+        "würden",
         "mussten",
-        "sollten",
-        "durften",
-        "wollten"
+        "dürften"
       ],
       "correct_answer": "a"
     },
     {
       "number": "42",
       "options": [
-        "im",
-        "beim",
-        "am",
-        "zum"
+        "als das aufstrebende",
+        "für das aufstrebende",
+        "an dem aufstrebenden",
+        "in dem aufstrebenden"
       ],
       "correct_answer": "a"
     },
@@ -209,9 +209,9 @@
       "number": "43",
       "options": [
         "änderten sich",
-        "veränderten sich",
-        "wandelten sich",
-        "wandten sich"
+        "änderte sich",
+        "sich änderten",
+        "änderten sie"
       ],
       "correct_answer": "b"
     },
@@ -219,29 +219,29 @@
       "number": "44",
       "options": [
         "Wert",
-        "Gewicht",
         "Interesse",
-        "Bedeutung"
+        "Bedeutung",
+        "Wichtigkeit"
       ],
       "correct_answer": "a"
     },
     {
       "number": "45",
       "options": [
-        "Zutat",
-        "Basis",
-        "Grundlage",
-        "Element"
+        "für",
+        "zur",
+        "auf",
+        "als"
       ],
       "correct_answer": "c"
     },
     {
       "number": "46",
       "options": [
-        "bildete",
-        "entwickelte",
-        "entfaltete",
-        "formte"
+        "etablierte",
+        "etapplierte",
+        "etaplierte",
+        "etablirte ________________________________________"
       ],
       "correct_answer": "b"
     }

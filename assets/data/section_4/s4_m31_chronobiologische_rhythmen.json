@@ -28,19 +28,19 @@
     {
       "number": "25",
       "options": [
-        "sogar",
+        "schon",
         "längst",
-        "bereits",
-        "schon"
+        "bareits",
+        "sogar"
       ],
       "correct_answer": "a"
     },
     {
       "number": "26",
       "options": [
-        "haben",
-        "nehmen",
         "geben",
+        "nehmen",
+        "haben",
         "zeigen"
       ],
       "correct_answer": "b"
@@ -48,9 +48,9 @@
     {
       "number": "27",
       "options": [
-        "zeitig kommen",
-        "zurechtkommen",
         "früh kommen",
+        "zurechtkommen",
+        "zeitig kommen",
         "zur Zeit kommen"
       ],
       "correct_answer": "b"
@@ -58,8 +58,8 @@
     {
       "number": "28",
       "options": [
-        "Dieselben",
         "Diese",
+        "Dieselben",
         "Solche",
         "Derartige"
       ],
@@ -68,8 +68,8 @@
     {
       "number": "29",
       "options": [
-        "taktet",
         "pocht",
+        "taktet",
         "tickt",
         "hämmert"
       ],
@@ -78,18 +78,18 @@
     {
       "number": "30",
       "options": [
-        "sei",
-        "ist",
         "war",
-        "würde"
+        "würde",
+        "sei",
+        "ist"
       ],
       "correct_answer": "a"
     },
     {
       "number": "31",
       "options": [
-        "Denn",
         "Also",
+        "Denn",
         "Demnach",
         "Folglich"
       ],
@@ -98,9 +98,9 @@
     {
       "number": "32",
       "options": [
-        "abzurufen",
-        "auszuruhen",
         "anzurufen",
+        "auszurufen",
+        "abzurufen",
         "abzuberufen"
       ],
       "correct_answer": "a"
@@ -108,40 +108,40 @@
     {
       "number": "33",
       "options": [
-        "Bann brechenden",
+        "bannbrechenden",
         "Bahn brechenden",
         "bahnbrechenden",
-        "bann brechenden"
+        "Bann brechenden"
       ],
       "correct_answer": "c"
     },
     {
       "number": "34",
       "options": [
-        "zu",
+        "auf",
         "mit",
         "für",
-        "auf"
+        "zu"
       ],
       "correct_answer": "d"
     },
     {
       "number": "35",
       "options": [
-        "ergaben",
+        "erreichten",
         "erhielten",
         "erlangten",
-        "erreichten"
+        "ergaben"
       ],
       "correct_answer": "a"
     },
     {
       "number": "36",
       "options": [
-        "bitten",
         "fordern",
-        "drängen",
-        "bestehen"
+        "bitten",
+        "drangen",
+        "besfetien"
       ],
       "correct_answer": "b"
     },
@@ -158,9 +158,9 @@
     {
       "number": "38",
       "options": [
-        "leihen",
-        "führen",
         "sehen",
+        "führen",
+        "leiten",
         "bieten"
       ],
       "correct_answer": "b"
@@ -168,8 +168,8 @@
     {
       "number": "39",
       "options": [
-        "ohnegleichen",
         "ohne",
+        "ohnegleichen",
         "ohneeinander",
         "ohnehin"
       ],
@@ -178,8 +178,8 @@
     {
       "number": "40",
       "options": [
-        "bloß",
         "schon",
+        "bloß",
         "längst",
         "nur"
       ],
@@ -188,10 +188,10 @@
     {
       "number": "41",
       "options": [
-        "des",
+        "dies",
         "diesen",
         "dessen",
-        "dies"
+        "des"
       ],
       "correct_answer": "a"
     },
@@ -199,18 +199,18 @@
       "number": "42",
       "options": [
         "wahrnehmen",
-        "sehen",
+        "verspüren",
         "bemerken",
-        "verspüren"
+        "sehen"
       ],
       "correct_answer": "b"
     },
     {
       "number": "43",
       "options": [
-        "um",
-        "für",
         "sodass",
+        "für",
+        "um",
         "damit"
       ],
       "correct_answer": "a"
@@ -218,8 +218,8 @@
     {
       "number": "44",
       "options": [
-        "ansichtig",
         "mit Bedacht auf",
+        "ansichtig",
         "im Hinblick auf",
         "angesichts"
       ],
@@ -228,20 +228,20 @@
     {
       "number": "45",
       "options": [
-        "Efekt",
+        "Effeckt",
         "Effekt",
         "Efekt",
-        "Effeckt"
+        "Efeckt"
       ],
       "correct_answer": "b"
     },
     {
       "number": "46",
       "options": [
-        "lautet",
         "gibt",
+        "lautet",
         "sucht",
-        "findet"
+        "findet _________________________________________"
       ],
       "correct_answer": "a"
     }

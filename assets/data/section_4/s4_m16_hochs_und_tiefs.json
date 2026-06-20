@@ -36,209 +36,209 @@
     {
       "number": "25",
       "options": [
-        "beglückte",
+        "bescherte",
+        "begluckte",
         "belohnte",
-        "beschenkte",
-        "bescherte"
+        "beschenkte"
       ],
       "correct_answer": "d"
     },
     {
       "number": "26",
       "options": [
-        "warme",
-        "warmem",
-        "warmen",
-        "warmer"
+        "Wetterereignisses",
+        "Wetterereignis",
+        "Wetterereignisse",
+        "Wetterereignissen"
       ],
       "correct_answer": "c"
     },
     {
       "number": "27",
       "options": [
+        "Während des",
         "Im Verlauf von",
         "Schon im",
-        "Seitdem",
-        "Während des"
+        "Seitdem"
       ],
       "correct_answer": "b"
     },
     {
       "number": "28",
       "options": [
+        "zeitweise",
         "zeitgemäß",
         "zeitgleich",
-        "zeitlich",
-        "zeitweise"
+        "zeitlich"
       ],
       "correct_answer": "b"
     },
     {
       "number": "29",
       "options": [
-        "unterscheiden können",
-        "unterscheiden zu können",
-        "unterscheiden werden",
-        "unterscheiden werden können"
+        "vergibt",
+        "begibt",
+        "ergibt",
+        "übergibt"
       ],
       "correct_answer": "b"
     },
     {
       "number": "30",
       "options": [
-        "beeinflussen",
-        "beeinflußen",
-        "beeinflussen",
-        "beinflußen"
+        "damallige",
+        "dahmalige",
+        "damahlige",
+        "damalige"
       ],
       "correct_answer": "a"
     },
     {
       "number": "31",
       "options": [
-        "aneinander",
-        "einander",
-        "füreinander",
-        "voneinander"
+        "stellten",
+        "bestellten",
+        "entstellten",
+        "erstellten"
       ],
       "correct_answer": "d"
     },
     {
       "number": "32",
       "options": [
-        "denen",
-        "dessen",
-        "in denen",
-        "in dessen"
+        "zuwider",
+        "zufolge",
+        "zugegen",
+        "zunächst"
       ],
       "correct_answer": "c"
     },
     {
       "number": "33",
       "options": [
+        "aufzuführen",
         "aufführten",
         "aufgeführt hatten",
-        "aufgeführt haben",
-        "aufzuführen"
+        "aufgeführt waren"
       ],
       "correct_answer": "a"
     },
     {
       "number": "34",
       "options": [
-        "auswärts",
-        "außerhalb von",
-        "jenseits",
-        "kaum über"
+        "zwar",
+        "gering",
+        "kaum",
+        "ziemlich"
       ],
       "correct_answer": "d"
     },
     {
       "number": "35",
       "options": [
-        "durchqueren",
+        "vorübergingen",
+        "durchquerten",
         "hinausliefen",
-        "hinwegfegten",
-        "vorübergingen"
+        "hinwegfegten"
       ],
       "correct_answer": "c"
     },
     {
       "number": "36",
       "options": [
+        "wurden",
         "war",
         "waren",
-        "wurde",
-        "wurden"
+        "wurde"
       ],
       "correct_answer": "c"
     },
     {
       "number": "37",
       "options": [
+        "ihres",
         "deren",
         "dessen",
-        "ihren",
-        "ihres"
+        "ihren"
       ],
       "correct_answer": "a"
     },
     {
       "number": "38",
       "options": [
-        "Aufgrund der Tatsache",
-        "In diesem Fall",
-        "Trotz allem",
-        "Ungeachtet dessen"
+        "urzeitlich",
+        "urgeschichtlich",
+        "ursächlch",
+        "ursprünglich"
       ],
       "correct_answer": "a"
     },
     {
       "number": "39",
       "options": [
-        "assoziiert",
+        "gestellt",
+        "asscziiert",
         "bezogen",
-        "gebracht",
-        "gestellt"
+        "gebracht"
       ],
       "correct_answer": "c"
     },
     {
       "number": "40",
       "options": [
+        "nach",
+        "an",
         "auf",
-        "aus",
-        "los",
-        "nach"
+        "los"
       ],
       "correct_answer": "a"
     },
     {
       "number": "41",
       "options": [
+        "worden sein",
         "gewesen sein",
         "sein",
-        "werden",
-        "worden sein"
+        "werden"
       ],
       "correct_answer": "c"
     },
     {
       "number": "42",
       "options": [
-        "alle sich",
-        "er sich",
-        "man ihn",
-        "man sich"
+        "wechselnder",
+        "wechselnde",
+        "wechselndem",
+        "wechselnden"
       ],
       "correct_answer": "d"
     },
     {
       "number": "43",
       "options": [
+        "zur Rede gestellt",
         "aufs Spiel gesetzt",
         "in Kauf genommen",
-        "ins Leben gerufen",
-        "zur Rede gestellt"
+        "ins Leben gerufen"
       ],
       "correct_answer": "c"
     },
     {
       "number": "44",
       "options": [
+        "zu einem",
         "an einen",
         "bei einer",
-        "für ein",
-        "zu einem"
+        "fur ein"
       ],
       "correct_answer": "b"
     },
     {
       "number": "45",
       "options": [
+        "begherteren",
         "begehrteren",
-        "begehrtem",
-        "begerteren",
+        "begehrtern",
         "begerteren"
       ],
       "correct_answer": "a"
@@ -246,10 +246,10 @@
     {
       "number": "46",
       "options": [
+        "zur Verfügung gestellt",
         "in Anspruch genommen",
         "zu Nutze gemacht",
-        "zum Einsatz gebracht",
-        "zur Verfügung gestellt"
+        "zum Einsatz gebracht _________________________________________"
       ],
       "correct_answer": "d"
     }

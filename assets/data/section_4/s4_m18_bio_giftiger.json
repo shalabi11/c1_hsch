@@ -53,7 +53,7 @@
       "number": "27",
       "options": [
         "Substansen",
-        "Substanzen",
+        "Substantzen",
         "Substanzen",
         "Supstanzen"
       ],
@@ -92,10 +92,10 @@
     {
       "number": "31",
       "options": [
-        "gesundheitsgefährdenden",
-        "gesundheitsgefährdenden",
-        "gesundheitsgefährdenden",
-        "gesundheitsgefährdenden"
+        "gesundheitsgefärdenden",
+        "gesundheitsgefahrdenden",
+        "Gesundheits gefährdenden",
+        "gesundheitsgeferdenden"
       ],
       "correct_answer": "a"
     },
@@ -133,9 +133,9 @@
       "number": "35",
       "options": [
         "Berechnungen",
-        "Plänen",
+        "Planen",
         "Strategien",
-        "Überlegungen"
+        "überlegungen"
       ],
       "correct_answer": "c"
     },
@@ -183,8 +183,8 @@
       "number": "40",
       "options": [
         "speichert",
-        "spritzt",
-        "spricht",
+        "spritz",
+        "sprüht",
         "spuckt"
       ],
       "correct_answer": "a"
@@ -245,7 +245,7 @@
         "durfte",
         "konnte",
         "musste",
-        "sollte"
+        "sollte __________________________________________________"
       ],
       "correct_answer": "d"
     }

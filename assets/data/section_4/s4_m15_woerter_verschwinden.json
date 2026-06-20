@@ -63,9 +63,9 @@
       "number": "28",
       "options": [
         "simbel",
-        "simmpe",
-        "simple",
-        "simpel"
+        "simmpel",
+        "simpel",
+        "simple"
       ],
       "correct_answer": "d"
     },
@@ -94,8 +94,8 @@
       "options": [
         "discriminierend",
         "diskriminierend",
-        "diskriminierend",
-        "diskriminierend"
+        "diskriminirend",
+        "diskrimminierend"
       ],
       "correct_answer": "b"
     },
@@ -113,7 +113,7 @@
       "number": "33",
       "options": [
         "keine",
-        "etwa",
+        "keinerlei",
         "keinerseits",
         "keineswegs"
       ],
@@ -122,45 +122,35 @@
     {
       "number": "34",
       "options": [
-        "zeigen",
-        "beweisen",
-        "verdeutlichen",
-        "erklären"
+        "abgeholt",
+        "geholt",
+        "nachgeholt",
+        "überholt"
       ],
       "correct_answer": "a"
     },
     {
       "number": "35",
       "options": [
-        "gefährdet",
-        "bedroht",
-        "betroffen",
-        "angegriffen"
+        "Wegfallen",
+        "Weggehen",
+        "Weglaufen",
+        "Wegziehen"
       ],
       "correct_answer": "b"
     },
     {
       "number": "36",
       "options": [
-        "überholt",
-        "überrannt",
-        "überwunden",
-        "übertrieben"
-      ],
-      "correct_answer": "a"
-    },
-    {
-      "number": "37",
-      "options": [
         "bedauert",
         "benennt",
         "bestimmt",
         "betont"
       ],
-      "correct_answer": "d"
+      "correct_answer": "a"
     },
     {
-      "number": "38",
+      "number": "37",
       "options": [
         "Jugenderinnerung",
         "Jugendgruppe",
@@ -170,7 +160,7 @@
       "correct_answer": "d"
     },
     {
-      "number": "39",
+      "number": "38",
       "options": [
         "aufgestellt",
         "erstellt",
@@ -180,17 +170,17 @@
       "correct_answer": "d"
     },
     {
-      "number": "40",
+      "number": "39",
       "options": [
         "beleuchtet",
         "belichtet",
         "beschienen",
         "bestrahlt"
       ],
-      "correct_answer": "a"
+      "correct_answer": "d"
     },
     {
-      "number": "41",
+      "number": "40",
       "options": [
         "Imitat",
         "Kopie",
@@ -200,9 +190,9 @@
       "correct_answer": "a"
     },
     {
-      "number": "42",
+      "number": "41",
       "options": [
-        "Synonym",
+        "Sünonüm",
         "Sünonym",
         "Synonüm",
         "Synonym"
@@ -210,21 +200,31 @@
       "correct_answer": "a"
     },
     {
+      "number": "42",
+      "options": [
+        "imblitzieren",
+        "imblizieren",
+        "implitzieren",
+        "implizieren"
+      ],
+      "correct_answer": "a"
+    },
+    {
       "number": "43",
       "options": [
-        "implizieren",
-        "implizieren",
-        "implizieren",
-        "implizieren"
+        "an",
+        "durch",
+        "mit",
+        "zu"
       ],
       "correct_answer": "a"
     },
     {
       "number": "44",
       "options": [
-        "heute",
+        "seien",
         "sind",
-        "wären",
+        "waren",
         "würden"
       ],
       "correct_answer": "a"
@@ -232,7 +232,7 @@
     {
       "number": "45",
       "options": [
-        "eng",
+        "fern",
         "mehr",
         "nach",
         "weiter"
@@ -245,7 +245,7 @@
         "unterläuft",
         "unterliegt",
         "untersteht",
-        "unterstellt"
+        "unterstellt ___________________________________"
       ],
       "correct_answer": "b"
     }

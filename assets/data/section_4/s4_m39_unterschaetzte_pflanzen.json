@@ -51,7 +51,7 @@
         "ja",
         "oder"
       ],
-      "correct_answer": "a"
+      "correct_answer": "b"
     },
     {
       "number": "27",
@@ -67,11 +67,11 @@
       "number": "28",
       "options": [
         "specktakuläre",
-        "spectakuläre",
+        "spektakuläre",
         "spektaculäre",
         "spektakulare"
       ],
-      "correct_answer": "d"
+      "correct_answer": "b"
     },
     {
       "number": "29",
@@ -81,7 +81,7 @@
         "offensichtlich",
         "sichtbar"
       ],
-      "correct_answer": "c"
+      "correct_answer": "d"
     },
     {
       "number": "30",
@@ -121,7 +121,7 @@
         "sie",
         "wir"
       ],
-      "correct_answer": "a"
+      "correct_answer": "d"
     },
     {
       "number": "34",
@@ -141,7 +141,7 @@
         "vorhersagen",
         "vorschreiben"
       ],
-      "correct_answer": "a"
+      "correct_answer": "b"
     },
     {
       "number": "36",
@@ -201,7 +201,7 @@
         "raffinierte",
         "raffinnierte"
       ],
-      "correct_answer": "a"
+      "correct_answer": "c"
     },
     {
       "number": "42",
@@ -211,7 +211,7 @@
         "vor die Tür",
         "zur Wehr"
       ],
-      "correct_answer": "c"
+      "correct_answer": "d"
     },
     {
       "number": "43",
@@ -227,11 +227,11 @@
       "number": "44",
       "options": [
         "unterschiedlichste Stoffe",
-        "unterschiedlichsten Stoffe",
+        "unterschiedlichen Stoffe",
         "unterschiedlichsten Stoffen",
         "unterschiedlichster Stoffe"
       ],
-      "correct_answer": "c"
+      "correct_answer": "b"
     },
     {
       "number": "45",
@@ -241,7 +241,7 @@
         "mit Feinden",
         "vor Feinden"
       ],
-      "correct_answer": "b"
+      "correct_answer": "d"
     },
     {
       "number": "46",
@@ -249,9 +249,9 @@
         "gelegt",
         "geräumt",
         "geschoben",
-        "gestellt ________________________________"
+        "gestellt"
       ],
-      "correct_answer": "c"
+      "correct_answer": "b"
     }
   ]
 }

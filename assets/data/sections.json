@@ -537,24 +537,6 @@
           "slug": "s6_m19_buerger_forschung"
         }
       ]
-    },
-    {
-      "id": 7,
-      "name": "HV3",
-      "nameAr": "القسم السابع",
-      "isLocked": true,
-      "models": [
-        {
-          "id": 1,
-          "name": "Kunst und Kultur",
-          "slug": "kunst_kultur"
-        },
-        {
-          "id": 2,
-          "name": "Literatur",
-          "slug": "literatur"
-        }
-      ]
     }
   ]
 }

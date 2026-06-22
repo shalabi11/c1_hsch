@@ -54,44 +54,7 @@
     }
   </style>
   
-  <!-- OS Checker and Blocker (Commented out to allow access on all devices) -->
-  <!--
-  <script>
-    // Detect iOS (iPhone, iPad, iPod)
-    var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-    
-    // If not iOS, block and show download page
-    if (!isIOS) {
-      var isWindows = /Win/i.test(navigator.userAgent);
-      var isAndroid = /Android/i.test(navigator.userAgent);
-      
-      var message = "نسخة الويب مخصصة لأجهزة الآيفون (iOS) فقط.";
-      
-      var htmlContent = `
-        <div style='background-color:#121212; color:white; min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:20px; font-family:sans-serif;'>
-          <h1 style='color:#8e44ad; font-size:32px; margin-bottom:10px;'>C1 Hsch</h1>
-          <h2 style='color:#e74c3c; margin-bottom:10px;'>عذراً! 🚫</h2>
-          <h3 style='margin-bottom:20px;'>${message}</h3>
-          <p style='color:#ccc; line-height:1.6; max-width:500px; margin-bottom:40px;'>
-            للحصول على الأداء المثالي والميزات الكاملة، يرجى تحميل النسخة المخصصة لنظامك مجاناً عبر الروابط المباشرة أدناه:
-          </p>
-          
-          <div style='display:flex; flex-direction:column; gap:15px; width:100%; max-width:300px;'>
-            <a href='https://github.com/alshalabi011-dotcom/c1_hsch_downloads/releases/latest/download/C1_Hsch.apk' download='C1_Hsch.apk' style='background-color:#2ecc71; color:white; padding:15px 20px; border-radius:8px; text-decoration:none; font-weight:bold; font-size:18px; display:flex; align-items:center; justify-content:center; gap:10px;'>
-              🤖 تحميل للأندرويد (APK)
-            </a>
-            <a href='https://github.com/alshalabi011-dotcom/c1_hsch_downloads/releases/latest/download/C1_Hsch.zip' download='C1_Hsch.zip' style='background-color:#3498db; color:white; padding:15px 20px; border-radius:8px; text-decoration:none; font-weight:bold; font-size:18px; display:flex; align-items:center; justify-content:center; gap:10px;'>
-              💻 تحميل للويندوز (EXE)
-            </a>
-          </div>
-        </div>
-      `;
-      
-      document.write(htmlContent);
-      window.stop(); // Prevents Flutter Wasm/JS from downloading
-    }
-  </script>
-  -->
+  <!-- Removed OS Checker and Blocker -->
 </head>
 <body>
   <!--

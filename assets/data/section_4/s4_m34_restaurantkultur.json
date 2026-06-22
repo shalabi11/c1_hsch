@@ -33,7 +33,7 @@
         "genau",
         "komplett"
       ],
-      "correct_answer": "a"
+      "correct_answer": "c"
     },
     {
       "number": "26",
@@ -43,7 +43,7 @@
         "speist",
         "schluckt"
       ],
-      "correct_answer": "a"
+      "correct_answer": "c"
     },
     {
       "number": "27",
@@ -53,7 +53,7 @@
         "Feinschmäcker",
         "Feinschmecker"
       ],
-      "correct_answer": "c"
+      "correct_answer": "d"
     },
     {
       "number": "28",
@@ -63,7 +63,7 @@
         "Schrei",
         "Brüller"
       ],
-      "correct_answer": "b"
+      "correct_answer": "c"
     },
     {
       "number": "29",
@@ -93,7 +93,7 @@
         "starren",
         "starken"
       ],
-      "correct_answer": "b"
+      "correct_answer": "a"
     },
     {
       "number": "32",
@@ -103,7 +103,7 @@
         "Hatte",
         "Sollte"
       ],
-      "correct_answer": "a"
+      "correct_answer": "b"
     },
     {
       "number": "33",
@@ -113,7 +113,7 @@
         "Läufe",
         "Gänge"
       ],
-      "correct_answer": "c"
+      "correct_answer": "d"
     },
     {
       "number": "34",
@@ -123,7 +123,7 @@
         "Welcher",
         "Wer"
       ],
-      "correct_answer": "a"
+      "correct_answer": "d"
     },
     {
       "number": "35",
@@ -133,7 +133,7 @@
         "zum",
         "beim"
       ],
-      "correct_answer": "a"
+      "correct_answer": "c"
     },
     {
       "number": "36",
@@ -153,7 +153,7 @@
         "dichtet",
         "interpretiert"
       ],
-      "correct_answer": "c"
+      "correct_answer": "a"
     },
     {
       "number": "38",
@@ -183,7 +183,7 @@
         "zu verdanken",
         "zu gedenken"
       ],
-      "correct_answer": "a"
+      "correct_answer": "c"
     },
     {
       "number": "41",
@@ -193,7 +193,7 @@
         "mussten",
         "dürften"
       ],
-      "correct_answer": "a"
+      "correct_answer": "c"
     },
     {
       "number": "42",
@@ -203,7 +203,7 @@
         "an dem aufstrebenden",
         "in dem aufstrebenden"
       ],
-      "correct_answer": "a"
+      "correct_answer": "d"
     },
     {
       "number": "43",
@@ -213,7 +213,7 @@
         "sich änderten",
         "änderten sie"
       ],
-      "correct_answer": "b"
+      "correct_answer": "a"
     },
     {
       "number": "44",
@@ -233,7 +233,7 @@
         "auf",
         "als"
       ],
-      "correct_answer": "c"
+      "correct_answer": "b"
     },
     {
       "number": "46",
@@ -243,7 +243,7 @@
         "etaplierte",
         "etablirte ________________________________________"
       ],
-      "correct_answer": "b"
+      "correct_answer": "a"
     }
   ]
 }

@@ -41,7 +41,7 @@
         "belohnte",
         "beschenkte"
       ],
-      "correct_answer": "d"
+      "correct_answer": "a"
     },
     {
       "number": "26",
@@ -51,7 +51,7 @@
         "Wetterereignisse",
         "Wetterereignissen"
       ],
-      "correct_answer": "c"
+      "correct_answer": "d"
     },
     {
       "number": "27",
@@ -61,7 +61,7 @@
         "Schon im",
         "Seitdem"
       ],
-      "correct_answer": "b"
+      "correct_answer": "c"
     },
     {
       "number": "28",
@@ -71,7 +71,7 @@
         "zeitgleich",
         "zeitlich"
       ],
-      "correct_answer": "b"
+      "correct_answer": "c"
     },
     {
       "number": "29",
@@ -81,7 +81,7 @@
         "ergibt",
         "übergibt"
       ],
-      "correct_answer": "b"
+      "correct_answer": "a"
     },
     {
       "number": "30",
@@ -91,7 +91,7 @@
         "damahlige",
         "damalige"
       ],
-      "correct_answer": "a"
+      "correct_answer": "d"
     },
     {
       "number": "31",
@@ -111,7 +111,7 @@
         "zugegen",
         "zunächst"
       ],
-      "correct_answer": "c"
+      "correct_answer": "d"
     },
     {
       "number": "33",
@@ -121,7 +121,7 @@
         "aufgeführt hatten",
         "aufgeführt waren"
       ],
-      "correct_answer": "a"
+      "correct_answer": "d"
     },
     {
       "number": "34",
@@ -131,7 +131,7 @@
         "kaum",
         "ziemlich"
       ],
-      "correct_answer": "d"
+      "correct_answer": "c"
     },
     {
       "number": "35",
@@ -141,7 +141,7 @@
         "hinausliefen",
         "hinwegfegten"
       ],
-      "correct_answer": "c"
+      "correct_answer": "d"
     },
     {
       "number": "36",
@@ -151,7 +151,7 @@
         "waren",
         "wurde"
       ],
-      "correct_answer": "c"
+      "correct_answer": "d"
     },
     {
       "number": "37",
@@ -161,7 +161,7 @@
         "dessen",
         "ihren"
       ],
-      "correct_answer": "a"
+      "correct_answer": "b"
     },
     {
       "number": "38",
@@ -171,7 +171,7 @@
         "ursächlch",
         "ursprünglich"
       ],
-      "correct_answer": "a"
+      "correct_answer": "d"
     },
     {
       "number": "39",
@@ -181,7 +181,7 @@
         "bezogen",
         "gebracht"
       ],
-      "correct_answer": "c"
+      "correct_answer": "d"
     },
     {
       "number": "40",
@@ -191,7 +191,7 @@
         "auf",
         "los"
       ],
-      "correct_answer": "a"
+      "correct_answer": "c"
     },
     {
       "number": "41",
@@ -201,7 +201,7 @@
         "sein",
         "werden"
       ],
-      "correct_answer": "c"
+      "correct_answer": "d"
     },
     {
       "number": "42",
@@ -221,7 +221,7 @@
         "in Kauf genommen",
         "ins Leben gerufen"
       ],
-      "correct_answer": "c"
+      "correct_answer": "d"
     },
     {
       "number": "44",
@@ -231,7 +231,7 @@
         "bei einer",
         "fur ein"
       ],
-      "correct_answer": "b"
+      "correct_answer": "a"
     },
     {
       "number": "45",
@@ -241,7 +241,7 @@
         "begehrtern",
         "begerteren"
       ],
-      "correct_answer": "a"
+      "correct_answer": "b"
     },
     {
       "number": "46",
@@ -251,7 +251,7 @@
         "zu Nutze gemacht",
         "zum Einsatz gebracht _________________________________________"
       ],
-      "correct_answer": "d"
+      "correct_answer": "a"
     }
   ]
 }

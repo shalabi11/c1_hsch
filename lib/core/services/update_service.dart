@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:package_info_plus/package_info_plus.dart';
@@ -16,7 +17,7 @@ class UpdateService {
     _hasChecked = true;
 
     // The ota_update package is only supported on Android.
-    if (!Platform.isAndroid) return 'not_android';
+    if (kIsWeb || !Platform.isAndroid) return 'not_android';
 
     try {
       final packageInfo = await PackageInfo.fromPlatform();

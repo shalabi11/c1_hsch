@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_text_styles.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 /// Clean and minimal Entry Splash Screen.
 /// Fade animation on app launch, then redirects to onboarding/welcome screen.
@@ -30,10 +31,16 @@ class _SplashScreenState extends State<SplashScreen> {
       }
     });
 
-    // Auto-navigate to welcome/intro screen after 1.8 seconds
-    _timer = Timer(const Duration(milliseconds: 1800), () {
+    // Auto-navigate to welcome/intro or sections screen after 1.8 seconds
+    _timer = Timer(const Duration(milliseconds: 1800), () async {
+      final prefs = await SharedPreferences.getInstance();
+      final showIntro = prefs.getBool('showIntro') ?? true;
       if (mounted) {
-        context.go('/intro');
+        if (showIntro) {
+          context.go('/intro');
+        } else {
+          context.go('/sections');
+        }
       }
     });
   }

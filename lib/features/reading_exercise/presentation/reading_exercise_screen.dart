@@ -8,6 +8,7 @@ import 'widgets/reading_text_section.dart';
 import 'widgets/reading_questions_section.dart';
 import 'widgets/reading_jump_fab.dart';
 import 'reading_exercise_notifier.dart';
+import '../../../../core/widgets/exercise_instruction_card.dart';
 
 class ReadingExerciseScreen extends ConsumerStatefulWidget {
   final int sectionId;
@@ -114,6 +115,16 @@ class _ReadingExerciseScreenState extends ConsumerState<ReadingExerciseScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
+                if (widget.sectionId == 2)
+                  const ExerciseInstructionCard(
+                    instructionAr: 'اقرأ النصوص التالية ثم أسندها إلى المقولات أو الأسئلة بالأسفل',
+                    instructionDe: 'Lesen Sie die folgenden Texte und ordnen Sie diese den untenstehenden Aussagen oder Fragen zu',
+                  )
+                else if (widget.sectionId == 3)
+                  const ExerciseInstructionCard(
+                    instructionAr: 'اقرأ النصوص التالية ثم أجب على الأسئلة بالأسفل بـ صح (+) أو خطأ (-) أو غير ذلك (x)',
+                    instructionDe: 'Lesen Sie die folgenden Texte und beantworten Sie die untenstehenden Fragen mit richtig (+), falsch (-) oder beides nicht (x)',
+                  ),
                 ReadingTextSection(exercise: exercise),
                 const SizedBox(height: 16),
                 ReadingQuestionsSection(

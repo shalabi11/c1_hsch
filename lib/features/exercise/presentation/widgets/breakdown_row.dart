@@ -103,12 +103,13 @@ class UserAnswer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           RichText(
+            textDirection: TextDirection.ltr,
             text: TextSpan(
               style: AppTextStyles.bodyMedium.copyWith(
                 color: AppColors.textPrimary,
               ),
               children: [
-                const TextSpan(text: 'Your Answer: '),
+                const TextSpan(text: 'Deine Antwort: '),
                 TextSpan(
                   text: chosenKey,
                   style: TextStyle(
@@ -122,12 +123,13 @@ class UserAnswer extends StatelessWidget {
           if (!isCorrect) ...[
             const SizedBox(height: 4),
             RichText(
+              textDirection: TextDirection.ltr,
               text: TextSpan(
                 style: AppTextStyles.labelSmall.copyWith(
                   color: AppColors.textSecondary,
                 ),
                 children: [
-                  const TextSpan(text: 'Correct: '),
+                  const TextSpan(text: 'Richtig: '),
                   TextSpan(
                     text: correctKey,
                     style: TextStyle(

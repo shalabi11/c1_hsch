@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'l10n/app_localizations.dart';
 import 'core/localization/locale_provider.dart';
@@ -29,41 +28,6 @@ void main() async {
     ],
     child: const C1HschApp(),
   ));
-}
-
-/// شاشة الـ Splash مخصصة لفحص التوجيه المناسب للمستخدم وتجنب حدوث وميض بالشاشة
-class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
-
-  @override
-  State<SplashScreen> createState() => _SplashScreenState();
-}
-
-class _SplashScreenState extends State<SplashScreen> {
-  @override
-  void initState() {
-    super.initState();
-    // نقوم بالتوجيه مباشرة بعد اكتمال بناء الإطار الرسومي الأول للتطبيق
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (_showIntro) {
-        context.go('/intro');
-      } else {
-        context.go('/sections');
-      }
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.background,
-      body: Center(
-        child: CircularProgressIndicator(
-          valueColor: AlwaysStoppedAnimation<Color>(AppColors.accent),
-        ),
-      ),
-    );
-  }
 }
 
 class AppScrollBehavior extends MaterialScrollBehavior {

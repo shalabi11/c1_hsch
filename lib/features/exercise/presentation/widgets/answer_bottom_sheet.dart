@@ -129,6 +129,7 @@ class _OptionRow extends StatelessWidget {
         padding: const EdgeInsets.symmetric(
             horizontal: AppSpacing.screenH, vertical: 12),
         child: Row(
+          textDirection: TextDirection.ltr,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             _LetterBadge(letter: option.key),
@@ -188,7 +189,12 @@ class _OptionText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (keyword == null || keyword!.isEmpty || !text.contains(keyword!)) {
-      return Text(text, style: AppTextStyles.bodyMedium);
+      return Text(
+        text, 
+        style: AppTextStyles.bodyMedium,
+        textDirection: TextDirection.ltr,
+        textAlign: TextAlign.left,
+      );
     }
 
     final parts = text.split(keyword!);
@@ -207,6 +213,10 @@ class _OptionText extends StatelessWidget {
         ));
       }
     }
-    return Text.rich(TextSpan(children: spans));
+    return Text.rich(
+      TextSpan(children: spans),
+      textDirection: TextDirection.ltr,
+      textAlign: TextAlign.left,
+    );
   }
 }

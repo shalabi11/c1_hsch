@@ -231,6 +231,8 @@ class _SprachbausteineTextSectionState extends ConsumerState<SprachbausteineText
                 Text(
                   'Wähle das richtige Wort für [$questionNumber]',
                   style: AppTextStyles.headingMedium,
+                  textDirection: TextDirection.ltr,
+                  textAlign: TextAlign.left,
                 ),
                 const SizedBox(height: 16),
                 ...List.generate(options.length, (index) {
@@ -258,6 +260,7 @@ class _SprachbausteineTextSectionState extends ConsumerState<SprachbausteineText
                           color: isSelected ? AppColors.accent.withValues(alpha: 0.05) : null,
                         ),
                         child: Row(
+                          textDirection: TextDirection.ltr,
                           children: [
                             Text(
                               '$letter)',
@@ -265,6 +268,7 @@ class _SprachbausteineTextSectionState extends ConsumerState<SprachbausteineText
                                 fontWeight: FontWeight.bold,
                                 color: isSelected ? AppColors.accent : AppColors.textSecondary,
                               ),
+                              textDirection: TextDirection.ltr,
                             ),
                             const SizedBox(width: 16),
                             Expanded(
@@ -274,6 +278,8 @@ class _SprachbausteineTextSectionState extends ConsumerState<SprachbausteineText
                                   color: isSelected ? AppColors.accent : AppColors.textPrimary,
                                   fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
                                 ),
+                                textDirection: TextDirection.ltr,
+                                textAlign: TextAlign.left,
                               ),
                             ),
                             if (isSelected)

@@ -8,7 +8,8 @@ import '../../../../core/localization/locale_provider.dart';
 import 'widgets/theme_selection_card.dart';
 import 'widgets/language_tile.dart';
 import 'widgets/clear_data_dialog.dart';
-
+import 'package:go_router/go_router.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SettingsScreen extends ConsumerStatefulWidget {
   const SettingsScreen({super.key});
@@ -177,6 +178,43 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           ),
           const SizedBox(height: 32),
 
+          // Exam Tips Section
+          Text(
+            tr('التحضير للامتحان', 'PRÜFUNGSVORBEREITUNG').toUpperCase(),
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 1.2,
+              color: AppColors.textSecondary,
+            ),
+          ),
+          const SizedBox(height: 16),
+          _buildSectionCard(
+            padding: EdgeInsets.zero,
+            child: ListTile(
+              onTap: () => context.push('/exam_tips'),
+              leading: Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: AppColors.accent.withValues(alpha: 0.1),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Icon(Icons.tips_and_updates, color: AppColors.accent),
+              ),
+              title: Text(
+                tr('نصائح للامتحان', 'Prüfungstipps'),
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.textPrimary,
+                ),
+              ),
+              trailing:
+                  Icon(Icons.chevron_right, color: AppColors.textSecondary),
+            ),
+          ),
+          const SizedBox(height: 32),
+
           // Data Management Section
           Text(
             tr('إدارة البيانات', 'DATENVERWALTUNG').toUpperCase(),
@@ -279,6 +317,104 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             ),
           ),
 
+          const SizedBox(height: 32),
+
+          // Team Section
+          Text(
+            tr('فريق العمل', 'TEAM').toUpperCase(),
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 1.2,
+              color: AppColors.textSecondary,
+            ),
+          ),
+          const SizedBox(height: 16),
+          _buildSectionCard(
+            padding: EdgeInsets.zero,
+            child: Column(
+              children: [
+                _buildTeamMember(
+                  icon: Icons.developer_mode,
+                  title: tr('مطور التطبيق', 'App-Entwickler'),
+                  name: tr('إبراهيم الشلبي (Ibrahim Al-Shalabi)',
+                      'Ibrahim Al-Shalabi'),
+                ),
+                Divider(color: AppColors.border, height: 1),
+                _buildTeamMember(
+                  icon: Icons.supervisor_account,
+                  title: tr('إشراف', 'Betreuung'),
+                  name: tr(' الآنسة رؤى شقره', 'Frau Roaa'),
+                ),
+                _buildTeamMember(
+                  icon: Icons.person,
+                  title: tr('صاحب الفكرة', ''),
+                  name: tr('عبدالرحمن كردوش', 'Frau Roaa'),
+                ),
+                Divider(color: AppColors.border, height: 1),
+                Theme(
+                  data: Theme.of(context)
+                      .copyWith(dividerColor: Colors.transparent),
+                  child: ExpansionTile(
+                    leading: Icon(Icons.group, color: AppColors.textSecondary),
+                    title: Text(
+                      tr('المشاركون', 'Teilnehmer'),
+                      style: TextStyle(color: AppColors.textPrimary),
+                    ),
+                    children: [
+                      _buildParticipant('مايا المحمود'),
+                      _buildParticipant('علي كريم'),
+                      _buildParticipant('محمد حنيفة'),
+                      _buildParticipant('أماني جاموس'),
+                      _buildParticipant('اماني صابر'),
+                      _buildParticipant('Aylin Busse'),
+                      const SizedBox(height: 8),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 32),
+
+          // Useful Links
+          Text(
+            tr('روابط مفيدة', 'NÜTZLICHE LINKS').toUpperCase(),
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 1.2,
+              color: AppColors.textSecondary,
+            ),
+          ),
+          const SizedBox(height: 16),
+          _buildSectionCard(
+            padding: EdgeInsets.zero,
+            child: Column(
+              children: [
+                _buildLinkTile(
+                  title: 'قناة C1 HS',
+                  url: 'https://t.me/c1Hsc',
+                ),
+                Divider(color: AppColors.border, height: 1),
+                _buildLinkTile(
+                  title: 'مجموعة weg zur uni',
+                  url: 'https://t.me/+LrVPYEC_zqk4NDcy',
+                ),
+                Divider(color: AppColors.border, height: 1),
+                _buildLinkTile(
+                  title: 'قناة موندلش C1',
+                  url: 'https://t.me/+J0JcISvNrLo1Nzli',
+                ),
+                Divider(color: AppColors.border, height: 1),
+                _buildLinkTile(
+                  title: 'مجموعة Kostenfreie Hochschul-Lerngruppe',
+                  url: 'https://t.me/+mgH0XKqDWeMxMTg8',
+                ),
+              ],
+            ),
+          ),
+
           const SizedBox(height: 40),
           Center(
             child: Text(
@@ -337,6 +473,45 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
     showDialog(
       context: context,
       builder: (ctx) => ClearDataDialog(tr: tr),
+    );
+  }
+
+  Widget _buildTeamMember(
+      {required IconData icon, required String title, required String name}) {
+    return ListTile(
+      leading: Icon(icon, color: AppColors.textSecondary),
+      title: Text(title,
+          style: TextStyle(color: AppColors.textSecondary, fontSize: 12)),
+      subtitle: Text(name,
+          style: TextStyle(
+              color: AppColors.textPrimary, fontWeight: FontWeight.bold)),
+    );
+  }
+
+  Widget _buildParticipant(String name) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
+      child: Row(
+        children: [
+          Icon(Icons.person_outline, size: 16, color: AppColors.textSecondary),
+          const SizedBox(width: 12),
+          Text(name, style: TextStyle(color: AppColors.textPrimary)),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildLinkTile({required String title, required String url}) {
+    return ListTile(
+      leading: Icon(Icons.telegram, color: Colors.blue),
+      title: Text(title, style: TextStyle(color: AppColors.textPrimary)),
+      trailing: Icon(Icons.open_in_browser, color: AppColors.textSecondary),
+      onTap: () async {
+        final uri = Uri.parse(url);
+        if (await canLaunchUrl(uri)) {
+          await launchUrl(uri, mode: LaunchMode.externalApplication);
+        }
+      },
     );
   }
 }

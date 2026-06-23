@@ -6,6 +6,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../reading_exercise/presentation/widgets/reading_app_bar.dart';
 import 'sprachbausteine_notifier.dart';
 import 'widgets/sprachbausteine_text_section.dart';
+import '../../../../core/widgets/exercise_instruction_card.dart';
 
 class SprachbausteineScreen extends ConsumerStatefulWidget {
   final int sectionId;
@@ -90,10 +91,19 @@ class _SprachbausteineScreenState extends ConsumerState<SprachbausteineScreen> {
           ),
           body: SingleChildScrollView(
             padding: const EdgeInsets.all(16.0),
-            child: SprachbausteineTextSection(
-              exercise: exercise,
-              state: state,
-              params: _params,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                const ExerciseInstructionCard(
+                  instructionAr: 'اضغط على الفراغ وقم باختيار الإجابة الصحيحة',
+                  instructionDe: 'Klicken Sie auf die Lücke und wählen Sie die richtige Antwort aus',
+                ),
+                SprachbausteineTextSection(
+                  exercise: exercise,
+                  state: state,
+                  params: _params,
+                ),
+              ],
             ),
           ),
         );

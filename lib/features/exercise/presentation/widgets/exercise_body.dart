@@ -10,6 +10,7 @@ import 'exercise_top_bar.dart'; // استيراد التوب بار الجديد
 import '../../../../core/constants/app_spacing.dart';
 import '../../../../core/widgets/feedback_bar.dart';
 import '../../../../core/widgets/progress_bar.dart';
+import '../../../../core/widgets/exercise_instruction_card.dart';
 import '../../../../l10n/app_localizations.dart';
 
 class ExerciseBody extends StatelessWidget {
@@ -56,6 +57,10 @@ class ExerciseBody extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    const ExerciseInstructionCard(
+                      instructionAr: 'اضغط على الفراغ وقم بالإجابة عن الأسئلة',
+                      instructionDe: 'Klicken Sie auf die Lücke und beantworten Sie die Fragen',
+                    ),
                     ReadingAreaWithCorrectness(
                       paragraphs: exercise.deParagraphs,
                       textDirection: TextDirection.ltr,

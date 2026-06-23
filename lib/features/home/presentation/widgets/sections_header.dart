@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_text_styles.dart';
 import '../../../../l10n/app_localizations.dart';
+import 'package:go_router/go_router.dart';
 
 /// Clean, premium, and bilingual Header for the Sections list.
 class SectionsHeader extends StatelessWidget {
@@ -25,6 +26,10 @@ class SectionsHeader extends StatelessWidget {
 
           // 3. Structured Subtitles with bilingual styling
           _BilingualSubtitles(),
+          SizedBox(height: 12),
+
+          // 4. Settings Tip Banner
+          _SettingsTipBanner(),
         ],
       ),
     );
@@ -170,6 +175,57 @@ class _BilingualSubtitles extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// 4. Settings Tip Banner guiding users to the exam tips.
+class _SettingsTipBanner extends StatelessWidget {
+  const _SettingsTipBanner();
+
+  @override
+  Widget build(BuildContext context) {
+    final isAr = Localizations.localeOf(context).languageCode == 'ar';
+
+    return InkWell(
+      onTap: () => context.push('/exam_tips'),
+      borderRadius: BorderRadius.circular(12),
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        decoration: BoxDecoration(
+          color: AppColors.accent.withValues(alpha: 0.1),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(
+            color: AppColors.accent.withValues(alpha: 0.3),
+            width: 0.5,
+          ),
+        ),
+        child: Row(
+          children: [
+            Icon(Icons.lightbulb_outline_rounded,
+                color: AppColors.accent, size: 20),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Text(
+                isAr
+                    ? 'لا تنسَ الاطلاع على نصائح الامتحان المهمة في الإعدادات!'
+                    : 'Vergiss nicht, die wichtigen Prüfungstipps in den Einstellungen zu lesen!',
+                style: AppTextStyles.bodyMedium.copyWith(
+                  color: AppColors.accent,
+                  fontWeight: FontWeight.w600,
+                ),
+                textDirection: isAr ? TextDirection.rtl : TextDirection.ltr,
+                textAlign: isAr ? TextAlign.right : TextAlign.left,
+              ),
+            ),
+            Icon(
+              isAr ? Icons.chevron_left_rounded : Icons.chevron_right_rounded,
+              color: AppColors.accent,
+            ),
+          ],
+        ),
       ),
     );
   }

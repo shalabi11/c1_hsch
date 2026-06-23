@@ -1,10 +1,10 @@
 import 'package:go_router/go_router.dart';
-import '../../main.dart';
-import '../../features/onboarding/index.dart' hide SplashScreen;
+import '../../features/onboarding/index.dart';
 import '../../features/home/presentation/sections_screen.dart';
 import '../../features/home/presentation/models_screen.dart';
 import '../../features/home/presentation/update_screen.dart';
 import '../../features/settings/presentation/settings_screen.dart';
+import '../../features/settings/presentation/exam_tips_screen.dart';
 import '../../features/exercise/presentation/exercise_screen.dart';
 import '../../features/exercise/presentation/results_screen.dart';
 import '../../features/reading_exercise/presentation/reading_exercise_screen.dart';
@@ -29,6 +29,10 @@ final appRouter = GoRouter(
     GoRoute(
       path: '/settings',
       builder: (_, __) => const SettingsScreen(),
+    ),
+    GoRoute(
+      path: '/exam_tips',
+      builder: (_, __) => const ExamTipsScreen(),
     ),
     GoRoute(
       path: '/sections',

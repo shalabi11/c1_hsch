@@ -348,8 +348,8 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                 ),
                 _buildTeamMember(
                   icon: Icons.person,
-                  title: tr('صاحب الفكرة', ''),
-                  name: tr('عبدالرحمن كردوش', 'Frau Roaa'),
+                  title: tr('فكرة', 'Idee'),
+                  name: tr('عبدالرحمن كردوش', 'Abdulrahman Kurdush'),
                 ),
                 Divider(color: AppColors.border, height: 1),
                 Theme(

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -18,7 +19,9 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="C1 Hsch - التطبيق الأول لمساعدة المتحدثين بالعربية في التحضير لامتحان اللغة الألمانية C1. تدرب على قسم القراءة (Leseverstehen) بأسلوب ممتع وفعال.">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <meta name="description"
+    content="C1 Hsch - التطبيق الأول لمساعدة المتحدثين بالعربية في التحضير لامتحان اللغة الألمانية C1. تدرب على قسم القراءة (Leseverstehen) بأسلوب ممتع وفعال.">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -27,35 +30,45 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png?v=2">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png?v=2"/>
+  <link rel="icon" type="image/png" href="favicon.png?v=2" />
 
   <title>C1 Hsch - Leseverstehen</title>
   <link rel="manifest" href="manifest.json?v=2">
   <style>
     body {
-      background-color: #121212; /* Dark theme background */
+      background-color: #121212;
+      /* Dark theme background */
       margin: 0;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
     }
+
     .loader {
       border: 5px solid #2a2a2a;
-      border-top: 5px solid #8e44ad; /* Accent color */
+      border-top: 5px solid #8e44ad;
+      /* Accent color */
       border-radius: 50%;
       width: 50px;
       height: 50px;
       animation: spin 1s linear infinite;
     }
+
     @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
     }
   </style>
-  
+
   <!-- Removed OS Checker and Blocker -->
 </head>
+
 <body>
   <!--
     You can customize the "flutter_bootstrap.js" script.
@@ -68,4 +81,5 @@
   <div class="loader"></div>
   <script src="flutter_bootstrap.js" async></script>
 </body>
+
 </html>

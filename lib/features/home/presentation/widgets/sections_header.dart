@@ -189,7 +189,7 @@ class _SettingsTipBanner extends StatelessWidget {
     final isAr = Localizations.localeOf(context).languageCode == 'ar';
 
     return InkWell(
-      onTap: () => context.push('/exam_tips'),
+      onTap: () => context.push('/settings?highlight=exam_tips'),
       borderRadius: BorderRadius.circular(12),
       child: Container(
         width: double.infinity,

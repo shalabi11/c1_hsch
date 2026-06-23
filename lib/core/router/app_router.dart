@@ -28,7 +28,10 @@ final appRouter = GoRouter(
     ),
     GoRoute(
       path: '/settings',
-      builder: (_, __) => const SettingsScreen(),
+      builder: (_, state) {
+        final highlight = state.uri.queryParameters['highlight'];
+        return SettingsScreen(highlightSection: highlight);
+      },
     ),
     GoRoute(
       path: '/exam_tips',

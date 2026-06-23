@@ -12,7 +12,8 @@ import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SettingsScreen extends ConsumerStatefulWidget {
-  const SettingsScreen({super.key});
+  final String? highlightSection;
+  const SettingsScreen({super.key, this.highlightSection});
 
   @override
   ConsumerState<SettingsScreen> createState() => _SettingsScreenState();
@@ -20,11 +21,53 @@ class SettingsScreen extends ConsumerStatefulWidget {
 
 class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   String _appVersion = 'Lade...';
+  final GlobalKey _examTipsKey = GlobalKey();
+  bool _highlightExamTips = false;
+
+  void _triggerHighlightAndScroll() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final context = _examTipsKey.currentContext;
+      if (context != null) {
+        Scrollable.ensureVisible(
+          context,
+          alignment: 0.5, // Centered vertically in the viewport
+          duration: const Duration(milliseconds: 800),
+          curve: Curves.easeInOut,
+        );
+      }
+      setState(() {
+        _highlightExamTips = true;
+      });
+      Future.delayed(const Duration(milliseconds: 2500), () {
+        if (mounted) {
+          setState(() {
+            _highlightExamTips = false;
+          });
+        }
+      });
+    });
+  }
 
   @override
   void initState() {
     super.initState();
     _loadVersion();
+
+    if (widget.highlightSection == 'exam_tips') {
+      _triggerHighlightAndScroll();
+    }
+  }
+
+  @override
+  void didUpdateWidget(covariant SettingsScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.highlightSection == 'exam_tips' && 
+        oldWidget.highlightSection != 'exam_tips') {
+      _triggerHighlightAndScroll();
+    } else if (widget.highlightSection == 'exam_tips') {
+      // Trigger even if it was already 'exam_tips' to allow multiple taps
+      _triggerHighlightAndScroll();
+    }
   }
 
   Future<void> _loadVersion() async {
@@ -178,43 +221,6 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           ),
           const SizedBox(height: 32),
 
-          // Exam Tips Section
-          Text(
-            tr('التحضير للامتحان', 'PRÜFUNGSVORBEREITUNG').toUpperCase(),
-            style: TextStyle(
-              fontSize: 12,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 1.2,
-              color: AppColors.textSecondary,
-            ),
-          ),
-          const SizedBox(height: 16),
-          _buildSectionCard(
-            padding: EdgeInsets.zero,
-            child: ListTile(
-              onTap: () => context.push('/exam_tips'),
-              leading: Container(
-                padding: const EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: AppColors.accent.withValues(alpha: 0.1),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Icon(Icons.tips_and_updates, color: AppColors.accent),
-              ),
-              title: Text(
-                tr('نصائح للامتحان', 'Prüfungstipps'),
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.textPrimary,
-                ),
-              ),
-              trailing:
-                  Icon(Icons.chevron_right, color: AppColors.textSecondary),
-            ),
-          ),
-          const SizedBox(height: 32),
-
           // Data Management Section
           Text(
             tr('إدارة البيانات', 'DATENVERWALTUNG').toUpperCase(),
@@ -317,6 +323,46 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             ),
           ),
 
+          const SizedBox(height: 32),
+          // Exam Tips Section
+          Text(
+            tr('التحضير للامتحان', 'PRÜFUNGSVORBEREITUNG').toUpperCase(),
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 1.2,
+              color: AppColors.textSecondary,
+            ),
+          ),
+          const SizedBox(height: 16),
+          _buildSectionCard(
+            key: _examTipsKey,
+            backgroundColor: _highlightExamTips
+                ? AppColors.accent.withValues(alpha: 0.25)
+                : null,
+            padding: EdgeInsets.zero,
+            child: ListTile(
+              onTap: () => context.push('/exam_tips'),
+              leading: Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: AppColors.accent.withValues(alpha: 0.1),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Icon(Icons.tips_and_updates, color: AppColors.accent),
+              ),
+              title: Text(
+                tr('نصائح للامتحان', 'Prüfungstipps'),
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.textPrimary,
+                ),
+              ),
+              trailing:
+                  Icon(Icons.chevron_right, color: AppColors.textSecondary),
+            ),
+          ),
           const SizedBox(height: 32),
 
           // Team Section
@@ -429,16 +475,36 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   }
 
   Widget _buildSectionCard({
+    Key? key,
     required Widget child,
     String? title,
     String? subtitle,
     EdgeInsetsGeometry padding = const EdgeInsets.all(20),
+    Color? backgroundColor,
   }) {
-    return Container(
+    final effectiveColor = backgroundColor ?? AppColors.surface;
+    return AnimatedContainer(
+      key: key,
+      duration: const Duration(milliseconds: 500),
+      curve: Curves.easeInOut,
       decoration: BoxDecoration(
-        color: AppColors.surface,
+        color: effectiveColor,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: AppColors.border),
+        border: Border.all(
+          color: backgroundColor != null
+              ? AppColors.accent.withValues(alpha: 0.6)
+              : AppColors.border,
+          width: backgroundColor != null ? 1.5 : 1.0,
+        ),
+        boxShadow: backgroundColor != null
+            ? [
+                BoxShadow(
+                  color: AppColors.accent.withValues(alpha: 0.15),
+                  blurRadius: 12,
+                  spreadRadius: 2,
+                )
+              ]
+            : null,
       ),
       padding: padding,
       child: Column(

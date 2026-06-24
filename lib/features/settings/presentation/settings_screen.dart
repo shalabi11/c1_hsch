@@ -375,52 +375,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               color: AppColors.textSecondary,
             ),
           ),
-          const SizedBox(height: 16),
-          _buildSectionCard(
-            padding: EdgeInsets.zero,
-            child: Column(
-              children: [
-                _buildTeamMember(
-                  icon: Icons.developer_mode,
-                  title: tr('مطور التطبيق', 'App-Entwickler'),
-                  name: tr('إبراهيم الشلبي (Ibrahim Al-Shalabi)',
-                      'Ibrahim Al-Shalabi'),
-                ),
-                Divider(color: AppColors.border, height: 1),
-                _buildTeamMember(
-                  icon: Icons.supervisor_account,
-                  title: tr('إشراف', 'Betreuung'),
-                  name: tr(' الآنسة رؤى شقره', 'Frau Roaa'),
-                ),
-                _buildTeamMember(
-                  icon: Icons.person,
-                  title: tr('فكرة', 'Idee'),
-                  name: tr('عبدالرحمن كردوش', 'Abdulrahman Kurdush'),
-                ),
-                Divider(color: AppColors.border, height: 1),
-                Theme(
-                  data: Theme.of(context)
-                      .copyWith(dividerColor: Colors.transparent),
-                  child: ExpansionTile(
-                    leading: Icon(Icons.group, color: AppColors.textSecondary),
-                    title: Text(
-                      tr('المشاركون', 'Teilnehmer'),
-                      style: TextStyle(color: AppColors.textPrimary),
-                    ),
-                    children: [
-                      _buildParticipant('مايا المحمود'),
-                      _buildParticipant('علي كريم'),
-                      _buildParticipant('محمد حنيفة'),
-                      _buildParticipant('أماني جاموس'),
-                      _buildParticipant('اماني صابر'),
-                      _buildParticipant('Aylin Busse'),
-                      const SizedBox(height: 8),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
+          
           const SizedBox(height: 32),
 
           // Useful Links
